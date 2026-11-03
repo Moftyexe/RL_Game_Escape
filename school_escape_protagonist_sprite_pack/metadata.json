@@ -1,0 +1,150 @@
+{
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "animations": {
+    "idle_down": {
+      "frames": 4,
+      "fps": 6,
+      "loop": true,
+      "sheet": "sheets/idle_down.png"
+    },
+    "walk_down": {
+      "frames": 4,
+      "fps": 10,
+      "loop": true,
+      "sheet": "sheets/walk_down.png"
+    },
+    "run_down": {
+      "frames": 6,
+      "fps": 14,
+      "loop": true,
+      "sheet": "sheets/run_down.png"
+    },
+    "idle_left": {
+      "frames": 4,
+      "fps": 6,
+      "loop": true,
+      "sheet": "sheets/idle_left.png"
+    },
+    "walk_left": {
+      "frames": 4,
+      "fps": 10,
+      "loop": true,
+      "sheet": "sheets/walk_left.png"
+    },
+    "run_left": {
+      "frames": 6,
+      "fps": 14,
+      "loop": true,
+      "sheet": "sheets/run_left.png"
+    },
+    "idle_right": {
+      "frames": 4,
+      "fps": 6,
+      "loop": true,
+      "sheet": "sheets/idle_right.png"
+    },
+    "walk_right": {
+      "frames": 4,
+      "fps": 10,
+      "loop": true,
+      "sheet": "sheets/walk_right.png"
+    },
+    "run_right": {
+      "frames": 6,
+      "fps": 14,
+      "loop": true,
+      "sheet": "sheets/run_right.png"
+    },
+    "idle_up": {
+      "frames": 4,
+      "fps": 6,
+      "loop": true,
+      "sheet": "sheets/idle_up.png"
+    },
+    "walk_up": {
+      "frames": 4,
+      "fps": 10,
+      "loop": true,
+      "sheet": "sheets/walk_up.png"
+    },
+    "run_up": {
+      "frames": 6,
+      "fps": 14,
+      "loop": true,
+      "sheet": "sheets/run_up.png"
+    },
+    "blink": {
+      "frames": 2,
+      "fps": 6,
+      "loop": true,
+      "sheet": "sheets/blink.png"
+    },
+    "interact": {
+      "frames": 4,
+      "fps": 8,
+      "loop": false,
+      "sheet": "sheets/interact.png"
+    },
+    "hurt": {
+      "frames": 3,
+      "fps": 10,
+      "loop": false,
+      "sheet": "sheets/hurt.png"
+    },
+    "victory": {
+      "frames": 4,
+      "fps": 8,
+      "loop": false,
+      "sheet": "sheets/victory.png"
+    },
+    "defeat": {
+      "frames": 4,
+      "fps": 8,
+      "loop": false,
+      "sheet": "sheets/defeat.png"
+    },
+    "attack": {
+      "frames": 4,
+      "fps": 12,
+      "loop": false,
+      "sheet": "sheets/attack.png"
+    },
+    "defend": {
+      "frames": 4,
+      "fps": 10,
+      "loop": false,
+      "sheet": "sheets/defend.png"
+    },
+    "hit_combat": {
+      "frames": 4,
+      "fps": 12,
+      "loop": false,
+      "sheet": "sheets/hit_combat.png"
+    },
+    "knockdown": {
+      "frames": 4,
+      "fps": 10,
+      "loop": false,
+      "sheet": "sheets/knockdown.png"
+    },
+    "get_up": {
+      "frames": 4,
+      "fps": 10,
+      "loop": false,
+      "sheet": "sheets/get_up.png"
+    },
+    "buff": {
+      "frames": 4,
+      "fps": 8,
+      "loop": false,
+      "sheet": "sheets/buff.png"
+    },
+    "debuff": {
+      "frames": 4,
+      "fps": 8,
+      "loop": false,
+      "sheet": "sheets/debuff.png"
+    }
+  }
+}
