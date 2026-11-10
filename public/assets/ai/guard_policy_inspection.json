@@ -1,0 +1,884 @@
+{
+  "tableSha256": "96dff2a6a9c7f2803342e5d7e9550231b22392c10a5bebd8e8d4fb7f012bf686",
+  "schema": "guard-q-v7",
+  "seed": 20261108,
+  "episodesPerBot": 1000,
+  "startMode": "normal-only",
+  "representativeStates": [
+    {
+      "label": "A",
+      "state": "GHP_CRITICAL|PHP_CRITICAL|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W1|DONUT_FULL_VALUE|PSTUN0|PREV_ATTACK",
+      "guardHp": 60,
+      "playerHp": 50,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": true,
+      "donutAvailable": true,
+      "donutState": "FULL_VALUE",
+      "learnedState": true,
+      "learnedActions": [
+        "blowWhistle",
+        "eatDonut"
+      ],
+      "values": {
+        "attack": 0,
+        "defend": 0,
+        "crackKnuckles": 0,
+        "blowWhistle": -0.020000000000000004,
+        "callWife": 0,
+        "eatDonut": 1.2851949989427471
+      },
+      "visits": {
+        "attack": 0,
+        "defend": 0,
+        "crackKnuckles": 0,
+        "blowWhistle": 1,
+        "callWife": 0,
+        "eatDonut": 1
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "evalCandidates": [
+        "blowWhistle",
+        "eatDonut"
+      ],
+      "chosen": "eatDonut",
+      "fallback": false,
+      "preferred": [
+        "eatDonut"
+      ]
+    },
+    {
+      "label": "B",
+      "state": "GHP_CRITICAL|PHP_HIGH|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W1|DONUT_FULL_VALUE|PSTUN0|PREV_ATTACK",
+      "guardHp": 60,
+      "playerHp": 700,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": true,
+      "donutAvailable": true,
+      "donutState": "FULL_VALUE",
+      "learnedState": true,
+      "learnedActions": [
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife"
+      ],
+      "values": {
+        "attack": 0,
+        "defend": 0,
+        "crackKnuckles": -10.255,
+        "blowWhistle": -0.17,
+        "callWife": -0.020000000000000004,
+        "eatDonut": 0
+      },
+      "visits": {
+        "attack": 0,
+        "defend": 0,
+        "crackKnuckles": 1,
+        "blowWhistle": 1,
+        "callWife": 1,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "evalCandidates": [
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife"
+      ],
+      "chosen": "callWife",
+      "fallback": false,
+      "preferred": [
+        "callWife"
+      ]
+    },
+    {
+      "label": "C",
+      "state": "GHP_VERY_HIGH|PHP_CRITICAL|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W1|DONUT_PARTIAL_VALUE|PSTUN0|PREV_ATTACK",
+      "guardHp": 1080,
+      "playerHp": 50,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": true,
+      "donutAvailable": true,
+      "donutState": "PARTIAL_VALUE",
+      "learnedState": true,
+      "learnedActions": [
+        "crackKnuckles"
+      ],
+      "values": {
+        "attack": 0,
+        "defend": 0,
+        "crackKnuckles": -0.020000000000000004,
+        "blowWhistle": 0,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "visits": {
+        "attack": 0,
+        "defend": 0,
+        "crackKnuckles": 1,
+        "blowWhistle": 0,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "evalCandidates": [
+        "crackKnuckles"
+      ],
+      "chosen": "crackKnuckles",
+      "fallback": false,
+      "preferred": [
+        "crackKnuckles"
+      ]
+    },
+    {
+      "label": "D",
+      "state": "GHP_MID|PHP_MID|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W1|DONUT_FULL_VALUE|PSTUN0|PREV_ATTACK",
+      "guardHp": 480,
+      "playerHp": 400,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": true,
+      "donutAvailable": true,
+      "donutState": "FULL_VALUE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "values": {
+        "attack": 1.3621199562629116,
+        "defend": -0.354110105,
+        "crackKnuckles": -0.798,
+        "blowWhistle": -1.098,
+        "callWife": -0.5760774734197377,
+        "eatDonut": -0.6172305438651469
+      },
+      "visits": {
+        "attack": 18,
+        "defend": 3,
+        "crackKnuckles": 2,
+        "blowWhistle": 2,
+        "callWife": 4,
+        "eatDonut": 1
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "chosen": "attack",
+      "fallback": false,
+      "preferred": [
+        "attack"
+      ]
+    },
+    {
+      "label": "E",
+      "state": "GHP_MID|PHP_LOW|GSP_HIGH|PSP_HIGH|G_RILED|P_NONE|W1|DONUT_FULL_VALUE|PSTUN0|PREV_ATTACK",
+      "guardHp": 480,
+      "playerHp": 200,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": true,
+      "donutAvailable": true,
+      "donutState": "FULL_VALUE",
+      "learnedState": true,
+      "learnedActions": [
+        "blowWhistle"
+      ],
+      "values": {
+        "attack": 0,
+        "defend": 0,
+        "crackKnuckles": 0,
+        "blowWhistle": -0.7200000000000001,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "visits": {
+        "attack": 0,
+        "defend": 0,
+        "crackKnuckles": 0,
+        "blowWhistle": 1,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "evalCandidates": [
+        "blowWhistle"
+      ],
+      "chosen": "blowWhistle",
+      "fallback": false,
+      "preferred": [
+        "blowWhistle"
+      ]
+    },
+    {
+      "label": "F",
+      "state": "GHP_LOW|PHP_HIGH|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W1|DONUT_FULL_VALUE|PSTUN0|PREV_ATTACK",
+      "guardHp": 240,
+      "playerHp": 700,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": true,
+      "donutAvailable": true,
+      "donutState": "FULL_VALUE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "values": {
+        "attack": -10.087321450000001,
+        "defend": -0.18390000000000004,
+        "crackKnuckles": -0.021900000000000003,
+        "blowWhistle": -0.42000000000000004,
+        "callWife": -0.31732150000000003,
+        "eatDonut": -0.7280540735595958
+      },
+      "visits": {
+        "attack": 4,
+        "defend": 1,
+        "crackKnuckles": 1,
+        "blowWhistle": 1,
+        "callWife": 2,
+        "eatDonut": 1
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "chosen": "crackKnuckles",
+      "fallback": false,
+      "preferred": [
+        "crackKnuckles"
+      ]
+    },
+    {
+      "label": "G",
+      "state": "GHP_CRITICAL|PHP_LOW|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W1|DONUT_FULL_VALUE|PSTUN0|PREV_ATTACK",
+      "guardHp": 60,
+      "playerHp": 200,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": true,
+      "donutAvailable": true,
+      "donutState": "FULL_VALUE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "values": {
+        "attack": -10.385,
+        "defend": -0.020000000000000004,
+        "crackKnuckles": 0,
+        "blowWhistle": -10.55,
+        "callWife": 0.03618300000000001,
+        "eatDonut": -0.5561988792674407
+      },
+      "visits": {
+        "attack": 1,
+        "defend": 1,
+        "crackKnuckles": 0,
+        "blowWhistle": 1,
+        "callWife": 1,
+        "eatDonut": 1
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "chosen": "callWife",
+      "fallback": false,
+      "preferred": [
+        "callWife"
+      ]
+    },
+    {
+      "label": "H",
+      "state": "GHP_VERY_HIGH|PHP_HIGH|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W1|DONUT_PARTIAL_VALUE|PSTUN0|PREV_ATTACK",
+      "guardHp": 1190,
+      "playerHp": 700,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": true,
+      "donutAvailable": true,
+      "donutState": "PARTIAL_VALUE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "values": {
+        "attack": 1.668161541171529,
+        "defend": -0.6056072594393193,
+        "crackKnuckles": 0.09310320849448214,
+        "blowWhistle": -0.8765550174184814,
+        "callWife": 0.33799248337078064,
+        "eatDonut": -0.2898402039487311
+      },
+      "visits": {
+        "attack": 23,
+        "defend": 2,
+        "crackKnuckles": 4,
+        "blowWhistle": 4,
+        "callWife": 3,
+        "eatDonut": 4
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle",
+        "callWife",
+        "eatDonut"
+      ],
+      "chosen": "attack",
+      "fallback": false,
+      "preferred": [
+        "attack"
+      ]
+    }
+  ],
+  "spentResourceExamples": [
+    {
+      "label": "A",
+      "state": "GHP_CRITICAL|PHP_CRITICAL|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W0|DONUT_UNAVAILABLE|PSTUN0|PREV_ATTACK",
+      "guardHp": 60,
+      "playerHp": 50,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": false,
+      "donutAvailable": false,
+      "donutState": "UNAVAILABLE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "values": {
+        "attack": -5.244485039655931,
+        "defend": -1.4897516600099179,
+        "crackKnuckles": -24.336510871825897,
+        "blowWhistle": -22.069367266251522,
+        "callWife": null,
+        "eatDonut": null
+      },
+      "visits": {
+        "attack": 58,
+        "defend": 19,
+        "crackKnuckles": 11,
+        "blowWhistle": 13,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "chosen": "defend",
+      "fallback": false,
+      "preferred": [
+        "defend"
+      ]
+    },
+    {
+      "label": "B",
+      "state": "GHP_CRITICAL|PHP_HIGH|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W0|DONUT_UNAVAILABLE|PSTUN0|PREV_ATTACK",
+      "guardHp": 60,
+      "playerHp": 700,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": false,
+      "donutAvailable": false,
+      "donutState": "UNAVAILABLE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "values": {
+        "attack": -62.608969748056836,
+        "defend": -62.77448199986136,
+        "crackKnuckles": -60.507053809809214,
+        "blowWhistle": -60.58187716890945,
+        "callWife": null,
+        "eatDonut": null
+      },
+      "visits": {
+        "attack": 16,
+        "defend": 28,
+        "crackKnuckles": 18,
+        "blowWhistle": 40,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "chosen": "crackKnuckles",
+      "fallback": false,
+      "preferred": [
+        "crackKnuckles"
+      ]
+    },
+    {
+      "label": "C",
+      "state": "GHP_VERY_HIGH|PHP_CRITICAL|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W0|DONUT_UNAVAILABLE|PSTUN0|PREV_ATTACK",
+      "guardHp": 1080,
+      "playerHp": 50,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": false,
+      "donutAvailable": false,
+      "donutState": "UNAVAILABLE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "values": {
+        "attack": 87.35948964901375,
+        "defend": 29.33124648566313,
+        "crackKnuckles": 15.155054763437327,
+        "blowWhistle": 2.015148939792432,
+        "callWife": null,
+        "eatDonut": null
+      },
+      "visits": {
+        "attack": 46,
+        "defend": 10,
+        "crackKnuckles": 5,
+        "blowWhistle": 5,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "chosen": "attack",
+      "fallback": false,
+      "preferred": [
+        "attack"
+      ]
+    },
+    {
+      "label": "D",
+      "state": "GHP_MID|PHP_MID|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W0|DONUT_UNAVAILABLE|PSTUN0|PREV_ATTACK",
+      "guardHp": 480,
+      "playerHp": 400,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": false,
+      "donutAvailable": false,
+      "donutState": "UNAVAILABLE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "values": {
+        "attack": 11.006803132585272,
+        "defend": 7.373138247010566,
+        "crackKnuckles": -0.9153704194013534,
+        "blowWhistle": 8.866356986592313,
+        "callWife": null,
+        "eatDonut": null
+      },
+      "visits": {
+        "attack": 564,
+        "defend": 176,
+        "crackKnuckles": 214,
+        "blowWhistle": 317,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "chosen": "attack",
+      "fallback": false,
+      "preferred": [
+        "attack"
+      ]
+    },
+    {
+      "label": "E",
+      "state": "GHP_MID|PHP_LOW|GSP_HIGH|PSP_HIGH|G_RILED|P_NONE|W0|DONUT_UNAVAILABLE|PSTUN0|PREV_ATTACK",
+      "guardHp": 480,
+      "playerHp": 200,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": false,
+      "donutAvailable": false,
+      "donutState": "UNAVAILABLE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "values": {
+        "attack": 65.70394337905684,
+        "defend": 47.01228890603808,
+        "crackKnuckles": 33.12272607155076,
+        "blowWhistle": 23.415568157858136,
+        "callWife": null,
+        "eatDonut": null
+      },
+      "visits": {
+        "attack": 157,
+        "defend": 23,
+        "crackKnuckles": 17,
+        "blowWhistle": 24,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "chosen": "attack",
+      "fallback": false,
+      "preferred": [
+        "attack"
+      ]
+    },
+    {
+      "label": "G",
+      "state": "GHP_CRITICAL|PHP_LOW|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W0|DONUT_UNAVAILABLE|PSTUN0|PREV_ATTACK",
+      "guardHp": 60,
+      "playerHp": 200,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": false,
+      "donutAvailable": false,
+      "donutState": "UNAVAILABLE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "values": {
+        "attack": -38.81153974016106,
+        "defend": -57.74063371303332,
+        "crackKnuckles": -57.82584407777139,
+        "blowWhistle": -58.45019442169668,
+        "callWife": null,
+        "eatDonut": null
+      },
+      "visits": {
+        "attack": 47,
+        "defend": 43,
+        "crackKnuckles": 20,
+        "blowWhistle": 24,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "chosen": "attack",
+      "fallback": false,
+      "preferred": [
+        "attack"
+      ]
+    },
+    {
+      "label": "H",
+      "state": "GHP_VERY_HIGH|PHP_HIGH|GSP_HIGH|PSP_HIGH|G_NONE|P_NONE|W0|DONUT_UNAVAILABLE|PSTUN0|PREV_ATTACK",
+      "guardHp": 1190,
+      "playerHp": 700,
+      "guardSp": 50,
+      "playerSp": 50,
+      "wifeAvailable": false,
+      "donutAvailable": false,
+      "donutState": "UNAVAILABLE",
+      "learnedState": true,
+      "learnedActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "values": {
+        "attack": 23.94741797084567,
+        "defend": 20.96762800191665,
+        "crackKnuckles": 26.74987301884093,
+        "blowWhistle": 22.103711491160173,
+        "callWife": null,
+        "eatDonut": null
+      },
+      "visits": {
+        "attack": 1331,
+        "defend": 289,
+        "crackKnuckles": 1035,
+        "blowWhistle": 269,
+        "callWife": 0,
+        "eatDonut": 0
+      },
+      "validActions": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "evalCandidates": [
+        "attack",
+        "defend",
+        "crackKnuckles",
+        "blowWhistle"
+      ],
+      "chosen": "crackKnuckles",
+      "fallback": false,
+      "preferred": [
+        "crackKnuckles"
+      ]
+    }
+  ],
+  "behavior": {
+    "decisions": 63844,
+    "rounds": 65252,
+    "actions": {
+      "callWife": 3000,
+      "attack": 46754,
+      "eatDonut": 2999,
+      "crackKnuckles": 5930,
+      "blowWhistle": 2021,
+      "defend": 3140
+    },
+    "criticalActions": {
+      "defend": 149,
+      "attack": 715,
+      "crackKnuckles": 68,
+      "blowWhistle": 185
+    },
+    "bothCriticalActions": {
+      "defend": 22,
+      "attack": 241,
+      "blowWhistle": 14,
+      "crackKnuckles": 1
+    },
+    "criticalPlayerActions": {
+      "attack": 4023,
+      "crackKnuckles": 237,
+      "defend": 78,
+      "blowWhistle": 50
+    },
+    "criticalGuardHighPlayerActions": {
+      "attack": 39,
+      "defend": 32,
+      "blowWhistle": 8,
+      "crackKnuckles": 5
+    },
+    "riledActions": {
+      "attack": 21739,
+      "eatDonut": 1110,
+      "crackKnuckles": 490,
+      "blowWhistle": 867,
+      "defend": 1755
+    },
+    "donuts": 2999,
+    "donutUseByHpBucket": {
+      "CRITICAL": 0,
+      "LOW": 0,
+      "MID": 1,
+      "HIGH": 684,
+      "VERY_HIGH": 2314
+    },
+    "donutUseByValue": {
+      "FULL_VALUE": 1163,
+      "PARTIAL_VALUE": 1836,
+      "UNAVAILABLE": 0
+    },
+    "executedDonuts": 2999,
+    "executedDonutsByValue": {
+      "FULL_VALUE": 1163,
+      "PARTIAL_VALUE": 1836,
+      "UNAVAILABLE": 0
+    },
+    "executedDonutsByHp": {
+      "VERY_HIGH": 2314,
+      "HIGH": 684,
+      "MID": 1
+    },
+    "executedDonutsAbove75": 2314,
+    "riledEntries": 11725,
+    "fallbackDecisions": 10,
+    "meanEffectiveHeal": 132.4208069356452,
+    "meanWastedHeal": 67.5791930643548,
+    "nearFullDonuts": 2314,
+    "over90Donuts": 1256,
+    "donutHealedHp": 397130,
+    "donutRestoredSp": 0,
+    "wifeAfterCrack": 0,
+    "cracks": 5930,
+    "crackExecuted": 5878,
+    "repeatedCracks": 204,
+    "battlesRiled": 2983,
+    "stumbles": 1675,
+    "fatalStumbles": 12,
+    "riledPhysical": 22069,
+    "riledMisses": 7988,
+    "riledHits": 14081,
+    "riledCrits": 4917,
+    "maxDefendStreak": 5,
+    "criticalPlayerDefendChains": 6,
+    "longestCriticalPlayerDefendChain": 2,
+    "roundLimitDraws": 0
+  },
+  "caveats": [
+    "EVAL masks unvisited valid actions; no visited valid action uses explicit Random fallback.",
+    "Action counts are commitments, including later interruptions.",
+    "This is bot evaluation, not evidence of human difficulty."
+  ]
+}

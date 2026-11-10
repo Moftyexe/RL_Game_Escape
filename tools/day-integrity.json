@@ -1,0 +1,26 @@
+{
+  "productionQSha256": "a45930e8955707be6f1ea0689b39b0ecbce384080277fa2fa19c9c813f695a6d",
+  "frozenFilesMatched": 463,
+  "expectedChangedRunAndTestFiles": [
+    "src/game/audio/BattleMusic.test.mjs",
+    "public/assets/player/movement/preview.png",
+    "public/assets/player/movement/processing-report.json",
+    "public/assets/player/movement/processing-report.md",
+    "public/assets/player/movement/run-audit-source-vs-processed.png",
+    "public/assets/player/movement/run-audit.json",
+    "public/assets/player/movement/run-audit.md",
+    "public/assets/player/movement/run-audit.png",
+    "public/assets/player/movement/run-manifest.json",
+    "public/assets/player/movement/run_side/0.png",
+    "public/assets/player/movement/run_side/1.png",
+    "public/assets/player/movement/run_side/2.png",
+    "public/assets/player/movement/run_side/3.png",
+    "public/assets/player/movement/run_side/4.png",
+    "public/assets/player/movement/run_side/5.png",
+    "public/assets/player/movement/run_side/6.png",
+    "public/assets/player/movement/run_side/7.png"
+  ],
+  "combatAndTrainingUnchanged": true,
+  "musicAndSfxUnchanged": true,
+  "frontRearIdleWalkPngsUnchanged": true
+}

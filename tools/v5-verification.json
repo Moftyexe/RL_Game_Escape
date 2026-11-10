@@ -1,0 +1,14 @@
+{
+  "buildExitCode": 0,
+  "testsTotal": 349,
+  "testsPassed": 349,
+  "testsFailed": 0,
+  "syntax": "PASS: 84 JavaScript modules",
+  "builtAssetsMatch": true,
+  "productionCheckpointBytesMatch": true,
+  "protectedNonAiFilesUnchanged": 232,
+  "sfxRetainedHashesUnchanged": true,
+  "onlyPlannedSfxDeleted": true,
+  "noSfxIntegrated": true,
+  "manualBrowserChecked": false
+}

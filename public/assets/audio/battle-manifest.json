@@ -1,0 +1,9 @@
+{
+  "music": {
+    "source": "Battle.mp3.mpeg",
+    "file": "assets/audio/battle.mp3",
+    "format": "mp3",
+    "bytes": 3435136,
+    "sha256": "f2396ed1f8a312b6241bdaeaabed46b8e5f5f58f84fa5ed67034a757dce351b3"
+  }
+}

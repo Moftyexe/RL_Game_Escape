@@ -1,0 +1,7 @@
+{
+  "src/game/combat/CombatSystem.js": "2805d363e7513d239a8ae177c35b9b84da416bfea746a3c4bb8484c90fcf6af3",
+  "src/game/combat/Combatant.js": "dc053776cbaf947abbaf61f65cd0504d9b5a5e25c3a5614a20e8a7df5465e84f",
+  "src/game/combat/RandomGuardPolicy.js": "04d9abd30187d45f31e86e048ac473b52880166c0bff607de6b9dd323780a856",
+  "src/game/scenes/SchoolScene.js": "173b9cb569bd33dddf5d5f5bebbd5418586ca40d6ecfa6440719390a883e026c",
+  "src/game/player/playerAnimations.js": "f39c66b34c408915e41b8ff3dbee7be34b4f2e30831b54e159e2015014f18b77"
+}

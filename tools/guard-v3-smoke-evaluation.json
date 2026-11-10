@@ -1,0 +1,171 @@
+{
+  "seed": 20261109,
+  "episodesPerBot": 10,
+  "maxRounds": 100,
+  "learning": false,
+  "startMode": "normal-only",
+  "results": [
+    {
+      "policy": "random",
+      "bot": "random",
+      "episodes": 10,
+      "wins": 1,
+      "losses": 9,
+      "draws": 0,
+      "averageReward": -102.14500000000001,
+      "averageRounds": 41.4,
+      "forcedRounds": 10,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 10,
+      "actionCounts": {
+        "defend": 127,
+        "crackKnuckles": 74,
+        "blowWhistle": 54,
+        "callWife": 10,
+        "attack": 129,
+        "eatDonut": 10
+      },
+      "startCounts": {
+        "normal": 10,
+        "randomized": 0
+      },
+      "winRate": 0.1
+    },
+    {
+      "policy": "q-learning",
+      "bot": "random",
+      "episodes": 10,
+      "wins": 9,
+      "losses": 1,
+      "draws": 0,
+      "averageReward": 90.88000000000001,
+      "averageRounds": 29.8,
+      "forcedRounds": 8,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 6,
+      "actionCounts": {
+        "blowWhistle": 40,
+        "attack": 168,
+        "crackKnuckles": 31,
+        "callWife": 10,
+        "eatDonut": 10,
+        "defend": 31
+      },
+      "startCounts": {
+        "normal": 10,
+        "randomized": 0
+      },
+      "winRate": 0.9
+    },
+    {
+      "policy": "random",
+      "bot": "aggressive",
+      "episodes": 10,
+      "wins": 0,
+      "losses": 10,
+      "draws": 0,
+      "averageReward": -138.67000000000002,
+      "averageRounds": 22.2,
+      "forcedRounds": 0,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 4,
+      "actionCounts": {
+        "callWife": 10,
+        "crackKnuckles": 40,
+        "attack": 61,
+        "blowWhistle": 43,
+        "defend": 58,
+        "eatDonut": 10
+      },
+      "startCounts": {
+        "normal": 10,
+        "randomized": 0
+      },
+      "winRate": 0
+    },
+    {
+      "policy": "q-learning",
+      "bot": "aggressive",
+      "episodes": 10,
+      "wins": 3,
+      "losses": 7,
+      "draws": 0,
+      "averageReward": -55.13000000000001,
+      "averageRounds": 19.9,
+      "forcedRounds": 1,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 3,
+      "actionCounts": {
+        "blowWhistle": 29,
+        "attack": 113,
+        "defend": 27,
+        "crackKnuckles": 15,
+        "callWife": 7,
+        "eatDonut": 7
+      },
+      "startCounts": {
+        "normal": 10,
+        "randomized": 0
+      },
+      "winRate": 0.3
+    },
+    {
+      "policy": "random",
+      "bot": "tricky",
+      "episodes": 10,
+      "wins": 5,
+      "losses": 4,
+      "draws": 1,
+      "averageReward": 16.310000000000013,
+      "averageRounds": 60.6,
+      "forcedRounds": 21,
+      "roundLimitDraws": 1,
+      "cancelledGuardActions": 6,
+      "actionCounts": {
+        "callWife": 10,
+        "attack": 185,
+        "crackKnuckles": 99,
+        "blowWhistle": 76,
+        "defend": 205,
+        "eatDonut": 10
+      },
+      "startCounts": {
+        "normal": 10,
+        "randomized": 0
+      },
+      "winRate": 0.5
+    },
+    {
+      "policy": "q-learning",
+      "bot": "tricky",
+      "episodes": 10,
+      "wins": 10,
+      "losses": 0,
+      "draws": 0,
+      "averageReward": 130.76500000000001,
+      "averageRounds": 32.3,
+      "forcedRounds": 15,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 12,
+      "actionCounts": {
+        "blowWhistle": 30,
+        "attack": 207,
+        "callWife": 10,
+        "crackKnuckles": 21,
+        "eatDonut": 10,
+        "defend": 30
+      },
+      "startCounts": {
+        "normal": 10,
+        "randomized": 0
+      },
+      "winRate": 1
+    }
+  ],
+  "table": {
+    "sha256": "74183e4c2ad1fac4927078e02f6676dacb6fb198129251f26f7a85392b558dce",
+    "stateSchema": "guard-q-v3",
+    "trainingSeed": 20261108,
+    "trainingEpisodes": 2000
+  }
+}

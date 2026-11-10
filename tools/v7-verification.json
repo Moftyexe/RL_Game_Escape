@@ -1,0 +1,13 @@
+{
+  "testsPassed": 388,
+  "testsTotal": 388,
+  "testsFailed": 0,
+  "syntax": "PASS: 111 JavaScript/MJS files",
+  "buildExitCode": 0,
+  "buildWarning": "Existing chunk >500kB warning",
+  "checked": 638,
+  "frozenChanges": [],
+  "builtAssetMismatches": [],
+  "productionSha256": "96dff2a6a9c7f2803342e5d7e9550231b22392c10a5bebd8e8d4fb7f012bf686",
+  "browserVerified": false
+}

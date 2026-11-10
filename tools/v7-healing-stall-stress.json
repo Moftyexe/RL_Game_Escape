@@ -1,0 +1,311 @@
+{
+  "seed": 20261113,
+  "episodesPerPolicy": 300,
+  "maxRounds": 100,
+  "normalStartsOnly": true,
+  "probe": "Player never attacks; Defend until missing>=150HP and affordable, then Catch Breath. Diagnostic only, not a training opponent.",
+  "results": [
+    {
+      "policy": "random",
+      "episodes": 300,
+      "wins": 0,
+      "losses": 0,
+      "draws": 300,
+      "averageReward": 50.29083333333329,
+      "averageRounds": 100,
+      "forcedRounds": 0,
+      "roundLimitDraws": 300,
+      "cancelledGuardActions": 0,
+      "actionCounts": {
+        "crackKnuckles": 4434,
+        "blowWhistle": 3419,
+        "defend": 10789,
+        "callWife": 300,
+        "attack": 10847,
+        "eatDonut": 211
+      },
+      "startCounts": {
+        "normal": 300,
+        "randomized": 0
+      },
+      "winRate": 0,
+      "playerStall": {
+        "maxDefendChain": 43,
+        "defendToCatch": 2859,
+        "defendCatchDefendCycles": 2611,
+        "threeOrMoreDefendsThenCatch": 2446
+      },
+      "catchBreath": {
+        "selected": 3148,
+        "executed": 3148,
+        "cancelled": 0,
+        "selectedHp": 2583364,
+        "selectedSp": 295400,
+        "hpBefore": 2583364,
+        "spBefore": 295400,
+        "effectiveHealing": 472200,
+        "wastedHealing": 0,
+        "totalSpSpent": 94440,
+        "healsUnder50": 0,
+        "usedAtFullHp": 0,
+        "costViolations": 0,
+        "missingHpBins": {
+          "FULL_HP": 0,
+          "UNDER25": 0,
+          "FROM25_TO49": 0,
+          "FROM50_TO99": 0,
+          "AT_LEAST100": 3148
+        },
+        "averageHpBeforeUse": 820.6365946632783,
+        "averageSpBeforeUse": 93.83735705209656,
+        "averageEffectiveHealing": 150,
+        "averageWastedHealing": 0,
+        "under50Percent": 0,
+        "fullHpPercent": 0,
+        "everyExecutedCost30": true
+      },
+      "averagePlayerHealing": 1574
+    },
+    {
+      "policy": "heuristic",
+      "episodes": 300,
+      "wins": 0,
+      "losses": 0,
+      "draws": 300,
+      "averageReward": 130.34166666666664,
+      "averageRounds": 100,
+      "forcedRounds": 0,
+      "roundLimitDraws": 300,
+      "cancelledGuardActions": 0,
+      "actionCounts": {
+        "callWife": 300,
+        "attack": 20277,
+        "blowWhistle": 2396,
+        "crackKnuckles": 1937,
+        "defend": 4995,
+        "eatDonut": 95
+      },
+      "startCounts": {
+        "normal": 300,
+        "randomized": 0
+      },
+      "winRate": 0,
+      "playerStall": {
+        "maxDefendChain": 21,
+        "defendToCatch": 5759,
+        "defendCatchDefendCycles": 5273,
+        "threeOrMoreDefendsThenCatch": 3923
+      },
+      "catchBreath": {
+        "selected": 6279,
+        "executed": 6279,
+        "cancelled": 0,
+        "selectedHp": 5126159,
+        "selectedSp": 475530,
+        "hpBefore": 5126159,
+        "spBefore": 475530,
+        "effectiveHealing": 941850,
+        "wastedHealing": 0,
+        "totalSpSpent": 188370,
+        "healsUnder50": 0,
+        "usedAtFullHp": 0,
+        "costViolations": 0,
+        "missingHpBins": {
+          "FULL_HP": 0,
+          "UNDER25": 0,
+          "FROM25_TO49": 0,
+          "FROM50_TO99": 0,
+          "AT_LEAST100": 6279
+        },
+        "averageHpBeforeUse": 816.3973562669215,
+        "averageSpBeforeUse": 75.73339703774487,
+        "averageEffectiveHealing": 150,
+        "averageWastedHealing": 0,
+        "under50Percent": 0,
+        "fullHpPercent": 0,
+        "everyExecutedCost30": true
+      },
+      "averagePlayerHealing": 3139.5
+    },
+    {
+      "policy": "q-60k",
+      "episodes": 300,
+      "wins": 0,
+      "losses": 0,
+      "draws": 300,
+      "averageReward": 170.38466666666665,
+      "averageRounds": 100,
+      "forcedRounds": 0,
+      "roundLimitDraws": 300,
+      "cancelledGuardActions": 0,
+      "actionCounts": {
+        "callWife": 300,
+        "attack": 24698,
+        "defend": 4827,
+        "blowWhistle": 109,
+        "crackKnuckles": 57,
+        "eatDonut": 9
+      },
+      "startCounts": {
+        "normal": 300,
+        "randomized": 0
+      },
+      "winRate": 0,
+      "playerStall": {
+        "maxDefendChain": 33,
+        "defendToCatch": 7649,
+        "defendCatchDefendCycles": 7520,
+        "threeOrMoreDefendsThenCatch": 5164
+      },
+      "catchBreath": {
+        "selected": 7702,
+        "executed": 7702,
+        "cancelled": 0,
+        "selectedHp": 6257802,
+        "selectedSp": 354180,
+        "hpBefore": 6257802,
+        "spBefore": 354180,
+        "effectiveHealing": 1155300,
+        "wastedHealing": 0,
+        "totalSpSpent": 231060,
+        "healsUnder50": 0,
+        "usedAtFullHp": 0,
+        "costViolations": 0,
+        "missingHpBins": {
+          "FULL_HP": 0,
+          "UNDER25": 0,
+          "FROM25_TO49": 0,
+          "FROM50_TO99": 0,
+          "AT_LEAST100": 7702
+        },
+        "averageHpBeforeUse": 812.4905219423526,
+        "averageSpBeforeUse": 45.98545832251363,
+        "averageEffectiveHealing": 150,
+        "averageWastedHealing": 0,
+        "under50Percent": 0,
+        "fullHpPercent": 0,
+        "everyExecutedCost30": true
+      },
+      "averagePlayerHealing": 3851
+    },
+    {
+      "policy": "q-80k",
+      "episodes": 300,
+      "wins": 0,
+      "losses": 0,
+      "draws": 300,
+      "averageReward": 170.19566666666614,
+      "averageRounds": 100,
+      "forcedRounds": 0,
+      "roundLimitDraws": 300,
+      "cancelledGuardActions": 0,
+      "actionCounts": {
+        "blowWhistle": 300,
+        "callWife": 300,
+        "attack": 24597,
+        "defend": 4803
+      },
+      "startCounts": {
+        "normal": 300,
+        "randomized": 0
+      },
+      "winRate": 0,
+      "playerStall": {
+        "maxDefendChain": 11,
+        "defendToCatch": 7624,
+        "defendCatchDefendCycles": 7463,
+        "threeOrMoreDefendsThenCatch": 5136
+      },
+      "catchBreath": {
+        "selected": 7678,
+        "executed": 7678,
+        "cancelled": 0,
+        "selectedHp": 6224488,
+        "selectedSp": 356880,
+        "hpBefore": 6224488,
+        "spBefore": 356880,
+        "effectiveHealing": 1151700,
+        "wastedHealing": 0,
+        "totalSpSpent": 230340,
+        "healsUnder50": 0,
+        "usedAtFullHp": 0,
+        "costViolations": 0,
+        "missingHpBins": {
+          "FULL_HP": 0,
+          "UNDER25": 0,
+          "FROM25_TO49": 0,
+          "FROM50_TO99": 0,
+          "AT_LEAST100": 7678
+        },
+        "averageHpBeforeUse": 810.691325866111,
+        "averageSpBeforeUse": 46.480854389163845,
+        "averageEffectiveHealing": 150,
+        "averageWastedHealing": 0,
+        "under50Percent": 0,
+        "fullHpPercent": 0,
+        "everyExecutedCost30": true
+      },
+      "averagePlayerHealing": 3839
+    },
+    {
+      "policy": "q-100k",
+      "episodes": 300,
+      "wins": 6,
+      "losses": 0,
+      "draws": 294,
+      "averageReward": 174.84300000000002,
+      "averageRounds": 99.84333333333333,
+      "forcedRounds": 0,
+      "roundLimitDraws": 294,
+      "cancelledGuardActions": 0,
+      "actionCounts": {
+        "callWife": 300,
+        "crackKnuckles": 622,
+        "attack": 25172,
+        "defend": 3793,
+        "eatDonut": 66
+      },
+      "startCounts": {
+        "normal": 300,
+        "randomized": 0
+      },
+      "winRate": 0.02,
+      "playerStall": {
+        "maxDefendChain": 13,
+        "defendToCatch": 7538,
+        "defendCatchDefendCycles": 7395,
+        "threeOrMoreDefendsThenCatch": 5186
+      },
+      "catchBreath": {
+        "selected": 7609,
+        "executed": 7609,
+        "cancelled": 0,
+        "selectedHp": 5933470,
+        "selectedSp": 347910,
+        "hpBefore": 5933470,
+        "spBefore": 347910,
+        "effectiveHealing": 1141350,
+        "wastedHealing": 0,
+        "totalSpSpent": 228270,
+        "healsUnder50": 0,
+        "usedAtFullHp": 0,
+        "costViolations": 0,
+        "missingHpBins": {
+          "FULL_HP": 0,
+          "UNDER25": 0,
+          "FROM25_TO49": 0,
+          "FROM50_TO99": 0,
+          "AT_LEAST100": 7609
+        },
+        "averageHpBeforeUse": 779.7962938625312,
+        "averageSpBeforeUse": 45.723485346300436,
+        "averageEffectiveHealing": 150,
+        "averageWastedHealing": 0,
+        "under50Percent": 0,
+        "fullHpPercent": 0,
+        "everyExecutedCost30": true
+      },
+      "averagePlayerHealing": 3804.5
+    }
+  ]
+}

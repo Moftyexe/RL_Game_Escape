@@ -1,0 +1,26 @@
+{
+  "player": {
+    "source": "P_Animations/P_dialogue.png",
+    "file": "assets/portraits/player.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "png",
+    "hasAlpha": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "transparentPixels": 760817,
+    "sha256": "ee0d886f82d7691b1380d7aec90d99bd46d07d7242b99f84fb34985d862efede"
+  },
+  "guard": {
+    "source": "Guard_Animations/guard_dialogue.png",
+    "file": "assets/portraits/guard.png",
+    "width": 1312,
+    "height": 1199,
+    "format": "png",
+    "hasAlpha": true,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "transparentPixels": 896214,
+    "sha256": "277a7f887e4f3e8f3b589a61ea71331716808f20596dcd53ad3f1a733dd49d2b"
+  }
+}

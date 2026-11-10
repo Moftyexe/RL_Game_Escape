@@ -1,0 +1,14 @@
+
+> template-vite@1.4.0 build-nolog
+> vite build --config vite/config.prod.mjs
+
+Building for production...
+---------------------------------------------------------
+❤️❤️❤️ Tell us about your game! - games@phaser.io ❤️❤️❤️
+---------------------------------------------------------
+✨ Done ✨
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

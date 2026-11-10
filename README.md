@@ -1,4 +1,8 @@
-# Phaser Vite Template
+# RL_Game_Escape
+
+School Escape: a Phaser RPG with a frozen Q-learning Guard, day-based readiness, dialogue and audio settings.
+
+## Phaser Vite Template
 
 This is a Phaser 4 project template that uses Vite for bundling. It supports hot-reloading for quick development workflow and includes scripts to generate production-ready builds.
 
@@ -151,3 +155,27 @@ Created by [Phaser Studio](mailto:support@phaser.io). Powered by coffee, anime, 
 The Phaser logo and characters are &copy; 2011 - 2025 Phaser Studio Inc.
 
 All rights reserved.
+
+
+## School Guard AI
+
+The shipped Q-table is used in evaluation mode; human battles do not learn. Press **P** (or click the Guard AI label) to switch the next decision between Random and Q-learning. **F2** toggles the AI debug overlay. Missing/incompatible data safely falls back to Random.
+
+```sh
+npm run train:guard -- --episodes 20000 --seed 20261108
+npm run evaluate:guard -- --episodes 1000 --seed 20261109
+node --test
+```
+
+See [Guard Q-learning](docs/GUARD_Q_LEARNING.md) for architecture, state/reward definitions, reproducibility and actual evaluation results. See the training configuration and checkpoint reports for the current training protocol.
+
+Current balance: Player 1000 HP, Guard 1200 HP; Catch Breath costs30 SP and heals150 HP only; Player Defend adds5 percentage points evasion against rolled physical attacks; Donut heals 200 HP only; five percentage HP bins and guard-q-v7 table. See [combat, gate, portraits and checkpoint report](docs/V7_COMBAT_GATE_PORTRAITS.md). Hallway music loops at 0.35 volume, pauses during battle, with volume controls available by talking to the Music Guy with Space.
+
+
+## Dialogue and audio settings
+
+Edit authored speech in [dialogueScript.js](src/game/dialogue/dialogueScript.js). See [dialogue editing](docs/DIALOGUE_EDITING.md) and [debug, portraits and settings](docs/DEBUG_DIALOGUE_AUDIO_SETTINGS.md).
+
+## License notices
+
+The repository LICENSE retains its Apache 2.0 text. The Phaser template MIT notice is preserved in [LICENSE.phaser-template](LICENSE.phaser-template). Audio/asset pack licenses remain with their respective assets.

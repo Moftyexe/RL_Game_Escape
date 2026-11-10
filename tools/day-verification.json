@@ -1,0 +1,32 @@
+{
+  "testsTotal": 380,
+  "testsPassed": 380,
+  "testsFailed": 0,
+  "syntax": "PASS: 104 JavaScript modules",
+  "buildExitCode": 0,
+  "productionQSha256": "a45930e8955707be6f1ea0689b39b0ecbce384080277fa2fa19c9c813f695a6d",
+  "combatAndTrainingFrozen": true,
+  "musicAndSfxUnchanged": true,
+  "newRunVideoSelected": "8-frame side run cycle.mp4",
+  "newRunFrames": 8,
+  "newRunFps": 12,
+  "newRunRevision": "3c1b0ebd06d1",
+  "newRunGeometry": {
+    "headTopRange": [
+      10,
+      11
+    ],
+    "visibleFootRange": [
+      245,
+      249
+    ],
+    "headCenterRange": [
+      127.555,
+      128.42
+    ]
+  },
+  "previousRunFallbackRetained": true,
+  "builtAssetsMatch": true,
+  "browserVerified": false,
+  "browserBlocker": "Browser host unavailable; native Edge app approval timed out."
+}

@@ -1,0 +1,1732 @@
+{
+  "output": {
+    "width": 256,
+    "height": 256,
+    "baseline": 249,
+    "characterHeight": 240
+  },
+  "detection": "8-connected alpha > 0; pose components >= 10000 pixels; detached debris excluded",
+  "unreliableFrames": [],
+  "sheets": [
+    {
+      "source": "Pixel Art Protagonist Idle Animation Frames.png",
+      "sha256": "6dadf6bf85b34214ad3bb05f126793a7376dd547cae23c1a7c657a2f75fed498",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "analysisRegion": null,
+      "animation": "idle_down",
+      "detectedFrames": 4,
+      "exportedFrames": 4,
+      "normalizationReferenceHeight": null,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 130,
+            "top": 59,
+            "width": 281,
+            "height": 633
+          },
+          "cropBounds": {
+            "left": 130,
+            "top": 59,
+            "width": 281,
+            "height": 633
+          },
+          "resized": [
+            107,
+            240
+          ],
+          "placement": {
+            "left": 74,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 676,
+            "top": 47,
+            "width": 275,
+            "height": 645
+          },
+          "cropBounds": {
+            "left": 676,
+            "top": 47,
+            "width": 275,
+            "height": 645
+          },
+          "resized": [
+            102,
+            240
+          ],
+          "placement": {
+            "left": 77,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1218,
+            "top": 60,
+            "width": 279,
+            "height": 632
+          },
+          "cropBounds": {
+            "left": 1218,
+            "top": 60,
+            "width": 279,
+            "height": 632
+          },
+          "resized": [
+            106,
+            240
+          ],
+          "placement": {
+            "left": 75,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1755,
+            "top": 73,
+            "width": 287,
+            "height": 619
+          },
+          "cropBounds": {
+            "left": 1755,
+            "top": 73,
+            "width": 287,
+            "height": 619
+          },
+          "resized": [
+            111,
+            240
+          ],
+          "placement": {
+            "left": 72,
+            "top": 10
+          },
+          "baseline": 249
+        }
+      ],
+      "replaces": null,
+      "orientation": "front",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "Pixel-Art Front Walk Cycle Sprite Sheet.png",
+      "sha256": "3acee7ce557697c4f8ee97d47f17e5303d1dc8c5fce376978aeccca5bfaa6750",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "analysisRegion": null,
+      "animation": "walk_down",
+      "detectedFrames": 4,
+      "exportedFrames": 4,
+      "normalizationReferenceHeight": null,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 132,
+            "top": 58,
+            "width": 272,
+            "height": 620
+          },
+          "cropBounds": {
+            "left": 132,
+            "top": 58,
+            "width": 272,
+            "height": 620
+          },
+          "resized": [
+            105,
+            240
+          ],
+          "placement": {
+            "left": 75,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 675,
+            "top": 58,
+            "width": 276,
+            "height": 620
+          },
+          "cropBounds": {
+            "left": 675,
+            "top": 58,
+            "width": 276,
+            "height": 620
+          },
+          "resized": [
+            107,
+            240
+          ],
+          "placement": {
+            "left": 74,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1220,
+            "top": 58,
+            "width": 278,
+            "height": 620
+          },
+          "cropBounds": {
+            "left": 1220,
+            "top": 58,
+            "width": 278,
+            "height": 620
+          },
+          "resized": [
+            108,
+            240
+          ],
+          "placement": {
+            "left": 74,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1766,
+            "top": 58,
+            "width": 265,
+            "height": 619
+          },
+          "cropBounds": {
+            "left": 1766,
+            "top": 58,
+            "width": 265,
+            "height": 619
+          },
+          "resized": [
+            103,
+            240
+          ],
+          "placement": {
+            "left": 76,
+            "top": 10
+          },
+          "baseline": 249
+        }
+      ],
+      "replaces": null,
+      "orientation": "front",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "Pixel Art Afro Character Idle Spritesheet.png",
+      "sha256": "fd8b6afcd516aca192de8841033f8115b61d1f92bb6408bf6a9739ab1cf8c226",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "analysisRegion": null,
+      "animation": "idle_side",
+      "detectedFrames": 4,
+      "exportedFrames": 4,
+      "normalizationReferenceHeight": null,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 158,
+            "top": 61,
+            "width": 235,
+            "height": 618
+          },
+          "cropBounds": {
+            "left": 158,
+            "top": 61,
+            "width": 235,
+            "height": 618
+          },
+          "resized": [
+            91,
+            239
+          ],
+          "placement": {
+            "left": 82,
+            "top": 11
+          },
+          "baseline": 249
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 697,
+            "top": 63,
+            "width": 239,
+            "height": 615
+          },
+          "cropBounds": {
+            "left": 697,
+            "top": 63,
+            "width": 239,
+            "height": 615
+          },
+          "resized": [
+            92,
+            240
+          ],
+          "placement": {
+            "left": 82,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1240,
+            "top": 73,
+            "width": 240,
+            "height": 606
+          },
+          "cropBounds": {
+            "left": 1240,
+            "top": 73,
+            "width": 240,
+            "height": 606
+          },
+          "resized": [
+            95,
+            240
+          ],
+          "placement": {
+            "left": 80,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1783,
+            "top": 72,
+            "width": 244,
+            "height": 608
+          },
+          "cropBounds": {
+            "left": 1783,
+            "top": 72,
+            "width": 244,
+            "height": 608
+          },
+          "resized": [
+            96,
+            239
+          ],
+          "placement": {
+            "left": 80,
+            "top": 11
+          },
+          "baseline": 249
+        }
+      ],
+      "replaces": null,
+      "orientation": "right",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "Pixel-Art Walking Cycle Sprite Sheet.png",
+      "sha256": "0262b086bf7d3cb045de225453c8cc77aef8366ab25f7b80bbcce13bfd1b149a",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "analysisRegion": null,
+      "animation": "walk_side",
+      "detectedFrames": 6,
+      "exportedFrames": 6,
+      "normalizationReferenceHeight": null,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 32,
+            "top": 81,
+            "width": 307,
+            "height": 549
+          },
+          "cropBounds": {
+            "left": 32,
+            "top": 81,
+            "width": 307,
+            "height": 549
+          },
+          "resized": [
+            134,
+            239
+          ],
+          "placement": {
+            "left": 61,
+            "top": 11
+          },
+          "baseline": 249
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 435,
+            "top": 95,
+            "width": 239,
+            "height": 534
+          },
+          "cropBounds": {
+            "left": 435,
+            "top": 95,
+            "width": 239,
+            "height": 534
+          },
+          "resized": [
+            107,
+            240
+          ],
+          "placement": {
+            "left": 74,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 801,
+            "top": 82,
+            "width": 231,
+            "height": 548
+          },
+          "cropBounds": {
+            "left": 801,
+            "top": 82,
+            "width": 231,
+            "height": 548
+          },
+          "resized": [
+            101,
+            239
+          ],
+          "placement": {
+            "left": 77,
+            "top": 11
+          },
+          "baseline": 249
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1126,
+            "top": 94,
+            "width": 306,
+            "height": 534
+          },
+          "cropBounds": {
+            "left": 1126,
+            "top": 94,
+            "width": 306,
+            "height": 534
+          },
+          "resized": [
+            138,
+            240
+          ],
+          "placement": {
+            "left": 59,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1519,
+            "top": 93,
+            "width": 234,
+            "height": 536
+          },
+          "cropBounds": {
+            "left": 1519,
+            "top": 93,
+            "width": 234,
+            "height": 536
+          },
+          "resized": [
+            105,
+            239
+          ],
+          "placement": {
+            "left": 75,
+            "top": 11
+          },
+          "baseline": 249
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1883,
+            "top": 92,
+            "width": 241,
+            "height": 538
+          },
+          "cropBounds": {
+            "left": 1883,
+            "top": 92,
+            "width": 241,
+            "height": 538
+          },
+          "resized": [
+            108,
+            240
+          ],
+          "placement": {
+            "left": 74,
+            "top": 10
+          },
+          "baseline": 249
+        }
+      ],
+      "replaces": null,
+      "orientation": "right",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "Pixel-Art Character Idle Animation Sprite Sheet.png",
+      "sha256": "61e583c85107db9a7bae0a8eed2a4a1fc7fca3c318397a84696c798649b7a07b",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "analysisRegion": null,
+      "animation": "idle_up",
+      "detectedFrames": 4,
+      "exportedFrames": 4,
+      "normalizationReferenceHeight": null,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 143,
+            "top": 69,
+            "width": 259,
+            "height": 607
+          },
+          "cropBounds": {
+            "left": 143,
+            "top": 69,
+            "width": 259,
+            "height": 607
+          },
+          "resized": [
+            102,
+            240
+          ],
+          "placement": {
+            "left": 77,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 691,
+            "top": 65,
+            "width": 256,
+            "height": 611
+          },
+          "cropBounds": {
+            "left": 691,
+            "top": 65,
+            "width": 256,
+            "height": 611
+          },
+          "resized": [
+            101,
+            240
+          ],
+          "placement": {
+            "left": 77,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1224,
+            "top": 72,
+            "width": 265,
+            "height": 604
+          },
+          "cropBounds": {
+            "left": 1224,
+            "top": 72,
+            "width": 265,
+            "height": 604
+          },
+          "resized": [
+            105,
+            240
+          ],
+          "placement": {
+            "left": 75,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1771,
+            "top": 63,
+            "width": 259,
+            "height": 614
+          },
+          "cropBounds": {
+            "left": 1771,
+            "top": 63,
+            "width": 259,
+            "height": 614
+          },
+          "resized": [
+            101,
+            240
+          ],
+          "placement": {
+            "left": 77,
+            "top": 10
+          },
+          "baseline": 249
+        }
+      ],
+      "replaces": null,
+      "orientation": "rear",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "Rear-View Pixel Character Walk Cycle.png",
+      "sha256": "6fd70c5a8013a8803e086a8ddd45c3b09f2b635dcffe30d84e09eeff353cb24f",
+      "dimensions": [
+        2170,
+        725
+      ],
+      "analysisRegion": null,
+      "animation": "walk_up",
+      "detectedFrames": 4,
+      "exportedFrames": 4,
+      "normalizationReferenceHeight": null,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 146,
+            "top": 64,
+            "width": 256,
+            "height": 613
+          },
+          "cropBounds": {
+            "left": 146,
+            "top": 64,
+            "width": 256,
+            "height": 613
+          },
+          "resized": [
+            100,
+            240
+          ],
+          "placement": {
+            "left": 78,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 676,
+            "top": 64,
+            "width": 270,
+            "height": 611
+          },
+          "cropBounds": {
+            "left": 676,
+            "top": 64,
+            "width": 270,
+            "height": 611
+          },
+          "resized": [
+            106,
+            240
+          ],
+          "placement": {
+            "left": 75,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1218,
+            "top": 65,
+            "width": 270,
+            "height": 611
+          },
+          "cropBounds": {
+            "left": 1218,
+            "top": 65,
+            "width": 270,
+            "height": 611
+          },
+          "resized": [
+            106,
+            240
+          ],
+          "placement": {
+            "left": 75,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1764,
+            "top": 64,
+            "width": 267,
+            "height": 613
+          },
+          "cropBounds": {
+            "left": 1764,
+            "top": 64,
+            "width": 267,
+            "height": 613
+          },
+          "resized": [
+            105,
+            240
+          ],
+          "placement": {
+            "left": 75,
+            "top": 10
+          },
+          "baseline": 249
+        }
+      ],
+      "replaces": null,
+      "orientation": "rear",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "Six-Frame Pixel Art Run Cycle.png",
+      "sha256": "a9c887dd505276f4ca509f348ad52868d527de686e422459d4e87e7c42e03b51",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "analysisRegion": {
+        "left": 0,
+        "top": 95,
+        "width": 2172,
+        "height": 520
+      },
+      "animation": "run_down",
+      "detectedFrames": 6,
+      "exportedFrames": 6,
+      "normalizationReferenceHeight": 520,
+      "sourceFloor": 615,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 7,
+            "top": 95,
+            "width": 309,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 7,
+            "top": 95,
+            "width": 309,
+            "height": 520
+          },
+          "resized": [
+            143,
+            240
+          ],
+          "placement": {
+            "left": 47,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 127.91819264278503,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 143,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 416,
+            "top": 95,
+            "width": 266,
+            "height": 482
+          },
+          "cropBounds": {
+            "left": 416,
+            "top": 95,
+            "width": 266,
+            "height": 482
+          },
+          "resized": [
+            123,
+            222
+          ],
+          "placement": {
+            "left": 69,
+            "top": 10
+          },
+          "baseline": 231,
+          "headCenterX": 128.02467159792164,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 123,
+            "height": 222,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 765,
+            "top": 95,
+            "width": 269,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 765,
+            "top": 95,
+            "width": 269,
+            "height": 520
+          },
+          "resized": [
+            124,
+            240
+          ],
+          "placement": {
+            "left": 63,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 128.03553960418458,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 124,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1131,
+            "top": 95,
+            "width": 272,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 1131,
+            "top": 95,
+            "width": 272,
+            "height": 520
+          },
+          "resized": [
+            125,
+            240
+          ],
+          "placement": {
+            "left": 65,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 127.58259733135748,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 126,
+            "height": 240,
+            "trim": {
+              "left": 1,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1495,
+            "top": 95,
+            "width": 265,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 1495,
+            "top": 95,
+            "width": 265,
+            "height": 520
+          },
+          "resized": [
+            122,
+            240
+          ],
+          "placement": {
+            "left": 66,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 127.95791699198222,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 122,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1864,
+            "top": 95,
+            "width": 264,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 1864,
+            "top": 95,
+            "width": 264,
+            "height": 520
+          },
+          "resized": [
+            122,
+            240
+          ],
+          "placement": {
+            "left": 69,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 128.135095073683,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 122,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        }
+      ],
+      "replaces": null,
+      "orientation": "front",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "latest-run-side.png",
+      "sha256": "21f742f9f0c062d94476bd91f6d314e9ae18ef32a5e6b11f727c075cd88ebb9b",
+      "dimensions": [
+        4320,
+        760
+      ],
+      "analysisRegion": null,
+      "animation": "run_side",
+      "detectedFrames": 8,
+      "exportedFrames": 8,
+      "normalizationReferenceHeight": 443,
+      "sourceFloor": 467,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 135,
+            "top": 24,
+            "width": 269,
+            "height": 441
+          },
+          "cropBounds": {
+            "left": 135,
+            "top": 24,
+            "width": 269,
+            "height": 441
+          },
+          "resized": [
+            146,
+            239
+          ],
+          "placement": {
+            "left": 35,
+            "top": 10
+          },
+          "baseline": 248,
+          "headCenterX": 127.65880008391022,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.5417607223476298,
+          "sampling": {
+            "width": 146,
+            "height": 239,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 642,
+            "top": 24,
+            "width": 336,
+            "height": 436
+          },
+          "cropBounds": {
+            "left": 642,
+            "top": 24,
+            "width": 336,
+            "height": 436
+          },
+          "resized": [
+            182,
+            236
+          ],
+          "placement": {
+            "left": 20,
+            "top": 10
+          },
+          "baseline": 245,
+          "headCenterX": 128.00857142857143,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.5417607223476298,
+          "sampling": {
+            "width": 182,
+            "height": 236,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1218,
+            "top": 24,
+            "width": 264,
+            "height": 438
+          },
+          "cropBounds": {
+            "left": 1218,
+            "top": 24,
+            "width": 264,
+            "height": 438
+          },
+          "resized": [
+            143,
+            237
+          ],
+          "placement": {
+            "left": 34,
+            "top": 10
+          },
+          "baseline": 246,
+          "headCenterX": 128.42034650327489,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.5417607223476298,
+          "sampling": {
+            "width": 143,
+            "height": 237,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1793,
+            "top": 24,
+            "width": 193,
+            "height": 437
+          },
+          "cropBounds": {
+            "left": 1793,
+            "top": 24,
+            "width": 193,
+            "height": 437
+          },
+          "resized": [
+            105,
+            237
+          ],
+          "placement": {
+            "left": 72,
+            "top": 10
+          },
+          "baseline": 246,
+          "headCenterX": 128.23616392057457,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.5417607223476298,
+          "sampling": {
+            "width": 105,
+            "height": 237,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 2288,
+            "top": 24,
+            "width": 284,
+            "height": 436
+          },
+          "cropBounds": {
+            "left": 2288,
+            "top": 24,
+            "width": 284,
+            "height": 436
+          },
+          "resized": [
+            154,
+            235
+          ],
+          "placement": {
+            "left": 35,
+            "top": 11
+          },
+          "baseline": 245,
+          "headCenterX": 127.92433795712485,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.5417607223476298,
+          "sampling": {
+            "width": 154,
+            "height": 236,
+            "trim": {
+              "left": 0,
+              "top": 1,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 2806,
+            "top": 24,
+            "width": 327,
+            "height": 436
+          },
+          "cropBounds": {
+            "left": 2806,
+            "top": 24,
+            "width": 327,
+            "height": 436
+          },
+          "resized": [
+            176,
+            236
+          ],
+          "placement": {
+            "left": 22,
+            "top": 10
+          },
+          "baseline": 245,
+          "headCenterX": 127.65155358275206,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.5417607223476298,
+          "sampling": {
+            "width": 177,
+            "height": 236,
+            "trim": {
+              "left": 1,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 6,
+          "alphaBounds": {
+            "left": 3354,
+            "top": 24,
+            "width": 311,
+            "height": 443
+          },
+          "cropBounds": {
+            "left": 3354,
+            "top": 24,
+            "width": 311,
+            "height": 443
+          },
+          "resized": [
+            168,
+            240
+          ],
+          "placement": {
+            "left": 25,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 127.55533177867288,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.5417607223476298,
+          "sampling": {
+            "width": 168,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 7,
+          "alphaBounds": {
+            "left": 3933,
+            "top": 24,
+            "width": 234,
+            "height": 442
+          },
+          "cropBounds": {
+            "left": 3933,
+            "top": 24,
+            "width": 234,
+            "height": 442
+          },
+          "resized": [
+            127,
+            239
+          ],
+          "placement": {
+            "left": 49,
+            "top": 10
+          },
+          "baseline": 248,
+          "headCenterX": 127.59570887673539,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.5417607223476298,
+          "sampling": {
+            "width": 127,
+            "height": 239,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        }
+      ],
+      "replaces": {
+        "sha256": "c3c6828721340f3b1e784cfa4e81de335dd6d9da2469899f8e46dd9bdba70e42",
+        "dimensions": [
+          4320,
+          760
+        ],
+        "frames": 8
+      },
+      "orientation": "right",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "Pixel Runner Back-View Sprite Sheet.png",
+      "sha256": "342acabf72184a067c2815ae8535029aa793b0ef1aed5fac2f2f3d80a7ba4607",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "analysisRegion": null,
+      "animation": "run_up",
+      "detectedFrames": 6,
+      "exportedFrames": 6,
+      "normalizationReferenceHeight": 520,
+      "sourceFloor": 632,
+      "note": "",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 65,
+            "top": 112,
+            "width": 244,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 65,
+            "top": 112,
+            "width": 244,
+            "height": 520
+          },
+          "resized": [
+            113,
+            239
+          ],
+          "placement": {
+            "left": 71,
+            "top": 10
+          },
+          "baseline": 248,
+          "headCenterX": 128.1779718515608,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 113,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 1
+            }
+          }
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 432,
+            "top": 113,
+            "width": 246,
+            "height": 519
+          },
+          "cropBounds": {
+            "left": 432,
+            "top": 113,
+            "width": 246,
+            "height": 519
+          },
+          "resized": [
+            114,
+            240
+          ],
+          "placement": {
+            "left": 73,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 127.77024640369487,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 114,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 787,
+            "top": 112,
+            "width": 243,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 787,
+            "top": 112,
+            "width": 243,
+            "height": 520
+          },
+          "resized": [
+            112,
+            240
+          ],
+          "placement": {
+            "left": 70,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 127.98023223402762,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 112,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1143,
+            "top": 112,
+            "width": 257,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 1143,
+            "top": 112,
+            "width": 257,
+            "height": 520
+          },
+          "resized": [
+            119,
+            240
+          ],
+          "placement": {
+            "left": 67,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 127.7937263931288,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 119,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1526,
+            "top": 114,
+            "width": 234,
+            "height": 497
+          },
+          "cropBounds": {
+            "left": 1526,
+            "top": 114,
+            "width": 234,
+            "height": 497
+          },
+          "resized": [
+            108,
+            229
+          ],
+          "placement": {
+            "left": 77,
+            "top": 11
+          },
+          "baseline": 239,
+          "headCenterX": 127.92426703761052,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 108,
+            "height": 229,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1878,
+            "top": 112,
+            "width": 247,
+            "height": 520
+          },
+          "cropBounds": {
+            "left": 1878,
+            "top": 112,
+            "width": 247,
+            "height": 520
+          },
+          "resized": [
+            114,
+            240
+          ],
+          "placement": {
+            "left": 72,
+            "top": 10
+          },
+          "baseline": 249,
+          "headCenterX": 127.90631972985678,
+          "anchor": "common source floor; top-60px head alpha centroid centered at x=128",
+          "sourceScale": 0.46153846153846156,
+          "sampling": {
+            "width": 114,
+            "height": 240,
+            "trim": {
+              "left": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0
+            }
+          }
+        }
+      ],
+      "replaces": null,
+      "orientation": "rear",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    },
+    {
+      "source": "Pixel-Art Runner Sprite Sheet.png",
+      "sha256": "39a5ade1b938bf0fef5969c9fbf018a8ef1f825c7a689856418e1592e84cc058",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "analysisRegion": null,
+      "animation": null,
+      "detectedFrames": 6,
+      "exportedFrames": 0,
+      "normalizationReferenceHeight": null,
+      "note": "Inspected alternate rear-run sheet; canonical run_up uses Pixel Runner Back-View Sprite Sheet.png.",
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 64,
+            "top": 114,
+            "width": 243,
+            "height": 532
+          },
+          "cropBounds": {
+            "left": 64,
+            "top": 114,
+            "width": 243,
+            "height": 532
+          },
+          "resized": [
+            110,
+            240
+          ],
+          "placement": {
+            "left": 73,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 417,
+            "top": 112,
+            "width": 245,
+            "height": 530
+          },
+          "cropBounds": {
+            "left": 417,
+            "top": 112,
+            "width": 245,
+            "height": 530
+          },
+          "resized": [
+            111,
+            240
+          ],
+          "placement": {
+            "left": 72,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 773,
+            "top": 114,
+            "width": 247,
+            "height": 524
+          },
+          "cropBounds": {
+            "left": 773,
+            "top": 114,
+            "width": 247,
+            "height": 524
+          },
+          "resized": [
+            113,
+            240
+          ],
+          "placement": {
+            "left": 71,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1143,
+            "top": 111,
+            "width": 247,
+            "height": 529
+          },
+          "cropBounds": {
+            "left": 1143,
+            "top": 111,
+            "width": 247,
+            "height": 529
+          },
+          "resized": [
+            112,
+            240
+          ],
+          "placement": {
+            "left": 72,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1511,
+            "top": 114,
+            "width": 243,
+            "height": 514
+          },
+          "cropBounds": {
+            "left": 1511,
+            "top": 114,
+            "width": 243,
+            "height": 514
+          },
+          "resized": [
+            113,
+            240
+          ],
+          "placement": {
+            "left": 71,
+            "top": 10
+          },
+          "baseline": 249
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1867,
+            "top": 113,
+            "width": 241,
+            "height": 529
+          },
+          "cropBounds": {
+            "left": 1867,
+            "top": 113,
+            "width": 241,
+            "height": 529
+          },
+          "resized": [
+            109,
+            240
+          ],
+          "placement": {
+            "left": 73,
+            "top": 10
+          },
+          "baseline": 249
+        }
+      ],
+      "replaces": null,
+      "orientation": "rear",
+      "layout": "Single row of detected alpha-connected poses; unequal silhouette widths and gaps, no uniform grid slicing."
+    }
+  ],
+  "notes": [
+    "Side run uses eight chronological poses from8-frame side run cycle.mp4; deterministic background removal and framing stabilization precede this shared normalization pipeline.",
+    "Running uses one scale and a common source floor per sheet, plus a head-center horizontal anchor. Airborne visible feet may be above the logical baseline 249; head height is not shifted to force every foot down.",
+    "Front and rear run sources currently contain six poses each; no new eight-pose front/rear sheet was present.",
+    "Side run uses alpha >= 16/255 for connectivity to exclude background debris joining poses; retained pixels preserve their original alpha.",
+    "All movement/idle frames now use a 256x256 canvas, 240 px character height, and baseline 249; runtime scales are halved to preserve apparent size. All outputs are generated and structurally validated before any existing PNG is replaced."
+  ]
+}

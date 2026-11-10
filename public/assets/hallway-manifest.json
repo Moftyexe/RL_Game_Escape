@@ -1,0 +1,88 @@
+{
+  "music": {
+    "source": "Hallway.mp3.mpeg",
+    "file": "assets/audio/hallway.mp3",
+    "format": "mp3",
+    "sha256": "8f18890c72a78e99d6d1071fb250b6d64a624f2955a8cee3f98ecc350ee89780"
+  },
+  "musician": {
+    "source": "npcanimations/musicguy_idle.png",
+    "sha256": "e5a0384eeaaa0a49b9c5b5504a8f9e2c8eb1929f565427b36f43d88ac2e32da5",
+    "revision": "e5a0384eeaaa",
+    "dimensions": [
+      2508,
+      627
+    ],
+    "canvas": [
+      256,
+      256
+    ],
+    "baseline": 249,
+    "sourceHasAlpha": false,
+    "matteRemoval": {
+      "method": "edge-connected near-black only",
+      "tolerance": 8,
+      "removedPixels": 1256961
+    },
+    "hasAlpha": true,
+    "frameRate": 4,
+    "frames": [
+      {
+        "file": "assets/npc/musician/0.png",
+        "sha256": "cd65c3cb4ccd7812ad3ea7f414c6e6caa5ebd90a8511c35d7c762dae80cc73b4",
+        "crop": {
+          "left": 270,
+          "top": 30,
+          "width": 210,
+          "height": 579
+        },
+        "size": [
+          86,
+          236
+        ]
+      },
+      {
+        "file": "assets/npc/musician/1.png",
+        "sha256": "e5cb3ada2097ecdffba5bc5c6c48d095b8e3c56c50af003c8b02f3e49319f7d9",
+        "crop": {
+          "left": 849,
+          "top": 20,
+          "width": 214,
+          "height": 588
+        },
+        "size": [
+          87,
+          240
+        ]
+      },
+      {
+        "file": "assets/npc/musician/2.png",
+        "sha256": "097b603bcb67cf5082827ce14b3710a91b464f57c91d920f2f00697341e82e7c",
+        "crop": {
+          "left": 1446,
+          "top": 43,
+          "width": 212,
+          "height": 566
+        },
+        "size": [
+          87,
+          231
+        ]
+      },
+      {
+        "file": "assets/npc/musician/3.png",
+        "sha256": "3220c8e4256cdefa16e37cb3f550e2400e1775cf11b0907c81a7dbc4cab38af0",
+        "crop": {
+          "left": 2034,
+          "top": 30,
+          "width": 210,
+          "height": 579
+        },
+        "size": [
+          86,
+          236
+        ]
+      }
+    ]
+  }
+}

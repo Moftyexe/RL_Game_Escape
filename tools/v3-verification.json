@@ -1,0 +1,14 @@
+{
+  "tests": 319,
+  "passed": 319,
+  "failed": 0,
+  "syntax": "all src/tools JS and MJS passed",
+  "build": "passed; existing large-chunk warning",
+  "tableSchema": "guard-q-v3",
+  "tableSha256": "288341c73878bb0c182edc271978b0725be874f2a4e930dad2142709e8185aac",
+  "productionAssetsMatch": true,
+  "runningManifestUnchanged": true,
+  "hallwayAudioUnchanged": true,
+  "stateCount": 16266,
+  "pairCount": 35187
+}

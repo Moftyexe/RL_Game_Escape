@@ -1,0 +1,11 @@
+{
+  "idle_down": 4,
+  "walk_down": 4,
+  "idle_side": 4,
+  "walk_side": 6,
+  "idle_up": 4,
+  "walk_up": 4,
+  "run_down": 6,
+  "run_side": 8,
+  "run_up": 6
+}

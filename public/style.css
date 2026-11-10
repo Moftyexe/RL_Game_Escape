@@ -13,3 +13,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* Preserve nearest-neighbour presentation when FIT scales the game canvas. */
+#game-container canvas {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}

@@ -1,0 +1,24 @@
+import{audioSettingsFor}from'./AudioSettings.js';
+export const MUSIC_CREDIT_URL='https://www.instagram.com/prodbyhajime/';
+export const VOLUME_ROWS=[['hallwayMusic','Hallway Music'],['battleMusic','Battle Music'],['sfx','Sound Effects'],['footsteps','Footsteps']];
+export function openMusicCredit(open=globalThis.open?.bind(globalThis)){return open?.(MUSIC_CREDIT_URL,'_blank','noopener,noreferrer');}
+export default class AudioSettingsMenu{
+ constructor(scene){this.scene=scene;this.settings=audioSettingsFor(scene.sound);this.active=false;}
+ open(onClose=()=>{}){if(this.active)return false;this.active=true;this.onClose=onClose;this.selected=0;this.dragging=null;const s=this.scene;
+  this.root=s.add.container(0,0).setScrollFactor(0).setDepth(3000);
+  const add=(x,y,text,size=18,color='#e7edf7')=>{const t=s.add.text(x,y,text,{fontFamily:'monospace',fontSize:size+'px',color});this.root.add(t);return t;};
+  this.root.add(s.add.rectangle(0,0,1024,768,0x030712,.65).setOrigin(0));this.root.add(s.add.rectangle(182,150,660,474,0x101827,.99).setOrigin(0).setStrokeStyle(3,0xe7d19b));add(210,176,'AUDIO',24,'#f5db91');
+  add(210,211,'Up/Down: select   Left/Right: adjust   Esc: close',11,'#9eb2ce');
+  this.rows=VOLUME_ROWS.map(([key,label],i)=>{const y=258+i*66,title=add(210,y-12,label,17),value=add(810,y-12,'',17).setOrigin(1,0),track=s.add.rectangle(452,y,250,12,0x34445e).setOrigin(0,.5).setInteractive({useHandCursor:true}),fill=s.add.rectangle(452,y,250,8,0x83b7e4).setOrigin(0,.5),knob=s.add.rectangle(452,y,8,22,0xf5db91);this.root.add([track,fill,knob]);track.on('pointerdown',p=>{this.selected=i;this.dragging=i;this.setFromPointer(i,p);});return{key,title,value,track,fill,knob};});
+  add(210,520,'MUSIC BY',13,'#a6b9d4');this.credit=add(402,516,'@prodbyhajime',18,'#a6d8ff').setInteractive({useHandCursor:true});this.credit.on('pointerover',()=>{this.selected=5;this.render();});this.credit.on('pointerdown',()=>openMusicCredit());this.root.add(s.add.rectangle(402,541,152,1,0xa6d8ff).setOrigin(0));
+  this.mute=add(210,576,'',16).setInteractive({useHandCursor:true});this.mute.on('pointerdown',()=>this.activate(4));this.closeButton=add(742,576,'CLOSE',16,'#f5db91').setInteractive({useHandCursor:true});this.closeButton.on('pointerdown',()=>this.close());
+  this.key=e=>{if(e.repeat)return;const code=e.code;if(['Escape','Backspace'].includes(code)){e.preventDefault?.();this.close();return;}if(['ArrowUp','KeyW','ArrowDown','KeyS'].includes(code)){e.preventDefault?.();this.selected=(this.selected+(['ArrowUp','KeyW'].includes(code)?6:1))%7;s.sfx?.play('uiMove');this.render();}else if(['ArrowLeft','KeyA','ArrowRight','KeyD'].includes(code)&&this.selected<4){e.preventDefault?.();const k=VOLUME_ROWS[this.selected][0];this.settings.set(k,Math.round((this.settings.get(k)+(['ArrowLeft','KeyA'].includes(code)?-.05:.05))*100)/100);}else if(['Enter','Space'].includes(code)){e.preventDefault?.();this.activate(this.selected);}};
+  this.move=p=>{if(this.dragging!==null)this.setFromPointer(this.dragging,p);};this.up=()=>this.dragging=null;this.shutdown=()=>this.close(false);
+  s.input.keyboard.on('keydown',this.key);s.input.on('pointermove',this.move);s.input.on('pointerup',this.up);s.events.once('shutdown',this.shutdown);
+  this.resize=()=>{const scale=Math.min(s.scale.width/1024,s.scale.height/768);this.fit={scale,x:(s.scale.width-1024*scale)/2,y:(s.scale.height-768*scale)/2};this.root.setScale(scale).setPosition(this.fit.x,this.fit.y);};s.scale.on?.('resize',this.resize);this.resize();this.unsubscribe=this.settings.subscribe(()=>this.render());this.render();return true;
+ }
+ setFromPointer(index,p){const x=(p.x-this.fit.x)/this.fit.scale;this.settings.set(VOLUME_ROWS[index][0],Math.round(Math.max(0,Math.min(1,(x-452)/250))*20)/20);}
+ activate(index){if(index===4){this.settings.set('musicMuted',!this.settings.get('musicMuted'));this.scene.sfx?.play('uiConfirm');}else if(index===5)openMusicCredit();else if(index===6)this.close();}
+ render(){if(!this.active)return;for(const[row,i]of this.rows.map((r,i)=>[r,i])){const v=this.settings.get(row.key);row.value.setText(Math.round(v*100)+'%');row.fill.setScale(v,1);row.knob.setPosition?.(452+v*250,258+i*66);row.title.setColor?.(i===this.selected?'#f5db91':'#e7edf7');}this.mute.setText((this.selected===4?'> ':'')+(this.settings.get('musicMuted')?'UNMUTE MUSIC':'MUTE MUSIC'));this.credit.setColor?.(this.selected===5?'#f5db91':'#a6d8ff');this.closeButton.setText((this.selected===6?'> ':'')+'CLOSE');}
+ close(notify=true){if(!this.active)return;this.active=false;const s=this.scene;this.unsubscribe?.();s.input.keyboard.off('keydown',this.key);s.input.off('pointermove',this.move);s.input.off('pointerup',this.up);s.events.off('shutdown',this.shutdown);s.scale.off?.('resize',this.resize);this.root.destroy();if(notify){s.sfx?.play('uiCancel');this.onClose();}}
+}

@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "animations": {
+    "run_down": {
+      "source": "Six-Frame Pixel Art Run Cycle.png",
+      "sourceSha256": "a9c887dd505276f4ca509f348ad52868d527de686e422459d4e87e7c42e03b51",
+      "frameRate": 12,
+      "frames": [
+        {
+          "index": 0,
+          "sourcePoseIndex": 0,
+          "file": "assets/player/movement/run_down/0.png",
+          "sha256": "0442fb400582d7210415f23e21f706c9d7b1dafc32de8e92f3754cac83071510",
+          "sourceCropSha256": "71befe0fd567b064ae16a34dd1de88ef90403400293c9dff2b18037e63f2083e"
+        },
+        {
+          "index": 1,
+          "sourcePoseIndex": 1,
+          "file": "assets/player/movement/run_down/1.png",
+          "sha256": "c8c3badf39995178fe0bea3d0ebe564b649c4c2d0328158fff49c7badd1ff46e",
+          "sourceCropSha256": "7b65e053686244c25884bdc6dfd94a61c474dd64ee64996e7b05856afdf06569"
+        },
+        {
+          "index": 2,
+          "sourcePoseIndex": 2,
+          "file": "assets/player/movement/run_down/2.png",
+          "sha256": "cccc42bb98aab834a704fb97094387e2f6c6a0095713e9777996eedfbd8f6f03",
+          "sourceCropSha256": "ea1501a6f70915e041192a313a434f1403aafae8b7934807151a6bba90b2985a"
+        },
+        {
+          "index": 3,
+          "sourcePoseIndex": 3,
+          "file": "assets/player/movement/run_down/3.png",
+          "sha256": "4e1c2446671854c096027fe299532284223673ab216b689a63744536f31e815c",
+          "sourceCropSha256": "91eae410d8d96b14c26b91811e494318a1927599e39aa6ce4f0c1c0c04ff12f6"
+        },
+        {
+          "index": 4,
+          "sourcePoseIndex": 4,
+          "file": "assets/player/movement/run_down/4.png",
+          "sha256": "198f74b1fd6033e793fa5a3c18b16594d841951938b734b42b28f31bdbb4fabc",
+          "sourceCropSha256": "b457310938feaee9f4f6e389d29c9f446810725a3bc9f0f3f83da604584384c8"
+        },
+        {
+          "index": 5,
+          "sourcePoseIndex": 5,
+          "file": "assets/player/movement/run_down/5.png",
+          "sha256": "619f94bad18ac9817b2dc0c54961606707a14a6047b0991ac3aaa3cf6b7f1e3b",
+          "sourceCropSha256": "4b0095a11a5b01108c1d6109619a74b69c12c13810f9ef12d2125abdf2c8c6e8"
+        }
+      ],
+      "revision": "ccbbdbbfb5cb"
+    },
+    "run_side": {
+      "source": "latest-run-side.png",
+      "sourceSha256": "21f742f9f0c062d94476bd91f6d314e9ae18ef32a5e6b11f727c075cd88ebb9b",
+      "frameRate": 12,
+      "videoSource": {
+        "file": "8-frame side run cycle.mp4",
+        "sha256": "3094201473b80ea4e0c2bb92f6ceaa43c2fd973ab8ffeaf1806f45a4bb3ffbba",
+        "sourceIndices": [
+          9,
+          11,
+          13,
+          15,
+          18,
+          20,
+          22,
+          24
+        ]
+      },
+      "frames": [
+        {
+          "index": 0,
+          "sourcePoseIndex": 0,
+          "file": "assets/player/movement/run_side/0.png",
+          "sha256": "182e3715c43a326a3ec512ac4e0c40bb2a0ed5959c344a233c07e2839931f69b",
+          "sourceCropSha256": "f21dce28213edb990179c468bf2f7095aa420783446d9d4e10ff79e622acd48f"
+        },
+        {
+          "index": 1,
+          "sourcePoseIndex": 1,
+          "file": "assets/player/movement/run_side/1.png",
+          "sha256": "f77a220426e84a3c0cd987f4e05504e908b114dea39b52115f81d6319bcf7102",
+          "sourceCropSha256": "a2f9d99f17051c9198c58633bfa0ef26491dfb1b02cca299af6909bcf0a32052"
+        },
+        {
+          "index": 2,
+          "sourcePoseIndex": 2,
+          "file": "assets/player/movement/run_side/2.png",
+          "sha256": "4775c516d207afa6a8eb349a30f2609aa8c207ebddfd32188ed504a65e125c0a",
+          "sourceCropSha256": "190acc4a6584ba3530810829126d3206acb60fd1cfd6d0a4f4f413ed96b86281"
+        },
+        {
+          "index": 3,
+          "sourcePoseIndex": 3,
+          "file": "assets/player/movement/run_side/3.png",
+          "sha256": "3c885885edbde5a96f38fdc3dbf72fe41f49b3e0f8a10df24abe72c4204d8f0d",
+          "sourceCropSha256": "7ae6b55915007bea7ddf52dbbd9cb20dc5b24b302c57622a092244b39ba432a6"
+        },
+        {
+          "index": 4,
+          "sourcePoseIndex": 4,
+          "file": "assets/player/movement/run_side/4.png",
+          "sha256": "0fb45e25e42a9e8a798b1368aeb4f0356c70e16d32c0d4c7a7bf8ab36ac835a6",
+          "sourceCropSha256": "76e1d22d046e6d646b933c48c4e19a48c3563a0ea0cab9072072f28754889de9"
+        },
+        {
+          "index": 5,
+          "sourcePoseIndex": 5,
+          "file": "assets/player/movement/run_side/5.png",
+          "sha256": "34dcfb822defae163518d56aed28daca805eeea6541b305a5f67f6df62ebf5d3",
+          "sourceCropSha256": "9eb9df67de21d8cbd48e5a53ef5599341c69c574e7ba0d0eed1e9dd1314e22f6"
+        },
+        {
+          "index": 6,
+          "sourcePoseIndex": 6,
+          "file": "assets/player/movement/run_side/6.png",
+          "sha256": "9dee348593a8941f7daa7ab917c944c83a748dc4776447cd798405d43074852a",
+          "sourceCropSha256": "cdc28f3e856c62e31cdffc4134b25dc24c80b5e6e54cba80e00221005fa91154"
+        },
+        {
+          "index": 7,
+          "sourcePoseIndex": 7,
+          "file": "assets/player/movement/run_side/7.png",
+          "sha256": "e503ab8a16a230bee0718bc0a50ca1c6975c5a33c535f509098320c85f04debd",
+          "sourceCropSha256": "7ff1a7bebadd0cf6d4ffb5f859f282d60750ff8cc199324c6d98d974ebfd67d1"
+        }
+      ],
+      "revision": "3c1b0ebd06d1"
+    },
+    "run_up": {
+      "source": "Pixel Runner Back-View Sprite Sheet.png",
+      "sourceSha256": "342acabf72184a067c2815ae8535029aa793b0ef1aed5fac2f2f3d80a7ba4607",
+      "frameRate": 12,
+      "frames": [
+        {
+          "index": 0,
+          "sourcePoseIndex": 0,
+          "file": "assets/player/movement/run_up/0.png",
+          "sha256": "b88dff5448567b7cd3ff4e97119a85e3d36e378270290619437cdc3376391e09",
+          "sourceCropSha256": "a04d8336ce8cbc2364678710d06ff5209655107c9c800631c1eae1517a6b8204"
+        },
+        {
+          "index": 1,
+          "sourcePoseIndex": 1,
+          "file": "assets/player/movement/run_up/1.png",
+          "sha256": "6c51c76c6a1945d7e87552407a6028ec7510a92c7cd42b18412ef84590ada12c",
+          "sourceCropSha256": "b99426f1a02eeb00794ddcc9534885166691b38ae5d970e1b24ecce4f0592544"
+        },
+        {
+          "index": 2,
+          "sourcePoseIndex": 2,
+          "file": "assets/player/movement/run_up/2.png",
+          "sha256": "592fa8e34f222da70ccdb8c32ed7d27ebcd75a8f0b00be18db57b5cdcecce746",
+          "sourceCropSha256": "89668d38b8884c1db95b9157d5c6c2262f87412f3bc06f90cd1661d738007c29"
+        },
+        {
+          "index": 3,
+          "sourcePoseIndex": 3,
+          "file": "assets/player/movement/run_up/3.png",
+          "sha256": "e4cd9a43280dae1bbfbaacb6bcae9a99f0870604eed342cb4b11d1166b9fdbc6",
+          "sourceCropSha256": "a2e6b3b4a93c8dbb72ad481fba13786c009cfa67c5dd1f0dc8c245d427f54027"
+        },
+        {
+          "index": 4,
+          "sourcePoseIndex": 4,
+          "file": "assets/player/movement/run_up/4.png",
+          "sha256": "ef15d7e2109f43a0dd15d713f8dffaf7135e9c50267a9a87c15177ba27511138",
+          "sourceCropSha256": "30d1a898c4973e7b41b1f2db8054eba7764559aa1a2731cb977548f694fd1933"
+        },
+        {
+          "index": 5,
+          "sourcePoseIndex": 5,
+          "file": "assets/player/movement/run_up/5.png",
+          "sha256": "664e2d7f60b4b8f70498d1fe2ed864ba9c6bc997d63bb86704255b5aa9c7b457",
+          "sourceCropSha256": "574b90aeea7f1592bbedfc55b0a5b2216a76392c54a8f0f40fc49261cfff5593"
+        }
+      ],
+      "revision": "3840dcd3e7ee"
+    }
+  }
+}

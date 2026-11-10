@@ -1,0 +1,47 @@
+// Selectors refer only to the previously retained source pack. No external audio.
+export const palette={
+ uiMove:['01_ui_interface/menu_move_',0,'ui',.7],
+ uiConfirm:['01_ui_interface/confirm_',0,'ui',.8],
+ uiCancel:['01_ui_interface/back_',0,'ui',.8],
+ uiInvalid:['01_ui_interface/error_',0,'ui',.7],
+ dialogueTick:['01_ui_interface/select_',0,'dialogue',.45],
+ dialogueAdvance:['01_ui_interface/click_',0,'dialogue',.6],
+ dialogueOpen:['01_ui_interface/open_',0,'dialogue',.5],
+ encounter:['01_ui_interface/alert_',0,'transition',.65],
+ wipe:['04_combat_melee/swosh_',2,'transition',.6],
+ reveal:['04_combat_melee/swosh_',0,'transition',.35],
+ nextDay:['01_ui_interface/sounds_powerup_',0,'transition',.25],
+ swing:['04_combat_melee/swing_',0,'combat',.6],
+ heavySwing:['04_combat_melee/swing_',5,'combat',.65],
+ hit:['04_combat_melee/punch_',0,'combat',.75],
+ heavyHit:['10_impacts_materials/impact_soft_heavy_',0,'combat',.75],
+ critical:['10_impacts_materials/heavy_thud_',0,'combat',.65],
+ block:['03_movement_cloth_gear/cloth_heavy_',0,'combat',.5],
+ brace:['03_movement_cloth_gear/movement_jump_landing_',0,'combat',.6],
+ focused:['01_ui_interface/power_up_',0,'status',.55],
+ riled:['01_ui_interface/negative_',0,'status',.5],
+ distracted:['01_ui_interface/toggle_',0,'status',.6],
+ offGuard:['01_ui_interface/error_',1,'status',.45],
+ stun:['01_ui_interface/alert_',1,'status',.6],
+ smack:['04_combat_melee/slap_',0,'combat',.55],
+ heal:['01_ui_interface/sounds_powerup_',1,'status',.55],
+ breath:['09_human_nonverbal/breath_',0,'combat',.55,1],
+ crack:['10_impacts_materials/crack_',0,'combat',.5,.6],
+ whistle:['09_human_nonverbal/attention_whistle_',0,'combat',.5],
+ phoneButton:['17_machinery_technology/switch_',0,'combat',.5],
+ fall:['03_movement_cloth_gear/jump_land_',0,'combat',.65],
+ getUp:['03_movement_cloth_gear/cloth_',0,'combat',.3,.45],
+ victory:['01_ui_interface/victory_',0,'transition',.4,1.6],
+ defeat:['01_ui_interface/game_over_',0,'transition',.4,1.6],
+ foot1:['02_footsteps/concrete_',0,'footsteps',.65],
+ foot2:['02_footsteps/concrete_',1,'footsteps',.65],
+ foot3:['02_footsteps/concrete_',2,'footsteps',.65]
+};
+export const candidateGroups={
+ ui:['uiMove','uiConfirm','uiCancel','uiInvalid'],dialogue:['dialogueTick','dialogueAdvance'],
+ battle_entry:['encounter','wipe','reveal'],player_backpack_hit:['heavyHit','critical'],
+ normal_hit:['hit'],attack_swing:['swing','heavySwing'],guard_stumble:['fall','getUp'],
+ talk_smack:['smack','riled'],catch_breath:['breath','heal'],status:['focused','distracted','offGuard','stun'],
+ guard_knuckles:['crack'],whistle:['whistle'],phone_buttons:['phoneButton'],results:['victory','defeat','nextDay'],hallway_steps:['foot1','foot2','foot3']
+};
+export const futurePrefixes=['11_doors_locks/door_open_','11_doors_locks/door_close_','11_doors_locks/keys_','11_doors_locks/latch_','13_paper_books/book_','13_paper_books/page_turn_','09_human_nonverbal/drink_','03_movement_cloth_gear/bag_zipper_','12_items_inventory/coin_flip_'];

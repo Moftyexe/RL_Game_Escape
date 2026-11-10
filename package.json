@@ -15,12 +15,21 @@
   },
   "homepage": "https://github.com/phaserjs/template-vite#readme",
   "scripts": {
+    "process-player-sprites": "node tools/processPlayerSprites.mjs",
+    "process-guard-sprites": "node tools/processGuardSprites.mjs",
+    "process-battle-sprites": "node tools/processBattleSprites.mjs",
     "dev": "node log.js dev & vite --config vite/config.dev.mjs",
     "build": "node log.js build & vite build --config vite/config.prod.mjs",
     "dev-nolog": "vite --config vite/config.dev.mjs",
-    "build-nolog": "vite build --config vite/config.prod.mjs"
+    "build-nolog": "vite build --config vite/config.prod.mjs",
+    "audit-running": "node tools/auditRunning.mjs",
+    "train:guard": "node tools/trainGuard.mjs",
+    "evaluate:guard": "node tools/evaluateGuard.mjs",
+    "process-hallway-assets": "node tools/processHallwayAssets.mjs",
+    "inspect:guard": "node tools/inspectGuardPolicy.mjs"
   },
   "devDependencies": {
+    "sharp": "^0.35.5",
     "terser": "^5.39.0",
     "vite": "^6.3.1"
   },

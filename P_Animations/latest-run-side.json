@@ -1,0 +1,181 @@
+{
+  "video": "P_Animations/8-frame side run cycle.mp4",
+  "videoSha256": "3094201473b80ea4e0c2bb92f6ceaa43c2fd973ab8ffeaf1806f45a4bb3ffbba",
+  "videoDimensions": [
+    1920,
+    1080
+  ],
+  "videoFps": 30,
+  "durationSeconds": 5.22,
+  "sheet": "P_Animations/latest-run-side.png",
+  "sheetSha256": "21f742f9f0c062d94476bd91f6d314e9ae18ef32a5e6b11f727c075cd88ebb9b",
+  "sheetDimensions": [
+    4320,
+    760
+  ],
+  "cells": [
+    540,
+    760
+  ],
+  "frameCount": 8,
+  "frameRate": 12,
+  "sourceIndices": [
+    9,
+    11,
+    13,
+    15,
+    18,
+    20,
+    22,
+    24
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "sourceFrame": 9,
+      "timeSeconds": 0.3,
+      "rawFrameSha256": "32ea3f703e331c6357584a956a30a491fcbf0e6bba3267216fe7a995ab1c9f0c",
+      "maskedCropSha256": "c7af21d901ad14d1f809d8f4da8ff13fb39b292900373c0650be1f5981a91de9",
+      "crop": {
+        "left": 326,
+        "top": 66,
+        "width": 269,
+        "height": 441
+      },
+      "placement": {
+        "left": 135,
+        "top": 24
+      },
+      "pixels": 63618
+    },
+    {
+      "index": 1,
+      "sourceFrame": 11,
+      "timeSeconds": 0.36666666666666664,
+      "rawFrameSha256": "e175f5da6ab3428fd05a46f54abbbe2e6b892b4824c760880980fab59983430b",
+      "maskedCropSha256": "26f2e0bf8ca90096e999482f6540963852b136e9cd103aa099bac6eae4f244db",
+      "crop": {
+        "left": 301,
+        "top": 68,
+        "width": 336,
+        "height": 436
+      },
+      "placement": {
+        "left": 642,
+        "top": 24
+      },
+      "pixels": 66656
+    },
+    {
+      "index": 2,
+      "sourceFrame": 13,
+      "timeSeconds": 0.43333333333333335,
+      "rawFrameSha256": "a1093cb946cdd137adb3b0527cb46206975eb8b334832e150093f9a350fea9a9",
+      "maskedCropSha256": "1d0c90744f32d39444b2295c557106140b1d0587a006a0f2584314237f7c05df",
+      "crop": {
+        "left": 327,
+        "top": 79,
+        "width": 264,
+        "height": 438
+      },
+      "placement": {
+        "left": 1218,
+        "top": 24
+      },
+      "pixels": 59883
+    },
+    {
+      "index": 3,
+      "sourceFrame": 15,
+      "timeSeconds": 0.5,
+      "rawFrameSha256": "ffad2b17105f21e75cd3c0321197a60fcc050ca48eb2cea5aabafce93ca27aeb",
+      "maskedCropSha256": "8fd1f77f6bcddc6e241eefd09e2fd531ba147ab40c6b683d0114a3d6d981174e",
+      "crop": {
+        "left": 400,
+        "top": 80,
+        "width": 193,
+        "height": 437
+      },
+      "placement": {
+        "left": 1793,
+        "top": 24
+      },
+      "pixels": 53852
+    },
+    {
+      "index": 4,
+      "sourceFrame": 18,
+      "timeSeconds": 0.6,
+      "rawFrameSha256": "569626e13e525edaca05040efa7ef715fd280406c83d1bfca53df310e9ae7a43",
+      "maskedCropSha256": "eb773c4aab63802f56206b1f3d0a43c4983138dc99b18c10d4b9576e2ae416da",
+      "crop": {
+        "left": 330,
+        "top": 65,
+        "width": 284,
+        "height": 436
+      },
+      "placement": {
+        "left": 2288,
+        "top": 24
+      },
+      "pixels": 66224
+    },
+    {
+      "index": 5,
+      "sourceFrame": 20,
+      "timeSeconds": 0.6666666666666666,
+      "rawFrameSha256": "2e4001285616023dd8b171ccf2e5779dc1d51d1c12f25bd443fd7b6cf3885de2",
+      "maskedCropSha256": "a6dc4c444977e46c7371d96e889590c81d98c95e22bef641c7cbbc1976556ab5",
+      "crop": {
+        "left": 303,
+        "top": 66,
+        "width": 327,
+        "height": 436
+      },
+      "placement": {
+        "left": 2806,
+        "top": 24
+      },
+      "pixels": 69594
+    },
+    {
+      "index": 6,
+      "sourceFrame": 22,
+      "timeSeconds": 0.7333333333333333,
+      "rawFrameSha256": "ad7a568585ef68f8a9f7b72ba079b0f7b02ca7b17a52027d3269502058123ec5",
+      "maskedCropSha256": "446b39869d347729d4c8662873ec337391c989f36500b59c7fbbb0c6ad335dab",
+      "crop": {
+        "left": 310,
+        "top": 70,
+        "width": 311,
+        "height": 443
+      },
+      "placement": {
+        "left": 3354,
+        "top": 24
+      },
+      "pixels": 68109
+    },
+    {
+      "index": 7,
+      "sourceFrame": 24,
+      "timeSeconds": 0.8,
+      "rawFrameSha256": "2c87fbc8f602c037b6a18a2ab1091540848c1b098792921234d5fdfd5525f8fe",
+      "maskedCropSha256": "a31f8383f483e2765903bc48fd8d2cc20c20d5201699d0ad7e5e8e1f97a9c1e2",
+      "crop": {
+        "left": 357,
+        "top": 80,
+        "width": 234,
+        "height": 442
+      },
+      "placement": {
+        "left": 3933,
+        "top": 24
+      },
+      "pixels": 57074
+    }
+  ],
+  "backgroundRemoval": "At960x540 nearest sample: RGB neighbor-edge threshold5,4px edge closure, exterior flood-fill,4px erosion, largest silhouette; internal dark clothing retained. Hard alpha, no AI redraw/recolor.",
+  "stabilization": "Common hair-top at24 source pixels before existing proportional240px-height/common-floor/head-centroid pipeline. No individual frame rescaling.",
+  "scope": "Side-facing only. Existing front/rear, movement speed, collision and controls unchanged. Video audio ignored."
+}

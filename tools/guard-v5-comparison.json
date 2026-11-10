@@ -1,0 +1,2014 @@
+{
+  "seed": 20261107,
+  "episodesPerBot": 1000,
+  "startMode": "normal-only",
+  "learning": false,
+  "checkpoints": [
+    {
+      "policy": "q-20k",
+      "file": "tools/checkpoints/v5/guard_qtable_20k.json",
+      "sha256": "c3b78b68bb5bf678724a53e8fbf2cb70c95062f8df7552f558628c6984333dcd",
+      "metadata": {
+        "config": {
+          "seed": 20261106,
+          "episodes": 60000,
+          "alpha": 0.1,
+          "gamma": 0.95,
+          "epsilonStart": 1,
+          "epsilonEnd": 0.05,
+          "epsilonDecayFraction": 0.75,
+          "maxRounds": 100,
+          "randomizedStartFraction": 0.25,
+          "botDistribution": {
+            "random": 1,
+            "aggressive": 2,
+            "tricky": 1
+          }
+        },
+        "initialization": "empty-zero-Q",
+        "startSchema": "midbattle-starts-v1",
+        "rewardWeights": {
+          "win": 100,
+          "loss": -100,
+          "draw": -10,
+          "damageDivisor": 20,
+          "roundCost": -0.2
+        },
+        "playerBotSchema": "player-bots-v1",
+        "rng": "mulberry32-named-fnv1a-streams",
+        "episodes": 20000,
+        "plannedEpisodes": 60000,
+        "seed": 20261106,
+        "alpha": 0.1,
+        "gamma": 0.95,
+        "finalEpsilon": 0.577798888888889,
+        "stateCount": 16601,
+        "pairCount": 39674,
+        "coverage": {
+          "encounteredStates": 16601,
+          "learnedPairs": 39674,
+          "totalVisits": 515676,
+          "meanVisitedActions": 2.3898560327691105,
+          "medianVisitedActions": 2,
+          "statesByVisitedActions": {
+            "1": 5667,
+            "2": 4326,
+            "3": 2642,
+            "4": 2645,
+            "5": 1077,
+            "6": 244
+          },
+          "percentByVisitedActions": {
+            "1": 34.13649780133727,
+            "2": 26.058671164387686,
+            "3": 15.914703933497982,
+            "4": 15.93277513402807,
+            "5": 6.487560990301789,
+            "6": 1.469790976447202
+          },
+          "fullyExploredSeenLegalStates": 8032,
+          "fullyExploredSeenLegalPercent": 48.382627552557075,
+          "seenLegalPairs": 61794,
+          "exploredSeenLegalPairs": 39674
+        },
+        "visitSemantics": "one visit per Q-updated committed decision, including cancellation; forced skips have none",
+        "forcedTransition": "discounted multi-round return and gamma^rounds bootstrap; no forced action Q rows"
+      },
+      "coverage": {
+        "encounteredStates": 16601,
+        "learnedPairs": 39674,
+        "totalVisits": 515676,
+        "meanVisitedActions": 2.3898560327691105,
+        "medianVisitedActions": 2,
+        "statesByVisitedActions": {
+          "1": 5667,
+          "2": 4326,
+          "3": 2642,
+          "4": 2645,
+          "5": 1077,
+          "6": 244
+        },
+        "percentByVisitedActions": {
+          "1": 34.13649780133727,
+          "2": 26.058671164387686,
+          "3": 15.914703933497982,
+          "4": 15.93277513402807,
+          "5": 6.487560990301789,
+          "6": 1.469790976447202
+        },
+        "fullyExploredSeenLegalStates": 8032,
+        "fullyExploredSeenLegalPercent": 48.382627552557075,
+        "seenLegalPairs": 61794,
+        "exploredSeenLegalPairs": 39674
+      }
+    },
+    {
+      "policy": "q-40k",
+      "file": "tools/checkpoints/v5/guard_qtable_40k.json",
+      "sha256": "158d7c17d1001905b39e0ed1afb666b8bcb14ad2f0378b947404ee9e47b30ad5",
+      "metadata": {
+        "config": {
+          "seed": 20261106,
+          "episodes": 60000,
+          "alpha": 0.1,
+          "gamma": 0.95,
+          "epsilonStart": 1,
+          "epsilonEnd": 0.05,
+          "epsilonDecayFraction": 0.75,
+          "maxRounds": 100,
+          "randomizedStartFraction": 0.25,
+          "botDistribution": {
+            "random": 1,
+            "aggressive": 2,
+            "tricky": 1
+          }
+        },
+        "initialization": "empty-zero-Q",
+        "startSchema": "midbattle-starts-v1",
+        "rewardWeights": {
+          "win": 100,
+          "loss": -100,
+          "draw": -10,
+          "damageDivisor": 20,
+          "roundCost": -0.2
+        },
+        "playerBotSchema": "player-bots-v1",
+        "rng": "mulberry32-named-fnv1a-streams",
+        "episodes": 40000,
+        "plannedEpisodes": 60000,
+        "seed": 20261106,
+        "alpha": 0.1,
+        "gamma": 0.95,
+        "finalEpsilon": 0.1555766666666667,
+        "stateCount": 19710,
+        "pairCount": 48041,
+        "coverage": {
+          "encounteredStates": 19710,
+          "learnedPairs": 48041,
+          "totalVisits": 924427,
+          "meanVisitedActions": 2.437392186707255,
+          "medianVisitedActions": 2,
+          "statesByVisitedActions": {
+            "1": 6412,
+            "2": 5079,
+            "3": 3373,
+            "4": 3147,
+            "5": 1430,
+            "6": 269
+          },
+          "percentByVisitedActions": {
+            "1": 32.531709791983765,
+            "2": 25.768645357686452,
+            "3": 17.11314053779807,
+            "4": 15.966514459665145,
+            "5": 7.255200405885337,
+            "6": 1.3647894469812278
+          },
+          "fullyExploredSeenLegalStates": 9599,
+          "fullyExploredSeenLegalPercent": 48.701166920345,
+          "seenLegalPairs": 74150,
+          "exploredSeenLegalPairs": 48041
+        },
+        "visitSemantics": "one visit per Q-updated committed decision, including cancellation; forced skips have none",
+        "forcedTransition": "discounted multi-round return and gamma^rounds bootstrap; no forced action Q rows"
+      },
+      "coverage": {
+        "encounteredStates": 19710,
+        "learnedPairs": 48041,
+        "totalVisits": 924427,
+        "meanVisitedActions": 2.437392186707255,
+        "medianVisitedActions": 2,
+        "statesByVisitedActions": {
+          "1": 6412,
+          "2": 5079,
+          "3": 3373,
+          "4": 3147,
+          "5": 1430,
+          "6": 269
+        },
+        "percentByVisitedActions": {
+          "1": 32.531709791983765,
+          "2": 25.768645357686452,
+          "3": 17.11314053779807,
+          "4": 15.966514459665145,
+          "5": 7.255200405885337,
+          "6": 1.3647894469812278
+        },
+        "fullyExploredSeenLegalStates": 9599,
+        "fullyExploredSeenLegalPercent": 48.701166920345,
+        "seenLegalPairs": 74150,
+        "exploredSeenLegalPairs": 48041
+      }
+    },
+    {
+      "policy": "q-60k",
+      "file": "tools/checkpoints/v5/guard_qtable_60k.json",
+      "sha256": "fb29db0c01c96cf71f18d69b363f77769f3aa5e120b6691b79a7d2093ab7cdcf",
+      "metadata": {
+        "config": {
+          "seed": 20261106,
+          "episodes": 60000,
+          "alpha": 0.1,
+          "gamma": 0.95,
+          "epsilonStart": 1,
+          "epsilonEnd": 0.05,
+          "epsilonDecayFraction": 0.75,
+          "maxRounds": 100,
+          "randomizedStartFraction": 0.25,
+          "botDistribution": {
+            "random": 1,
+            "aggressive": 2,
+            "tricky": 1
+          }
+        },
+        "initialization": "empty-zero-Q",
+        "startSchema": "midbattle-starts-v1",
+        "rewardWeights": {
+          "win": 100,
+          "loss": -100,
+          "draw": -10,
+          "damageDivisor": 20,
+          "roundCost": -0.2
+        },
+        "playerBotSchema": "player-bots-v1",
+        "rng": "mulberry32-named-fnv1a-streams",
+        "episodes": 60000,
+        "plannedEpisodes": 60000,
+        "seed": 20261106,
+        "alpha": 0.1,
+        "gamma": 0.95,
+        "finalEpsilon": 0.05,
+        "stateCount": 21602,
+        "pairCount": 53554,
+        "coverage": {
+          "encounteredStates": 21602,
+          "learnedPairs": 53554,
+          "totalVisits": 1273527,
+          "meanVisitedActions": 2.4791223034904175,
+          "medianVisitedActions": 2,
+          "statesByVisitedActions": {
+            "1": 6733,
+            "2": 5530,
+            "3": 3879,
+            "4": 3470,
+            "5": 1696,
+            "6": 294
+          },
+          "percentByVisitedActions": {
+            "1": 31.16841033237663,
+            "2": 25.59948152948801,
+            "3": 17.956670678640865,
+            "4": 16.063327469678732,
+            "5": 7.851124895842977,
+            "6": 1.3609850939727803
+          },
+          "fullyExploredSeenLegalStates": 10624,
+          "fullyExploredSeenLegalPercent": 49.180631423016386,
+          "seenLegalPairs": 81856,
+          "exploredSeenLegalPairs": 53554
+        },
+        "visitSemantics": "one visit per Q-updated committed decision, including cancellation; forced skips have none",
+        "forcedTransition": "discounted multi-round return and gamma^rounds bootstrap; no forced action Q rows"
+      },
+      "coverage": {
+        "encounteredStates": 21602,
+        "learnedPairs": 53554,
+        "totalVisits": 1273527,
+        "meanVisitedActions": 2.4791223034904175,
+        "medianVisitedActions": 2,
+        "statesByVisitedActions": {
+          "1": 6733,
+          "2": 5530,
+          "3": 3879,
+          "4": 3470,
+          "5": 1696,
+          "6": 294
+        },
+        "percentByVisitedActions": {
+          "1": 31.16841033237663,
+          "2": 25.59948152948801,
+          "3": 17.956670678640865,
+          "4": 16.063327469678732,
+          "5": 7.851124895842977,
+          "6": 1.3609850939727803
+        },
+        "fullyExploredSeenLegalStates": 10624,
+        "fullyExploredSeenLegalPercent": 49.180631423016386,
+        "seenLegalPairs": 81856,
+        "exploredSeenLegalPairs": 53554
+      }
+    }
+  ],
+  "results": [
+    {
+      "policy": "random",
+      "bot": "random",
+      "episodes": 1000,
+      "wins": 676,
+      "losses": 324,
+      "draws": 0,
+      "averageReward": 18.20584999999998,
+      "averageRounds": 44.036,
+      "forcedRounds": 1273,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 677,
+      "actionCounts": {
+        "attack": 13696,
+        "callWife": 999,
+        "blowWhistle": 6217,
+        "eatDonut": 999,
+        "crackKnuckles": 7118,
+        "defend": 13734
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.676,
+      "diagnostics": {
+        "guardActions": {
+          "attack": 13696,
+          "callWife": 999,
+          "blowWhistle": 6217,
+          "eatDonut": 999,
+          "crackKnuckles": 7118,
+          "defend": 13734
+        },
+        "playerActions": {
+          "catchBreath": 7711,
+          "broLockIn": 5426,
+          "attack": 7612,
+          "lookThere": 5093,
+          "talkSmack": 5386,
+          "swingBackpack": 4906,
+          "defend": 7561
+        },
+        "executedGuardActions": {
+          "attack": 13220,
+          "callWife": 999,
+          "blowWhistle": 6124,
+          "eatDonut": 999,
+          "crackKnuckles": 7010,
+          "defend": 13734
+        },
+        "executedPlayerActions": {
+          "catchBreath": 7711,
+          "broLockIn": 5398,
+          "attack": 7442,
+          "lookThere": 5068,
+          "talkSmack": 5346,
+          "swingBackpack": 4793,
+          "defend": 7561
+        },
+        "guardDamage": 924015,
+        "playerDamage": 1062119,
+        "donuts": 999,
+        "donutHp": 132735,
+        "donutUnder100": 357,
+        "donutAbove75": 820,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 1,
+          "MID": 14,
+          "HIGH": 164,
+          "VERY_HIGH": 820
+        },
+        "donutByValue": {
+          "FULL_VALUE": 368,
+          "PARTIAL_VALUE": 631
+        },
+        "criticalGuardDecisions": 1576,
+        "criticalGuardDefends": 584,
+        "maxDefendChain": 8,
+        "maxPlayerCriticalDefendChain": 6,
+        "criticalPlayerDefendChains": 244,
+        "crack": 7118,
+        "repeatCrack": 1020,
+        "riledEntries": 12356,
+        "riledBattles": 1000,
+        "riledHits": 4551,
+        "riledMisses": 2516,
+        "riledCrits": 1636,
+        "stumbles": 520,
+        "fatalStumbles": 13,
+        "fallbackDecisions": 0
+      },
+      "rates": {
+        "guardDamagingPercent": 32.027687486846105,
+        "guardSetupPercent": 67.9723125131539,
+        "playerDamagingPercent": 40.97493992447649,
+        "playerCatchBreathPercent": 17.647328069573177,
+        "playerBackpackPercent": 11.227829271083648,
+        "guardDefendPercent": 32.116549353413,
+        "guardDonutPercent": 2.3361317026401327,
+        "averageGuardDamage": 924.015,
+        "averagePlayerDamage": 1062.119,
+        "meanEffectiveDonut": 132.86786786786786,
+        "meanWastedDonut": 67.13213213213214,
+        "donutUnder100Percent": 35.73573573573574,
+        "donutAbove75Percent": 82.08208208208208,
+        "criticalDefendPercent": 37.055837563451774,
+        "riledHitPercent": 64.3979057591623,
+        "riledMissPercent": 35.602094240837694,
+        "riledCritAmongHitsPercent": 35.94814326521644,
+        "stumbleAmongMissesPercent": 20.66772655007949
+      }
+    },
+    {
+      "policy": "random",
+      "bot": "aggressive",
+      "episodes": 1000,
+      "wins": 50,
+      "losses": 950,
+      "draws": 0,
+      "averageReward": -135.06705000000028,
+      "averageRounds": 25.156,
+      "forcedRounds": 54,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 243,
+      "actionCounts": {
+        "defend": 7046,
+        "eatDonut": 993,
+        "blowWhistle": 4377,
+        "attack": 7024,
+        "crackKnuckles": 4663,
+        "callWife": 999
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.05,
+      "diagnostics": {
+        "guardActions": {
+          "defend": 7046,
+          "eatDonut": 993,
+          "blowWhistle": 4377,
+          "attack": 7024,
+          "crackKnuckles": 4663,
+          "callWife": 999
+        },
+        "playerActions": {
+          "attack": 9371,
+          "swingBackpack": 9592,
+          "broLockIn": 1164,
+          "catchBreath": 3675,
+          "defend": 796,
+          "talkSmack": 245,
+          "lookThere": 228
+        },
+        "executedGuardActions": {
+          "defend": 7046,
+          "eatDonut": 993,
+          "blowWhistle": 4372,
+          "attack": 6790,
+          "crackKnuckles": 4659,
+          "callWife": 999
+        },
+        "executedPlayerActions": {
+          "attack": 9190,
+          "swingBackpack": 9417,
+          "broLockIn": 1153,
+          "catchBreath": 3675,
+          "defend": 796,
+          "talkSmack": 244,
+          "lookThere": 227
+        },
+        "guardDamage": 562718,
+        "playerDamage": 1353925,
+        "donuts": 993,
+        "donutHp": 170942,
+        "donutUnder100": 135,
+        "donutAbove75": 496,
+        "donutByHp": {
+          "CRITICAL": 7,
+          "LOW": 40,
+          "MID": 135,
+          "HIGH": 315,
+          "VERY_HIGH": 496
+        },
+        "donutByValue": {
+          "FULL_VALUE": 675,
+          "PARTIAL_VALUE": 318
+        },
+        "criticalGuardDecisions": 2225,
+        "criticalGuardDefends": 801,
+        "maxDefendChain": 7,
+        "maxPlayerCriticalDefendChain": 5,
+        "criticalPlayerDefendChains": 13,
+        "crack": 4663,
+        "repeatCrack": 748,
+        "riledEntries": 4903,
+        "riledBattles": 996,
+        "riledHits": 2018,
+        "riledMisses": 1009,
+        "riledCrits": 680,
+        "stumbles": 196,
+        "fatalStumbles": 10,
+        "fallbackDecisions": 0
+      },
+      "rates": {
+        "guardDamagingPercent": 27.98183411680344,
+        "guardSetupPercent": 72.01816588319656,
+        "playerDamagingPercent": 76.61441506122611,
+        "playerCatchBreathPercent": 14.658370228550915,
+        "playerBackpackPercent": 38.25934346456065,
+        "guardDefendPercent": 28.069476535734204,
+        "guardDonutPercent": 3.955860090829416,
+        "averageGuardDamage": 562.718,
+        "averagePlayerDamage": 1353.925,
+        "meanEffectiveDonut": 172.14702920443102,
+        "meanWastedDonut": 27.85297079556898,
+        "donutUnder100Percent": 13.595166163141993,
+        "donutAbove75Percent": 49.9496475327291,
+        "criticalDefendPercent": 36,
+        "riledHitPercent": 66.66666666666667,
+        "riledMissPercent": 33.333333333333336,
+        "riledCritAmongHitsPercent": 33.696729435084244,
+        "stumbleAmongMissesPercent": 19.425173439048564
+      }
+    },
+    {
+      "policy": "random",
+      "bot": "tricky",
+      "episodes": 1000,
+      "wins": 959,
+      "losses": 41,
+      "draws": 0,
+      "averageReward": 91.54629999999999,
+      "averageRounds": 51.542,
+      "forcedRounds": 2488,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 1159,
+      "actionCounts": {
+        "defend": 16113,
+        "blowWhistle": 6873,
+        "crackKnuckles": 8122,
+        "attack": 15946,
+        "callWife": 1000,
+        "eatDonut": 1000
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.959,
+      "diagnostics": {
+        "guardActions": {
+          "defend": 16113,
+          "blowWhistle": 6873,
+          "crackKnuckles": 8122,
+          "attack": 15946,
+          "callWife": 1000,
+          "eatDonut": 1000
+        },
+        "playerActions": {
+          "lookThere": 10150,
+          "talkSmack": 8514,
+          "catchBreath": 7965,
+          "broLockIn": 6223,
+          "defend": 10869,
+          "attack": 5462,
+          "swingBackpack": 1971
+        },
+        "executedGuardActions": {
+          "defend": 16113,
+          "blowWhistle": 6694,
+          "crackKnuckles": 7925,
+          "attack": 15163,
+          "callWife": 1000,
+          "eatDonut": 1000
+        },
+        "executedPlayerActions": {
+          "lookThere": 10083,
+          "talkSmack": 8457,
+          "catchBreath": 7965,
+          "broLockIn": 6177,
+          "defend": 10869,
+          "attack": 5326,
+          "swingBackpack": 1919
+        },
+        "guardDamage": 992985,
+        "playerDamage": 764041,
+        "donuts": 1000,
+        "donutHp": 106073,
+        "donutUnder100": 512,
+        "donutAbove75": 934,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 4,
+          "HIGH": 62,
+          "VERY_HIGH": 934
+        },
+        "donutByValue": {
+          "FULL_VALUE": 187,
+          "PARTIAL_VALUE": 813
+        },
+        "criticalGuardDecisions": 353,
+        "criticalGuardDefends": 140,
+        "maxDefendChain": 7,
+        "maxPlayerCriticalDefendChain": 6,
+        "criticalPlayerDefendChains": 358,
+        "crack": 8122,
+        "repeatCrack": 1150,
+        "riledEntries": 16382,
+        "riledBattles": 1000,
+        "riledHits": 5301,
+        "riledMisses": 2808,
+        "riledCrits": 1847,
+        "stumbles": 557,
+        "fatalStumbles": 0,
+        "fallbackDecisions": 0
+      },
+      "rates": {
+        "guardDamagingPercent": 32.50703306560118,
+        "guardSetupPercent": 67.49296693439882,
+        "playerDamagingPercent": 31.174492708292608,
+        "playerCatchBreathPercent": 15.57062986276733,
+        "playerBackpackPercent": 3.853071118583102,
+        "guardDefendPercent": 32.8474742120928,
+        "guardDonutPercent": 2.038569739470787,
+        "averageGuardDamage": 992.985,
+        "averagePlayerDamage": 764.041,
+        "meanEffectiveDonut": 106.073,
+        "meanWastedDonut": 93.927,
+        "donutUnder100Percent": 51.2,
+        "donutAbove75Percent": 93.4,
+        "criticalDefendPercent": 39.6600566572238,
+        "riledHitPercent": 65.37180910099889,
+        "riledMissPercent": 34.62819089900111,
+        "riledCritAmongHitsPercent": 34.84248255046218,
+        "stumbleAmongMissesPercent": 19.836182336182336
+      }
+    },
+    {
+      "policy": "heuristic",
+      "bot": "random",
+      "episodes": 1000,
+      "wins": 994,
+      "losses": 6,
+      "draws": 0,
+      "averageReward": 110.99299999999978,
+      "averageRounds": 23.94,
+      "forcedRounds": 714,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 511,
+      "actionCounts": {
+        "callWife": 1000,
+        "attack": 14931,
+        "blowWhistle": 3661,
+        "eatDonut": 698,
+        "crackKnuckles": 1446,
+        "defend": 1490
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.994,
+      "diagnostics": {
+        "guardActions": {
+          "callWife": 1000,
+          "attack": 14931,
+          "blowWhistle": 3661,
+          "eatDonut": 698,
+          "crackKnuckles": 1446,
+          "defend": 1490
+        },
+        "playerActions": {
+          "catchBreath": 4051,
+          "broLockIn": 3069,
+          "attack": 3943,
+          "lookThere": 2897,
+          "talkSmack": 3040,
+          "swingBackpack": 2793,
+          "defend": 3944
+        },
+        "executedGuardActions": {
+          "callWife": 1000,
+          "attack": 14496,
+          "blowWhistle": 3599,
+          "eatDonut": 698,
+          "crackKnuckles": 1432,
+          "defend": 1490
+        },
+        "executedPlayerActions": {
+          "catchBreath": 4051,
+          "broLockIn": 3042,
+          "attack": 3786,
+          "lookThere": 2867,
+          "talkSmack": 3014,
+          "swingBackpack": 2681,
+          "defend": 3944
+        },
+        "guardDamage": 998878,
+        "playerDamage": 636158,
+        "donuts": 698,
+        "donutHp": 133208,
+        "donutUnder100": 34,
+        "donutAbove75": 302,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 25,
+          "MID": 58,
+          "HIGH": 313,
+          "VERY_HIGH": 302
+        },
+        "donutByValue": {
+          "FULL_VALUE": 632,
+          "PARTIAL_VALUE": 66
+        },
+        "criticalGuardDecisions": 16,
+        "criticalGuardDefends": 2,
+        "maxDefendChain": 3,
+        "maxPlayerCriticalDefendChain": 0,
+        "criticalPlayerDefendChains": 0,
+        "crack": 1446,
+        "repeatCrack": 34,
+        "riledEntries": 4446,
+        "riledBattles": 995,
+        "riledHits": 4281,
+        "riledMisses": 2279,
+        "riledCrits": 1489,
+        "stumbles": 462,
+        "fatalStumbles": 0,
+        "fallbackDecisions": 0
+      },
+      "rates": {
+        "guardDamagingPercent": 64.28571428571429,
+        "guardSetupPercent": 35.714285714285715,
+        "playerDamagingPercent": 41.18464843914564,
+        "playerCatchBreathPercent": 17.066183595231074,
+        "playerBackpackPercent": 11.766440578000589,
+        "guardDefendPercent": 6.415224317575131,
+        "guardDonutPercent": 3.0052527340049946,
+        "averageGuardDamage": 998.878,
+        "averagePlayerDamage": 636.158,
+        "meanEffectiveDonut": 190.84240687679082,
+        "meanWastedDonut": 9.157593123209182,
+        "donutUnder100Percent": 4.871060171919771,
+        "donutAbove75Percent": 43.26647564469914,
+        "criticalDefendPercent": 12.5,
+        "riledHitPercent": 65.25914634146342,
+        "riledMissPercent": 34.74085365853659,
+        "riledCritAmongHitsPercent": 34.781593085727636,
+        "stumbleAmongMissesPercent": 20.272049144361564
+      }
+    },
+    {
+      "policy": "heuristic",
+      "bot": "aggressive",
+      "episodes": 1000,
+      "wins": 606,
+      "losses": 394,
+      "draws": 0,
+      "averageReward": 1.7478000000000002,
+      "averageRounds": 19.91,
+      "forcedRounds": 48,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 208,
+      "actionCounts": {
+        "callWife": 1000,
+        "attack": 11954,
+        "blowWhistle": 3129,
+        "crackKnuckles": 1773,
+        "eatDonut": 956,
+        "defend": 1050
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.606,
+      "diagnostics": {
+        "guardActions": {
+          "callWife": 1000,
+          "attack": 11954,
+          "blowWhistle": 3129,
+          "crackKnuckles": 1773,
+          "eatDonut": 956,
+          "defend": 1050
+        },
+        "playerActions": {
+          "attack": 7459,
+          "swingBackpack": 7764,
+          "broLockIn": 951,
+          "catchBreath": 2671,
+          "talkSmack": 198,
+          "lookThere": 178,
+          "defend": 637
+        },
+        "executedGuardActions": {
+          "callWife": 1000,
+          "attack": 11756,
+          "blowWhistle": 3122,
+          "crackKnuckles": 1770,
+          "eatDonut": 956,
+          "defend": 1050
+        },
+        "executedPlayerActions": {
+          "attack": 7223,
+          "swingBackpack": 7531,
+          "broLockIn": 944,
+          "catchBreath": 2671,
+          "talkSmack": 198,
+          "lookThere": 175,
+          "defend": 637
+        },
+        "guardDamage": 920516,
+        "playerDamage": 1216860,
+        "donuts": 956,
+        "donutHp": 189526,
+        "donutUnder100": 9,
+        "donutAbove75": 159,
+        "donutByHp": {
+          "CRITICAL": 1,
+          "LOW": 312,
+          "MID": 191,
+          "HIGH": 293,
+          "VERY_HIGH": 159
+        },
+        "donutByValue": {
+          "FULL_VALUE": 937,
+          "PARTIAL_VALUE": 19
+        },
+        "criticalGuardDecisions": 919,
+        "criticalGuardDefends": 108,
+        "maxDefendChain": 3,
+        "maxPlayerCriticalDefendChain": 0,
+        "criticalPlayerDefendChains": 0,
+        "crack": 1773,
+        "repeatCrack": 32,
+        "riledEntries": 1968,
+        "riledBattles": 955,
+        "riledHits": 2319,
+        "riledMisses": 1247,
+        "riledCrits": 773,
+        "stumbles": 263,
+        "fatalStumbles": 5,
+        "fallbackDecisions": 0
+      },
+      "rates": {
+        "guardDamagingPercent": 60.18527842110563,
+        "guardSetupPercent": 39.81472157889437,
+        "playerDamagingPercent": 77.65636015711551,
+        "playerCatchBreathPercent": 13.450498539631383,
+        "playerBackpackPercent": 39.09759290965857,
+        "guardDefendPercent": 5.286476689155171,
+        "guardDonutPercent": 4.813211156983184,
+        "averageGuardDamage": 920.516,
+        "averagePlayerDamage": 1216.86,
+        "meanEffectiveDonut": 198.2489539748954,
+        "meanWastedDonut": 1.751046025104614,
+        "donutUnder100Percent": 0.9414225941422594,
+        "donutAbove75Percent": 16.631799163179917,
+        "criticalDefendPercent": 11.7519042437432,
+        "riledHitPercent": 65.03084688726865,
+        "riledMissPercent": 34.96915311273135,
+        "riledCritAmongHitsPercent": 33.333333333333336,
+        "stumbleAmongMissesPercent": 21.090617481956695
+      }
+    },
+    {
+      "policy": "heuristic",
+      "bot": "tricky",
+      "episodes": 1000,
+      "wins": 1000,
+      "losses": 0,
+      "draws": 0,
+      "averageReward": 122.64319999999987,
+      "averageRounds": 26.484,
+      "forcedRounds": 1356,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 982,
+      "actionCounts": {
+        "callWife": 1000,
+        "attack": 16513,
+        "blowWhistle": 3950,
+        "defend": 1725,
+        "crackKnuckles": 1310,
+        "eatDonut": 630
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 1,
+      "diagnostics": {
+        "guardActions": {
+          "callWife": 1000,
+          "attack": 16513,
+          "blowWhistle": 3950,
+          "defend": 1725,
+          "crackKnuckles": 1310,
+          "eatDonut": 630
+        },
+        "playerActions": {
+          "lookThere": 5478,
+          "talkSmack": 4520,
+          "catchBreath": 3600,
+          "broLockIn": 3299,
+          "defend": 5607,
+          "attack": 2728,
+          "swingBackpack": 1041
+        },
+        "executedGuardActions": {
+          "callWife": 1000,
+          "attack": 15668,
+          "blowWhistle": 3852,
+          "defend": 1725,
+          "crackKnuckles": 1271,
+          "eatDonut": 630
+        },
+        "executedPlayerActions": {
+          "lookThere": 5433,
+          "talkSmack": 4488,
+          "catchBreath": 3600,
+          "broLockIn": 3275,
+          "defend": 5607,
+          "attack": 2629,
+          "swingBackpack": 990
+        },
+        "guardDamage": 1000000,
+        "playerDamage": 413950,
+        "donuts": 630,
+        "donutHp": 115766,
+        "donutUnder100": 54,
+        "donutAbove75": 382,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 2,
+          "MID": 10,
+          "HIGH": 236,
+          "VERY_HIGH": 382
+        },
+        "donutByValue": {
+          "FULL_VALUE": 528,
+          "PARTIAL_VALUE": 102
+        },
+        "criticalGuardDecisions": 2,
+        "criticalGuardDefends": 0,
+        "maxDefendChain": 3,
+        "maxPlayerCriticalDefendChain": 0,
+        "criticalPlayerDefendChains": 0,
+        "crack": 1310,
+        "repeatCrack": 22,
+        "riledEntries": 5759,
+        "riledBattles": 998,
+        "riledHits": 4744,
+        "riledMisses": 2674,
+        "riledCrits": 1627,
+        "stumbles": 545,
+        "fatalStumbles": 0,
+        "fallbackDecisions": 0
+      },
+      "rates": {
+        "guardDamagingPercent": 65.71553645335881,
+        "guardSetupPercent": 34.2844635466412,
+        "playerDamagingPercent": 31.549499486164503,
+        "playerCatchBreathPercent": 13.702279907128991,
+        "playerBackpackPercent": 3.9622426064781333,
+        "guardDefendPercent": 6.8648519579751675,
+        "guardDonutPercent": 2.507163323782235,
+        "averageGuardDamage": 1000,
+        "averagePlayerDamage": 413.95,
+        "meanEffectiveDonut": 183.75555555555556,
+        "meanWastedDonut": 16.24444444444444,
+        "donutUnder100Percent": 8.571428571428571,
+        "donutAbove75Percent": 60.63492063492063,
+        "criticalDefendPercent": 0,
+        "riledHitPercent": 63.95254785656511,
+        "riledMissPercent": 36.04745214343489,
+        "riledCritAmongHitsPercent": 34.29595278246206,
+        "stumbleAmongMissesPercent": 20.38145100972326
+      }
+    },
+    {
+      "policy": "q-20k",
+      "bot": "random",
+      "episodes": 1000,
+      "wins": 993,
+      "losses": 7,
+      "draws": 0,
+      "averageReward": 112.76599999999995,
+      "averageRounds": 20.448,
+      "forcedRounds": 628,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 483,
+      "actionCounts": {
+        "callWife": 1000,
+        "attack": 14197,
+        "blowWhistle": 764,
+        "crackKnuckles": 2667,
+        "eatDonut": 1000,
+        "defend": 192
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.993,
+      "diagnostics": {
+        "guardActions": {
+          "callWife": 1000,
+          "attack": 14197,
+          "blowWhistle": 764,
+          "crackKnuckles": 2667,
+          "eatDonut": 1000,
+          "defend": 192
+        },
+        "playerActions": {
+          "catchBreath": 3445,
+          "broLockIn": 2705,
+          "attack": 3357,
+          "lookThere": 2513,
+          "talkSmack": 2632,
+          "swingBackpack": 2400,
+          "defend": 3352
+        },
+        "executedGuardActions": {
+          "callWife": 1000,
+          "attack": 13777,
+          "blowWhistle": 749,
+          "eatDonut": 1000,
+          "crackKnuckles": 2619,
+          "defend": 192
+        },
+        "executedPlayerActions": {
+          "catchBreath": 3445,
+          "broLockIn": 2699,
+          "attack": 3230,
+          "lookThere": 2511,
+          "talkSmack": 2625,
+          "swingBackpack": 2328,
+          "defend": 3352
+        },
+        "guardDamage": 998588,
+        "playerDamage": 603808,
+        "donuts": 1000,
+        "donutHp": 88332,
+        "donutUnder100": 611,
+        "donutAbove75": 993,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 0,
+          "HIGH": 7,
+          "VERY_HIGH": 993
+        },
+        "donutByValue": {
+          "FULL_VALUE": 76,
+          "PARTIAL_VALUE": 924
+        },
+        "criticalGuardDecisions": 16,
+        "criticalGuardDefends": 5,
+        "maxDefendChain": 3,
+        "maxPlayerCriticalDefendChain": 2,
+        "criticalPlayerDefendChains": 5,
+        "crack": 2667,
+        "repeatCrack": 214,
+        "riledEntries": 5244,
+        "riledBattles": 999,
+        "riledHits": 5476,
+        "riledMisses": 2878,
+        "riledCrits": 1953,
+        "stumbles": 594,
+        "fatalStumbles": 1,
+        "fallbackDecisions": 25
+      },
+      "rates": {
+        "guardDamagingPercent": 71.62966700302725,
+        "guardSetupPercent": 28.370332996972756,
+        "playerDamagingPercent": 41.11448735542051,
+        "playerCatchBreathPercent": 16.883944324642226,
+        "playerBackpackPercent": 11.76239952950402,
+        "guardDefendPercent": 0.9687184661957619,
+        "guardDonutPercent": 5.045408678102926,
+        "averageGuardDamage": 998.588,
+        "averagePlayerDamage": 603.808,
+        "meanEffectiveDonut": 88.332,
+        "meanWastedDonut": 111.668,
+        "donutUnder100Percent": 61.1,
+        "donutAbove75Percent": 99.3,
+        "criticalDefendPercent": 31.25,
+        "riledHitPercent": 65.54943739525976,
+        "riledMissPercent": 34.45056260474024,
+        "riledCritAmongHitsPercent": 35.66471877282688,
+        "stumbleAmongMissesPercent": 20.639332870048644
+      }
+    },
+    {
+      "policy": "q-20k",
+      "bot": "aggressive",
+      "episodes": 1000,
+      "wins": 582,
+      "losses": 418,
+      "draws": 0,
+      "averageReward": -3.911249999999998,
+      "averageRounds": 17.597,
+      "forcedRounds": 35,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 165,
+      "actionCounts": {
+        "callWife": 1000,
+        "crackKnuckles": 2230,
+        "eatDonut": 1000,
+        "attack": 11233,
+        "blowWhistle": 1251,
+        "defend": 848
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.582,
+      "diagnostics": {
+        "guardActions": {
+          "callWife": 1000,
+          "crackKnuckles": 2230,
+          "eatDonut": 1000,
+          "attack": 11233,
+          "blowWhistle": 1251,
+          "defend": 848
+        },
+        "playerActions": {
+          "attack": 6626,
+          "swingBackpack": 6979,
+          "broLockIn": 872,
+          "catchBreath": 2221,
+          "defend": 544,
+          "lookThere": 160,
+          "talkSmack": 170
+        },
+        "executedGuardActions": {
+          "callWife": 1000,
+          "crackKnuckles": 2226,
+          "eatDonut": 1000,
+          "attack": 11073,
+          "blowWhistle": 1250,
+          "defend": 848
+        },
+        "executedPlayerActions": {
+          "attack": 6464,
+          "swingBackpack": 6829,
+          "broLockIn": 870,
+          "catchBreath": 2221,
+          "defend": 544,
+          "lookThere": 159,
+          "talkSmack": 170
+        },
+        "guardDamage": 883402,
+        "playerDamage": 1201629,
+        "donuts": 1000,
+        "donutHp": 162300,
+        "donutUnder100": 181,
+        "donutAbove75": 954,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 0,
+          "HIGH": 46,
+          "VERY_HIGH": 954
+        },
+        "donutByValue": {
+          "FULL_VALUE": 540,
+          "PARTIAL_VALUE": 460
+        },
+        "criticalGuardDecisions": 1216,
+        "criticalGuardDefends": 405,
+        "maxDefendChain": 7,
+        "maxPlayerCriticalDefendChain": 2,
+        "criticalPlayerDefendChains": 3,
+        "crack": 2230,
+        "repeatCrack": 34,
+        "riledEntries": 2396,
+        "riledBattles": 997,
+        "riledHits": 3298,
+        "riledMisses": 1729,
+        "riledCrits": 1134,
+        "stumbles": 353,
+        "fatalStumbles": 4,
+        "fallbackDecisions": 6
+      },
+      "rates": {
+        "guardDamagingPercent": 63.96196332991686,
+        "guardSetupPercent": 36.03803667008314,
+        "playerDamagingPercent": 78.39175961757341,
+        "playerCatchBreathPercent": 12.639426360118371,
+        "playerBackpackPercent": 39.71659458229001,
+        "guardDefendPercent": 4.828607220134381,
+        "guardDonutPercent": 5.694112287894317,
+        "averageGuardDamage": 883.402,
+        "averagePlayerDamage": 1201.629,
+        "meanEffectiveDonut": 162.3,
+        "meanWastedDonut": 37.69999999999999,
+        "donutUnder100Percent": 18.1,
+        "donutAbove75Percent": 95.4,
+        "criticalDefendPercent": 33.30592105263158,
+        "riledHitPercent": 65.60572906305948,
+        "riledMissPercent": 34.39427093694052,
+        "riledCritAmongHitsPercent": 34.3844754396604,
+        "stumbleAmongMissesPercent": 20.416425679583575
+      }
+    },
+    {
+      "policy": "q-20k",
+      "bot": "tricky",
+      "episodes": 1000,
+      "wins": 999,
+      "losses": 1,
+      "draws": 0,
+      "averageReward": 123.10549999999995,
+      "averageRounds": 23.12,
+      "forcedRounds": 1205,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 921,
+      "actionCounts": {
+        "callWife": 1000,
+        "crackKnuckles": 3539,
+        "eatDonut": 1000,
+        "attack": 15629,
+        "blowWhistle": 569,
+        "defend": 178
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.999,
+      "diagnostics": {
+        "guardActions": {
+          "callWife": 1000,
+          "crackKnuckles": 3539,
+          "eatDonut": 1000,
+          "attack": 15629,
+          "blowWhistle": 569,
+          "defend": 178
+        },
+        "playerActions": {
+          "lookThere": 4834,
+          "talkSmack": 4014,
+          "catchBreath": 3108,
+          "broLockIn": 2907,
+          "defend": 4889,
+          "attack": 2395,
+          "swingBackpack": 939
+        },
+        "executedGuardActions": {
+          "callWife": 1000,
+          "crackKnuckles": 3454,
+          "eatDonut": 1000,
+          "attack": 14820,
+          "blowWhistle": 542,
+          "defend": 178
+        },
+        "executedPlayerActions": {
+          "lookThere": 4829,
+          "talkSmack": 4003,
+          "catchBreath": 3108,
+          "broLockIn": 2900,
+          "defend": 4889,
+          "attack": 2322,
+          "swingBackpack": 919
+        },
+        "guardDamage": 999680,
+        "playerDamage": 407540,
+        "donuts": 1000,
+        "donutHp": 63690,
+        "donutUnder100": 803,
+        "donutAbove75": 1000,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 0,
+          "HIGH": 0,
+          "VERY_HIGH": 1000
+        },
+        "donutByValue": {
+          "FULL_VALUE": 31,
+          "PARTIAL_VALUE": 969
+        },
+        "criticalGuardDecisions": 3,
+        "criticalGuardDefends": 0,
+        "maxDefendChain": 2,
+        "maxPlayerCriticalDefendChain": 2,
+        "criticalPlayerDefendChains": 3,
+        "crack": 3539,
+        "repeatCrack": 340,
+        "riledEntries": 7457,
+        "riledBattles": 1000,
+        "riledHits": 6155,
+        "riledMisses": 3285,
+        "riledCrits": 2151,
+        "stumbles": 671,
+        "fatalStumbles": 0,
+        "fallbackDecisions": 25
+      },
+      "rates": {
+        "guardDamagingPercent": 71.31644992014601,
+        "guardSetupPercent": 28.68355007985398,
+        "playerDamagingPercent": 31.828813999826735,
+        "playerCatchBreathPercent": 13.462704669496665,
+        "playerBackpackPercent": 4.067400155938664,
+        "guardDefendPercent": 0.81222906684919,
+        "guardDonutPercent": 4.563084645220169,
+        "averageGuardDamage": 999.68,
+        "averagePlayerDamage": 407.54,
+        "meanEffectiveDonut": 63.69,
+        "meanWastedDonut": 136.31,
+        "donutUnder100Percent": 80.3,
+        "donutAbove75Percent": 100,
+        "criticalDefendPercent": 0,
+        "riledHitPercent": 65.20127118644068,
+        "riledMissPercent": 34.79872881355932,
+        "riledCritAmongHitsPercent": 34.94719740048741,
+        "stumbleAmongMissesPercent": 20.426179604261797
+      }
+    },
+    {
+      "policy": "q-40k",
+      "bot": "random",
+      "episodes": 1000,
+      "wins": 988,
+      "losses": 12,
+      "draws": 0,
+      "averageReward": 110.77530000000002,
+      "averageRounds": 20.527,
+      "forcedRounds": 618,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 454,
+      "actionCounts": {
+        "attack": 14345,
+        "callWife": 1000,
+        "crackKnuckles": 2598,
+        "eatDonut": 1000,
+        "defend": 726,
+        "blowWhistle": 240
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.988,
+      "diagnostics": {
+        "guardActions": {
+          "attack": 14345,
+          "callWife": 1000,
+          "crackKnuckles": 2598,
+          "eatDonut": 1000,
+          "defend": 726,
+          "blowWhistle": 240
+        },
+        "playerActions": {
+          "catchBreath": 3482,
+          "broLockIn": 2709,
+          "attack": 3377,
+          "lookThere": 2526,
+          "talkSmack": 2650,
+          "swingBackpack": 2427,
+          "defend": 3343
+        },
+        "executedGuardActions": {
+          "attack": 13927,
+          "callWife": 1000,
+          "crackKnuckles": 2565,
+          "eatDonut": 1000,
+          "defend": 726,
+          "blowWhistle": 237
+        },
+        "executedPlayerActions": {
+          "catchBreath": 3482,
+          "broLockIn": 2706,
+          "attack": 3271,
+          "lookThere": 2526,
+          "talkSmack": 2647,
+          "swingBackpack": 2368,
+          "defend": 3343
+        },
+        "guardDamage": 996593,
+        "playerDamage": 621569,
+        "donuts": 1000,
+        "donutHp": 109398,
+        "donutUnder100": 471,
+        "donutAbove75": 986,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 0,
+          "HIGH": 14,
+          "VERY_HIGH": 986
+        },
+        "donutByValue": {
+          "FULL_VALUE": 179,
+          "PARTIAL_VALUE": 821
+        },
+        "criticalGuardDecisions": 50,
+        "criticalGuardDefends": 20,
+        "maxDefendChain": 4,
+        "maxPlayerCriticalDefendChain": 2,
+        "criticalPlayerDefendChains": 5,
+        "crack": 2598,
+        "repeatCrack": 150,
+        "riledEntries": 5212,
+        "riledBattles": 1000,
+        "riledHits": 5424,
+        "riledMisses": 2859,
+        "riledCrits": 1947,
+        "stumbles": 589,
+        "fatalStumbles": 1,
+        "fallbackDecisions": 5
+      },
+      "rates": {
+        "guardDamagingPercent": 72.05284042392887,
+        "guardSetupPercent": 27.947159576071122,
+        "playerDamagingPercent": 41.210880374378476,
+        "playerCatchBreathPercent": 16.97377400799454,
+        "playerBackpackPercent": 11.830944720678561,
+        "guardDefendPercent": 3.646591993570747,
+        "guardDonutPercent": 5.0228539856346375,
+        "averageGuardDamage": 996.593,
+        "averagePlayerDamage": 621.569,
+        "meanEffectiveDonut": 109.398,
+        "meanWastedDonut": 90.602,
+        "donutUnder100Percent": 47.1,
+        "donutAbove75Percent": 98.6,
+        "criticalDefendPercent": 40,
+        "riledHitPercent": 65.48352046360014,
+        "riledMissPercent": 34.516479536399856,
+        "riledCritAmongHitsPercent": 35.89601769911504,
+        "stumbleAmongMissesPercent": 20.601608954179785
+      }
+    },
+    {
+      "policy": "q-40k",
+      "bot": "aggressive",
+      "episodes": 1000,
+      "wins": 539,
+      "losses": 461,
+      "draws": 0,
+      "averageReward": -15.449299999999992,
+      "averageRounds": 18.73,
+      "forcedRounds": 47,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 132,
+      "actionCounts": {
+        "attack": 10817,
+        "callWife": 1000,
+        "crackKnuckles": 2357,
+        "eatDonut": 1000,
+        "defend": 2059,
+        "blowWhistle": 1450
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.539,
+      "diagnostics": {
+        "guardActions": {
+          "attack": 10817,
+          "callWife": 1000,
+          "crackKnuckles": 2357,
+          "eatDonut": 1000,
+          "defend": 2059,
+          "blowWhistle": 1450
+        },
+        "playerActions": {
+          "attack": 7070,
+          "swingBackpack": 7369,
+          "broLockIn": 893,
+          "catchBreath": 2446,
+          "talkSmack": 175,
+          "defend": 563,
+          "lookThere": 170
+        },
+        "executedGuardActions": {
+          "attack": 10692,
+          "callWife": 1000,
+          "crackKnuckles": 2354,
+          "eatDonut": 1000,
+          "defend": 2059,
+          "blowWhistle": 1446
+        },
+        "executedPlayerActions": {
+          "attack": 6905,
+          "swingBackpack": 7221,
+          "broLockIn": 889,
+          "catchBreath": 2446,
+          "talkSmack": 174,
+          "defend": 563,
+          "lookThere": 170
+        },
+        "guardDamage": 861085,
+        "playerDamage": 1235329,
+        "donuts": 1000,
+        "donutHp": 186920,
+        "donutUnder100": 54,
+        "donutAbove75": 928,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 0,
+          "HIGH": 72,
+          "VERY_HIGH": 928
+        },
+        "donutByValue": {
+          "FULL_VALUE": 823,
+          "PARTIAL_VALUE": 177
+        },
+        "criticalGuardDecisions": 1363,
+        "criticalGuardDefends": 440,
+        "maxDefendChain": 6,
+        "maxPlayerCriticalDefendChain": 3,
+        "criticalPlayerDefendChains": 14,
+        "crack": 2357,
+        "repeatCrack": 50,
+        "riledEntries": 2528,
+        "riledBattles": 994,
+        "riledHits": 2940,
+        "riledMisses": 1550,
+        "riledCrits": 1030,
+        "stumbles": 319,
+        "fatalStumbles": 3,
+        "fallbackDecisions": 4
+      },
+      "rates": {
+        "guardDamagingPercent": 57.89755392602901,
+        "guardSetupPercent": 42.10244607397099,
+        "playerDamagingPercent": 78.20828427699882,
+        "playerCatchBreathPercent": 13.090013914160334,
+        "playerBackpackPercent": 39.43594134646259,
+        "guardDefendPercent": 11.020714018091313,
+        "guardDonutPercent": 5.352459455119628,
+        "averageGuardDamage": 861.085,
+        "averagePlayerDamage": 1235.329,
+        "meanEffectiveDonut": 186.92,
+        "meanWastedDonut": 13.080000000000013,
+        "donutUnder100Percent": 5.4,
+        "donutAbove75Percent": 92.8,
+        "criticalDefendPercent": 32.281731474688186,
+        "riledHitPercent": 65.47884187082406,
+        "riledMissPercent": 34.521158129175944,
+        "riledCritAmongHitsPercent": 35.034013605442176,
+        "stumbleAmongMissesPercent": 20.580645161290324
+      }
+    },
+    {
+      "policy": "q-40k",
+      "bot": "tricky",
+      "episodes": 1000,
+      "wins": 1000,
+      "losses": 0,
+      "draws": 0,
+      "averageReward": 123.63920000000012,
+      "averageRounds": 22.597,
+      "forcedRounds": 1190,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 890,
+      "actionCounts": {
+        "attack": 15638,
+        "callWife": 1000,
+        "eatDonut": 1000,
+        "crackKnuckles": 3158,
+        "defend": 518,
+        "blowWhistle": 93
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 1,
+      "diagnostics": {
+        "guardActions": {
+          "attack": 15638,
+          "callWife": 1000,
+          "eatDonut": 1000,
+          "crackKnuckles": 3158,
+          "defend": 518,
+          "blowWhistle": 93
+        },
+        "playerActions": {
+          "lookThere": 4777,
+          "talkSmack": 3919,
+          "catchBreath": 3002,
+          "broLockIn": 2850,
+          "defend": 4771,
+          "attack": 2365,
+          "swingBackpack": 911
+        },
+        "executedGuardActions": {
+          "attack": 14825,
+          "callWife": 1000,
+          "eatDonut": 1000,
+          "crackKnuckles": 3082,
+          "defend": 518,
+          "blowWhistle": 92
+        },
+        "executedPlayerActions": {
+          "lookThere": 4777,
+          "talkSmack": 3918,
+          "catchBreath": 3002,
+          "broLockIn": 2849,
+          "defend": 4771,
+          "attack": 2300,
+          "swingBackpack": 886
+        },
+        "guardDamage": 1000000,
+        "playerDamage": 406128,
+        "donuts": 1000,
+        "donutHp": 78042,
+        "donutUnder100": 690,
+        "donutAbove75": 997,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 0,
+          "HIGH": 3,
+          "VERY_HIGH": 997
+        },
+        "donutByValue": {
+          "FULL_VALUE": 63,
+          "PARTIAL_VALUE": 937
+        },
+        "criticalGuardDecisions": 1,
+        "criticalGuardDefends": 0,
+        "maxDefendChain": 4,
+        "maxPlayerCriticalDefendChain": 2,
+        "criticalPlayerDefendChains": 2,
+        "crack": 3158,
+        "repeatCrack": 258,
+        "riledEntries": 7000,
+        "riledBattles": 1000,
+        "riledHits": 6000,
+        "riledMisses": 3113,
+        "riledCrits": 2130,
+        "stumbles": 614,
+        "fatalStumbles": 0,
+        "fallbackDecisions": 1
+      },
+      "rates": {
+        "guardDamagingPercent": 73.05087121035176,
+        "guardSetupPercent": 26.949128789648245,
+        "playerDamagingPercent": 31.843328169949103,
+        "playerCatchBreathPercent": 13.286125248948883,
+        "playerBackpackPercent": 4.031865456959505,
+        "guardDefendPercent": 2.4197692343625916,
+        "guardDonutPercent": 4.671369178306161,
+        "averageGuardDamage": 1000,
+        "averagePlayerDamage": 406.128,
+        "meanEffectiveDonut": 78.042,
+        "meanWastedDonut": 121.958,
+        "donutUnder100Percent": 69,
+        "donutAbove75Percent": 99.7,
+        "criticalDefendPercent": 0,
+        "riledHitPercent": 65.84000877866784,
+        "riledMissPercent": 34.15999122133216,
+        "riledCritAmongHitsPercent": 35.5,
+        "stumbleAmongMissesPercent": 19.723739158368133
+      }
+    },
+    {
+      "policy": "q-60k",
+      "bot": "random",
+      "episodes": 1000,
+      "wins": 993,
+      "losses": 7,
+      "draws": 0,
+      "averageReward": 112.29145000000008,
+      "averageRounds": 20.435,
+      "forcedRounds": 650,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 506,
+      "actionCounts": {
+        "attack": 14572,
+        "callWife": 1000,
+        "crackKnuckles": 2043,
+        "eatDonut": 1000,
+        "defend": 647,
+        "blowWhistle": 523
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.993,
+      "diagnostics": {
+        "guardActions": {
+          "attack": 14572,
+          "callWife": 1000,
+          "crackKnuckles": 2043,
+          "eatDonut": 1000,
+          "defend": 647,
+          "blowWhistle": 523
+        },
+        "playerActions": {
+          "catchBreath": 3461,
+          "broLockIn": 2698,
+          "attack": 3360,
+          "lookThere": 2517,
+          "talkSmack": 2641,
+          "swingBackpack": 2422,
+          "defend": 3312
+        },
+        "executedGuardActions": {
+          "attack": 14105,
+          "callWife": 1000,
+          "crackKnuckles": 2011,
+          "eatDonut": 1000,
+          "defend": 647,
+          "blowWhistle": 516
+        },
+        "executedPlayerActions": {
+          "catchBreath": 3461,
+          "broLockIn": 2692,
+          "attack": 3255,
+          "lookThere": 2515,
+          "talkSmack": 2637,
+          "swingBackpack": 2356,
+          "defend": 3312
+        },
+        "guardDamage": 998876,
+        "playerDamage": 617457,
+        "donuts": 1000,
+        "donutHp": 123192,
+        "donutUnder100": 380,
+        "donutAbove75": 918,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 0,
+          "HIGH": 82,
+          "VERY_HIGH": 918
+        },
+        "donutByValue": {
+          "FULL_VALUE": 288,
+          "PARTIAL_VALUE": 712
+        },
+        "criticalGuardDecisions": 25,
+        "criticalGuardDefends": 5,
+        "maxDefendChain": 5,
+        "maxPlayerCriticalDefendChain": 2,
+        "criticalPlayerDefendChains": 2,
+        "crack": 2043,
+        "repeatCrack": 217,
+        "riledEntries": 4648,
+        "riledBattles": 998,
+        "riledHits": 4774,
+        "riledMisses": 2533,
+        "riledCrits": 1687,
+        "stumbles": 517,
+        "fatalStumbles": 0,
+        "fallbackDecisions": 2
+      },
+      "rates": {
+        "guardDamagingPercent": 73.65175638109679,
+        "guardSetupPercent": 26.348243618903208,
+        "playerDamagingPercent": 41.26696389201901,
+        "playerCatchBreathPercent": 16.956543040517367,
+        "playerBackpackPercent": 11.866150605065895,
+        "guardDefendPercent": 3.2701541571897903,
+        "guardDonutPercent": 5.054334091483447,
+        "averageGuardDamage": 998.876,
+        "averagePlayerDamage": 617.457,
+        "meanEffectiveDonut": 123.192,
+        "meanWastedDonut": 76.808,
+        "donutUnder100Percent": 38,
+        "donutAbove75Percent": 91.8,
+        "criticalDefendPercent": 20,
+        "riledHitPercent": 65.33461064732448,
+        "riledMissPercent": 34.66538935267552,
+        "riledCritAmongHitsPercent": 35.33724340175953,
+        "stumbleAmongMissesPercent": 20.410580339518358
+      }
+    },
+    {
+      "policy": "q-60k",
+      "bot": "aggressive",
+      "episodes": 1000,
+      "wins": 625,
+      "losses": 375,
+      "draws": 0,
+      "averageReward": 6.381699999999998,
+      "averageRounds": 18.681,
+      "forcedRounds": 42,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 123,
+      "actionCounts": {
+        "attack": 11841,
+        "callWife": 1000,
+        "eatDonut": 999,
+        "crackKnuckles": 1409,
+        "blowWhistle": 1639,
+        "defend": 1751
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 0.625,
+      "diagnostics": {
+        "guardActions": {
+          "attack": 11841,
+          "callWife": 1000,
+          "eatDonut": 999,
+          "crackKnuckles": 1409,
+          "blowWhistle": 1639,
+          "defend": 1751
+        },
+        "playerActions": {
+          "attack": 7015,
+          "swingBackpack": 7368,
+          "broLockIn": 886,
+          "catchBreath": 2451,
+          "talkSmack": 183,
+          "lookThere": 173,
+          "defend": 581
+        },
+        "executedGuardActions": {
+          "attack": 11720,
+          "callWife": 1000,
+          "eatDonut": 999,
+          "crackKnuckles": 1409,
+          "blowWhistle": 1637,
+          "defend": 1751
+        },
+        "executedPlayerActions": {
+          "attack": 6817,
+          "swingBackpack": 7199,
+          "broLockIn": 883,
+          "catchBreath": 2451,
+          "talkSmack": 182,
+          "lookThere": 172,
+          "defend": 581
+        },
+        "guardDamage": 928001,
+        "playerDamage": 1216201,
+        "donuts": 999,
+        "donutHp": 196808,
+        "donutUnder100": 10,
+        "donutAbove75": 327,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 58,
+          "HIGH": 614,
+          "VERY_HIGH": 327
+        },
+        "donutByValue": {
+          "FULL_VALUE": 956,
+          "PARTIAL_VALUE": 43
+        },
+        "criticalGuardDecisions": 1024,
+        "criticalGuardDefends": 202,
+        "maxDefendChain": 7,
+        "maxPlayerCriticalDefendChain": 2,
+        "criticalPlayerDefendChains": 9,
+        "crack": 1409,
+        "repeatCrack": 27,
+        "riledEntries": 1591,
+        "riledBattles": 968,
+        "riledHits": 2097,
+        "riledMisses": 1089,
+        "riledCrits": 720,
+        "stumbles": 190,
+        "fatalStumbles": 2,
+        "fallbackDecisions": 5
+      },
+      "rates": {
+        "guardDamagingPercent": 63.52808627072268,
+        "guardSetupPercent": 36.47191372927732,
+        "playerDamagingPercent": 78.07257329688589,
+        "playerCatchBreathPercent": 13.137160315163209,
+        "playerBackpackPercent": 39.491879723428205,
+        "guardDefendPercent": 9.39428080905628,
+        "guardDonutPercent": 5.3597295992274265,
+        "averageGuardDamage": 928.001,
+        "averagePlayerDamage": 1216.201,
+        "meanEffectiveDonut": 197.00500500500502,
+        "meanWastedDonut": 2.9949949949949826,
+        "donutUnder100Percent": 1.001001001001001,
+        "donutAbove75Percent": 32.732732732732735,
+        "criticalDefendPercent": 19.7265625,
+        "riledHitPercent": 65.81920903954803,
+        "riledMissPercent": 34.18079096045198,
+        "riledCritAmongHitsPercent": 34.33476394849785,
+        "stumbleAmongMissesPercent": 17.447199265381084
+      }
+    },
+    {
+      "policy": "q-60k",
+      "bot": "tricky",
+      "episodes": 1000,
+      "wins": 1000,
+      "losses": 0,
+      "draws": 0,
+      "averageReward": 124.06584999999988,
+      "averageRounds": 22.413,
+      "forcedRounds": 1145,
+      "roundLimitDraws": 0,
+      "cancelledGuardActions": 906,
+      "actionCounts": {
+        "attack": 16001,
+        "callWife": 1000,
+        "eatDonut": 1000,
+        "blowWhistle": 294,
+        "crackKnuckles": 2590,
+        "defend": 383
+      },
+      "startCounts": {
+        "normal": 1000,
+        "randomized": 0
+      },
+      "winRate": 1,
+      "diagnostics": {
+        "guardActions": {
+          "attack": 16001,
+          "callWife": 1000,
+          "eatDonut": 1000,
+          "blowWhistle": 294,
+          "crackKnuckles": 2590,
+          "defend": 383
+        },
+        "playerActions": {
+          "lookThere": 4722,
+          "talkSmack": 3884,
+          "catchBreath": 2995,
+          "broLockIn": 2833,
+          "defend": 4740,
+          "attack": 2335,
+          "swingBackpack": 895
+        },
+        "executedGuardActions": {
+          "attack": 15157,
+          "callWife": 1000,
+          "eatDonut": 1000,
+          "blowWhistle": 281,
+          "crackKnuckles": 2541,
+          "defend": 383
+        },
+        "executedPlayerActions": {
+          "lookThere": 4715,
+          "talkSmack": 3883,
+          "catchBreath": 2995,
+          "broLockIn": 2832,
+          "defend": 4740,
+          "attack": 2259,
+          "swingBackpack": 872
+        },
+        "guardDamage": 1000000,
+        "playerDamage": 398381,
+        "donuts": 1000,
+        "donutHp": 86127,
+        "donutUnder100": 623,
+        "donutAbove75": 985,
+        "donutByHp": {
+          "CRITICAL": 0,
+          "LOW": 0,
+          "MID": 0,
+          "HIGH": 15,
+          "VERY_HIGH": 985
+        },
+        "donutByValue": {
+          "FULL_VALUE": 99,
+          "PARTIAL_VALUE": 901
+        },
+        "criticalGuardDecisions": 0,
+        "criticalGuardDefends": 0,
+        "maxDefendChain": 2,
+        "maxPlayerCriticalDefendChain": 2,
+        "criticalPlayerDefendChains": 1,
+        "crack": 2590,
+        "repeatCrack": 272,
+        "riledEntries": 6424,
+        "riledBattles": 1000,
+        "riledHits": 5508,
+        "riledMisses": 2922,
+        "riledCrits": 1937,
+        "stumbles": 613,
+        "fatalStumbles": 0,
+        "fallbackDecisions": 3
+      },
+      "rates": {
+        "guardDamagingPercent": 75.23509497837127,
+        "guardSetupPercent": 24.76490502162874,
+        "playerDamagingPercent": 31.7532583467238,
+        "playerCatchBreathPercent": 13.368148544902695,
+        "playerBackpackPercent": 3.994822353151223,
+        "guardDefendPercent": 1.8008275343238669,
+        "guardDonutPercent": 4.70189956742524,
+        "averageGuardDamage": 1000,
+        "averagePlayerDamage": 398.381,
+        "meanEffectiveDonut": 86.127,
+        "meanWastedDonut": 113.873,
+        "donutUnder100Percent": 62.3,
+        "donutAbove75Percent": 98.5,
+        "criticalDefendPercent": 0,
+        "riledHitPercent": 65.33807829181495,
+        "riledMissPercent": 34.661921708185055,
+        "riledCritAmongHitsPercent": 35.167029774872915,
+        "stumbleAmongMissesPercent": 20.978781656399725
+      }
+    }
+  ]
+}

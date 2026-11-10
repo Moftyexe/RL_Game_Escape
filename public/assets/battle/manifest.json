@@ -1,0 +1,400 @@
+{
+  "canvas": {
+    "width": 192,
+    "height": 160,
+    "baseline": 155,
+    "characterHeight": 144
+  },
+  "animations": {
+    "player-battle-idle": {
+      "character": "player",
+      "action": "idle",
+      "frameRate": 4,
+      "repeat": -1,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/idle/0.png",
+        "assets/battle/player/idle/1.png",
+        "assets/battle/player/idle/2.png",
+        "assets/battle/player/idle/3.png"
+      ]
+    },
+    "player-battle-attack": {
+      "character": "player",
+      "action": "attack",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": 3,
+      "frames": [
+        "assets/battle/player/attack/0.png",
+        "assets/battle/player/attack/1.png",
+        "assets/battle/player/attack/2.png",
+        "assets/battle/player/attack/3.png",
+        "assets/battle/player/attack/4.png",
+        "assets/battle/player/attack/5.png"
+      ]
+    },
+    "player-battle-defend": {
+      "character": "player",
+      "action": "defend",
+      "frameRate": 8,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/defend/0.png",
+        "assets/battle/player/defend/1.png",
+        "assets/battle/player/defend/2.png",
+        "assets/battle/player/defend/3.png"
+      ]
+    },
+    "guard-battle-idle": {
+      "character": "guard",
+      "action": "idle",
+      "frameRate": 4,
+      "repeat": -1,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/idle/0.png",
+        "assets/battle/guard/idle/1.png",
+        "assets/battle/guard/idle/2.png",
+        "assets/battle/guard/idle/3.png"
+      ]
+    },
+    "guard-battle-attack": {
+      "character": "guard",
+      "action": "attack",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": 3,
+      "frames": [
+        "assets/battle/guard/attack/0.png",
+        "assets/battle/guard/attack/1.png",
+        "assets/battle/guard/attack/2.png",
+        "assets/battle/guard/attack/3.png",
+        "assets/battle/guard/attack/4.png",
+        "assets/battle/guard/attack/5.png"
+      ]
+    },
+    "player-battle-lock-in": {
+      "character": "player",
+      "action": "lock-in",
+      "frameRate": 8,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/lock-in/0.png",
+        "assets/battle/player/lock-in/1.png",
+        "assets/battle/player/lock-in/2.png",
+        "assets/battle/player/lock-in/3.png",
+        "assets/battle/player/lock-in/4.png"
+      ]
+    },
+    "player-battle-look-there": {
+      "character": "player",
+      "action": "look-there",
+      "frameRate": 8,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/look-there/0.png",
+        "assets/battle/player/look-there/1.png",
+        "assets/battle/player/look-there/2.png",
+        "assets/battle/player/look-there/3.png",
+        "assets/battle/player/look-there/4.png",
+        "assets/battle/player/look-there/5.png"
+      ]
+    },
+    "player-battle-talk-smack": {
+      "character": "player",
+      "action": "talk-smack",
+      "frameRate": 8,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/talk-smack/0.png",
+        "assets/battle/player/talk-smack/1.png",
+        "assets/battle/player/talk-smack/2.png",
+        "assets/battle/player/talk-smack/3.png",
+        "assets/battle/player/talk-smack/4.png",
+        "assets/battle/player/talk-smack/5.png"
+      ]
+    },
+    "player-battle-backpack": {
+      "character": "player",
+      "action": "backpack",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": 4,
+      "frames": [
+        "assets/battle/player/backpack/0.png",
+        "assets/battle/player/backpack/1.png",
+        "assets/battle/player/backpack/2.png",
+        "assets/battle/player/backpack/3.png",
+        "assets/battle/player/backpack/4.png",
+        "assets/battle/player/backpack/5.png"
+      ]
+    },
+    "player-battle-catch-breath": {
+      "character": "player",
+      "action": "catch-breath",
+      "frameRate": 8,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/catch-breath/0.png",
+        "assets/battle/player/catch-breath/1.png",
+        "assets/battle/player/catch-breath/2.png",
+        "assets/battle/player/catch-breath/3.png",
+        "assets/battle/player/catch-breath/4.png"
+      ]
+    },
+    "player-battle-critical": {
+      "character": "player",
+      "action": "critical",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": 3,
+      "frames": [
+        "assets/battle/player/critical/0.png",
+        "assets/battle/player/critical/1.png",
+        "assets/battle/player/critical/2.png",
+        "assets/battle/player/critical/3.png",
+        "assets/battle/player/critical/4.png",
+        "assets/battle/player/critical/5.png"
+      ]
+    },
+    "player-battle-hurt": {
+      "character": "player",
+      "action": "hurt",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/hurt/0.png",
+        "assets/battle/player/hurt/1.png",
+        "assets/battle/player/hurt/2.png",
+        "assets/battle/player/hurt/3.png"
+      ]
+    },
+    "guard-battle-call-wife": {
+      "character": "guard",
+      "action": "call-wife",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/call-wife/0.png",
+        "assets/battle/guard/call-wife/1.png",
+        "assets/battle/guard/call-wife/2.png",
+        "assets/battle/guard/call-wife/3.png",
+        "assets/battle/guard/call-wife/4.png",
+        "assets/battle/guard/call-wife/5.png",
+        "assets/battle/guard/call-wife/6.png",
+        "assets/battle/guard/call-wife/7.png"
+      ]
+    },
+    "guard-battle-crack-knuckles": {
+      "character": "guard",
+      "action": "crack-knuckles",
+      "frameRate": 8,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/crack-knuckles/0.png",
+        "assets/battle/guard/crack-knuckles/1.png",
+        "assets/battle/guard/crack-knuckles/2.png",
+        "assets/battle/guard/crack-knuckles/3.png",
+        "assets/battle/guard/crack-knuckles/4.png",
+        "assets/battle/guard/crack-knuckles/5.png"
+      ]
+    },
+    "guard-battle-critical": {
+      "character": "guard",
+      "action": "critical",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": 3,
+      "frames": [
+        "assets/battle/guard/critical/0.png",
+        "assets/battle/guard/critical/1.png",
+        "assets/battle/guard/critical/2.png",
+        "assets/battle/guard/critical/3.png",
+        "assets/battle/guard/critical/4.png",
+        "assets/battle/guard/critical/5.png"
+      ]
+    },
+    "guard-battle-defend": {
+      "character": "guard",
+      "action": "defend",
+      "frameRate": 8,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/defend/0.png",
+        "assets/battle/guard/defend/1.png",
+        "assets/battle/guard/defend/2.png",
+        "assets/battle/guard/defend/3.png"
+      ]
+    },
+    "guard-battle-eat-donut": {
+      "character": "guard",
+      "action": "eat-donut",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/eat-donut/0.png",
+        "assets/battle/guard/eat-donut/1.png",
+        "assets/battle/guard/eat-donut/2.png",
+        "assets/battle/guard/eat-donut/3.png",
+        "assets/battle/guard/eat-donut/4.png",
+        "assets/battle/guard/eat-donut/5.png",
+        "assets/battle/guard/eat-donut/6.png",
+        "assets/battle/guard/eat-donut/7.png"
+      ]
+    },
+    "guard-battle-hurt": {
+      "character": "guard",
+      "action": "hurt",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/hurt/0.png",
+        "assets/battle/guard/hurt/1.png",
+        "assets/battle/guard/hurt/2.png",
+        "assets/battle/guard/hurt/3.png"
+      ]
+    },
+    "player-battle-defeat": {
+      "character": "player",
+      "action": "defeat",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/defeat/0.png",
+        "assets/battle/player/defeat/1.png",
+        "assets/battle/player/defeat/2.png",
+        "assets/battle/player/defeat/3.png",
+        "assets/battle/player/defeat/4.png"
+      ]
+    },
+    "player-battle-victory": {
+      "character": "player",
+      "action": "victory",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/player/victory/0.png",
+        "assets/battle/player/victory/1.png",
+        "assets/battle/player/victory/2.png",
+        "assets/battle/player/victory/3.png",
+        "assets/battle/player/victory/4.png"
+      ]
+    },
+    "guard-battle-distracted": {
+      "character": "guard",
+      "action": "distracted",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/distracted/0.png",
+        "assets/battle/guard/distracted/1.png",
+        "assets/battle/guard/distracted/2.png",
+        "assets/battle/guard/distracted/3.png"
+      ]
+    },
+    "guard-battle-riled": {
+      "character": "guard",
+      "action": "riled",
+      "frameRate": 4,
+      "repeat": -1,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/riled/0.png",
+        "assets/battle/guard/riled/1.png",
+        "assets/battle/guard/riled/2.png",
+        "assets/battle/guard/riled/3.png"
+      ]
+    },
+    "guard-battle-victory": {
+      "character": "guard",
+      "action": "victory",
+      "frameRate": 7,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/victory/0.png",
+        "assets/battle/guard/victory/1.png",
+        "assets/battle/guard/victory/2.png",
+        "assets/battle/guard/victory/3.png",
+        "assets/battle/guard/victory/4.png"
+      ]
+    },
+    "guard-battle-defeat": {
+      "character": "guard",
+      "action": "defeat",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/defeat/0.png",
+        "assets/battle/guard/defeat/1.png",
+        "assets/battle/guard/defeat/2.png",
+        "assets/battle/guard/defeat/3.png",
+        "assets/battle/guard/defeat/4.png",
+        "assets/battle/guard/defeat/5.png"
+      ]
+    },
+    "guard-battle-blow-whistle": {
+      "character": "guard",
+      "action": "blow-whistle",
+      "frameRate": 8,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/blow-whistle/0.png",
+        "assets/battle/guard/blow-whistle/1.png",
+        "assets/battle/guard/blow-whistle/2.png",
+        "assets/battle/guard/blow-whistle/3.png",
+        "assets/battle/guard/blow-whistle/4.png",
+        "assets/battle/guard/blow-whistle/5.png"
+      ]
+    },
+    "guard-battle-stumble": {
+      "character": "guard",
+      "action": "stumble",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/stumble/0.png",
+        "assets/battle/guard/stumble/1.png",
+        "assets/battle/guard/stumble/2.png",
+        "assets/battle/guard/stumble/3.png",
+        "assets/battle/guard/stumble/4.png",
+        "assets/battle/guard/stumble/5.png"
+      ]
+    },
+    "guard-battle-recovery": {
+      "character": "guard",
+      "action": "recovery",
+      "frameRate": 10,
+      "repeat": 0,
+      "impactFrame": null,
+      "frames": [
+        "assets/battle/guard/recovery/0.png",
+        "assets/battle/guard/recovery/1.png",
+        "assets/battle/guard/recovery/2.png",
+        "assets/battle/guard/recovery/3.png",
+        "assets/battle/guard/recovery/4.png",
+        "assets/battle/guard/recovery/5.png",
+        "assets/battle/guard/recovery/6.png",
+        "assets/battle/guard/recovery/7.png"
+      ]
+    }
+  }
+}

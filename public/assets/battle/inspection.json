@@ -1,0 +1,3234 @@
+{
+  "normalization": {
+    "width": 192,
+    "height": 160,
+    "baseline": 155,
+    "characterHeight": 144
+  },
+  "sheets": [
+    {
+      "source": "P_Animations/Protagonist_Battle_idle stance.png",
+      "character": "player",
+      "action": "idle",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 4,
+      "sha256": "882e78bc7bd088605136aecf25ccf67bd3f83828bb8c1396603f8000b3b83e01",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 27549,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 116,
+            "top": 64,
+            "width": 288,
+            "height": 621
+          },
+          "resized": [
+            67,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 661,
+            "top": 59,
+            "width": 278,
+            "height": 625
+          },
+          "resized": [
+            64,
+            144
+          ],
+          "placement": {
+            "left": 64,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1206,
+            "top": 65,
+            "width": 275,
+            "height": 624
+          },
+          "resized": [
+            62,
+            144
+          ],
+          "placement": {
+            "left": 65,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1743,
+            "top": 67,
+            "width": 284,
+            "height": 614
+          },
+          "resized": [
+            67,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_BasicATKpng.png",
+      "character": "player",
+      "action": "attack",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "c48f91a2abd205006be4526a28c0fc4f6ac461b2650ec3a2fd051e79722ce9cb",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 3612,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 76,
+            "top": 116,
+            "width": 236,
+            "height": 497
+          },
+          "resized": [
+            67,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 401,
+            "top": 128,
+            "width": 247,
+            "height": 485
+          },
+          "resized": [
+            73,
+            144
+          ],
+          "placement": {
+            "left": 60,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 721,
+            "top": 140,
+            "width": 295,
+            "height": 473
+          },
+          "resized": [
+            90,
+            144
+          ],
+          "placement": {
+            "left": 56,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1079,
+            "top": 132,
+            "width": 371,
+            "height": 481
+          },
+          "resized": [
+            110,
+            144
+          ],
+          "placement": {
+            "left": 54,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1474,
+            "top": 130,
+            "width": 265,
+            "height": 481
+          },
+          "resized": [
+            79,
+            144
+          ],
+          "placement": {
+            "left": 57,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1861,
+            "top": 114,
+            "width": 233,
+            "height": 497
+          },
+          "resized": [
+            68,
+            144
+          ],
+          "placement": {
+            "left": 62,
+            "top": 12
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_Defensepng.png",
+      "character": "player",
+      "action": "defend",
+      "dimensions": [
+        2170,
+        725
+      ],
+      "frameCount": 4,
+      "sha256": "08d643e41f570e7acf8378351cc4a701ff1b0a260829d8edaafc7ea46d53e055",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 6482,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 118,
+            "top": 63,
+            "width": 282,
+            "height": 596
+          },
+          "resized": [
+            68,
+            144
+          ],
+          "placement": {
+            "left": 62,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 664,
+            "top": 70,
+            "width": 279,
+            "height": 589
+          },
+          "resized": [
+            67,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1193,
+            "top": 82,
+            "width": 292,
+            "height": 577
+          },
+          "resized": [
+            74,
+            144
+          ],
+          "placement": {
+            "left": 59,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1737,
+            "top": 79,
+            "width": 288,
+            "height": 581
+          },
+          "resized": [
+            71,
+            144
+          ],
+          "placement": {
+            "left": 61,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_idle.png",
+      "character": "guard",
+      "action": "idle",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 4,
+      "sha256": "53d3110908972f09a4dad4150d73a8e868d5a6d89e8363d7b72c6d0852020246",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 3023,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 33,
+            "top": 109,
+            "width": 451,
+            "height": 549
+          },
+          "resized": [
+            118,
+            144
+          ],
+          "placement": {
+            "left": 29,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 578,
+            "top": 134,
+            "width": 454,
+            "height": 526
+          },
+          "resized": [
+            124,
+            144
+          ],
+          "placement": {
+            "left": 26,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1117,
+            "top": 118,
+            "width": 448,
+            "height": 538
+          },
+          "resized": [
+            119,
+            144
+          ],
+          "placement": {
+            "left": 28,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1668,
+            "top": 110,
+            "width": 446,
+            "height": 549
+          },
+          "resized": [
+            117,
+            144
+          ],
+          "placement": {
+            "left": 31,
+            "top": 12
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_BasicAtk.png",
+      "character": "guard",
+      "action": "attack",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "01ed47310d059164e000ba01549f89342a09923b5d7af31654c5bbc7aa874911",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 1504,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 33,
+            "top": 160,
+            "width": 325,
+            "height": 407
+          },
+          "resized": [
+            115,
+            144
+          ],
+          "placement": {
+            "left": 33,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 413,
+            "top": 161,
+            "width": 295,
+            "height": 400
+          },
+          "resized": [
+            106,
+            144
+          ],
+          "placement": {
+            "left": 39,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 747,
+            "top": 162,
+            "width": 334,
+            "height": 399
+          },
+          "resized": [
+            121,
+            144
+          ],
+          "placement": {
+            "left": 28,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1079,
+            "top": 176,
+            "width": 383,
+            "height": 383
+          },
+          "resized": [
+            144,
+            144
+          ],
+          "placement": {
+            "left": 11,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1499,
+            "top": 162,
+            "width": 293,
+            "height": 396
+          },
+          "resized": [
+            107,
+            144
+          ],
+          "placement": {
+            "left": 39,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1833,
+            "top": 162,
+            "width": 313,
+            "height": 401
+          },
+          "resized": [
+            112,
+            144
+          ],
+          "placement": {
+            "left": 35,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_Lockin.png",
+      "character": "player",
+      "action": "lock-in",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 5,
+      "sha256": "6911b9de7efd8aa30b7531c5c354b17faa5321cd43319aadb97139c4094888ae",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 11081,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 64,
+            "top": 60,
+            "width": 289,
+            "height": 628
+          },
+          "resized": [
+            66,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 514,
+            "top": 61,
+            "width": 242,
+            "height": 623
+          },
+          "resized": [
+            56,
+            144
+          ],
+          "placement": {
+            "left": 74,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 932,
+            "top": 45,
+            "width": 259,
+            "height": 636
+          },
+          "resized": [
+            58,
+            144
+          ],
+          "placement": {
+            "left": 70,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1352,
+            "top": 48,
+            "width": 273,
+            "height": 642
+          },
+          "resized": [
+            61,
+            144
+          ],
+          "placement": {
+            "left": 66,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1786,
+            "top": 63,
+            "width": 295,
+            "height": 618
+          },
+          "resized": [
+            69,
+            144
+          ],
+          "placement": {
+            "left": 62,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_LookThere.png",
+      "character": "player",
+      "action": "look-there",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "e2f120a020a89e4229dbc3b24778564bbc9eca38425e209bda1b47672f889c45",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 1127,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 43,
+            "top": 77,
+            "width": 263,
+            "height": 579
+          },
+          "resized": [
+            65,
+            144
+          ],
+          "placement": {
+            "left": 64,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 373,
+            "top": 85,
+            "width": 318,
+            "height": 573
+          },
+          "resized": [
+            80,
+            144
+          ],
+          "placement": {
+            "left": 62,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 702,
+            "top": 83,
+            "width": 278,
+            "height": 576
+          },
+          "resized": [
+            70,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1031,
+            "top": 86,
+            "width": 433,
+            "height": 574
+          },
+          "resized": [
+            108,
+            144
+          ],
+          "placement": {
+            "left": 58,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1444,
+            "top": 89,
+            "width": 405,
+            "height": 569
+          },
+          "resized": [
+            103,
+            144
+          ],
+          "placement": {
+            "left": 59,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1863,
+            "top": 81,
+            "width": 271,
+            "height": 573
+          },
+          "resized": [
+            67,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_Talk smack.png",
+      "character": "player",
+      "action": "talk-smack",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "694fdda040529942eff6b4663b1f6e227b08bb4a2950dad51c390d15ec8fb827",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 2210,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 49,
+            "top": 79,
+            "width": 274,
+            "height": 566
+          },
+          "resized": [
+            70,
+            144
+          ],
+          "placement": {
+            "left": 61,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 411,
+            "top": 78,
+            "width": 266,
+            "height": 568
+          },
+          "resized": [
+            67,
+            144
+          ],
+          "placement": {
+            "left": 62,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 755,
+            "top": 79,
+            "width": 321,
+            "height": 567
+          },
+          "resized": [
+            81,
+            144
+          ],
+          "placement": {
+            "left": 60,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1108,
+            "top": 77,
+            "width": 331,
+            "height": 568
+          },
+          "resized": [
+            84,
+            144
+          ],
+          "placement": {
+            "left": 51,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1489,
+            "top": 79,
+            "width": 284,
+            "height": 565
+          },
+          "resized": [
+            71,
+            144
+          ],
+          "placement": {
+            "left": 58,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1859,
+            "top": 75,
+            "width": 267,
+            "height": 571
+          },
+          "resized": [
+            67,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_Bagthrow.png",
+      "character": "player",
+      "action": "backpack",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "f21658aa52db0732277f17d04394e170846d931ec06001e50779660ed9dce19f",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 7834,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 27,
+            "top": 55,
+            "width": 247,
+            "height": 577
+          },
+          "resized": [
+            62,
+            144
+          ],
+          "placement": {
+            "left": 65,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 335,
+            "top": 95,
+            "width": 247,
+            "height": 535
+          },
+          "resized": [
+            66,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 578,
+            "top": 95,
+            "width": 395,
+            "height": 535
+          },
+          "resized": [
+            106,
+            144
+          ],
+          "placement": {
+            "left": 38,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 981,
+            "top": 120,
+            "width": 419,
+            "height": 508
+          },
+          "resized": [
+            120,
+            144
+          ],
+          "placement": {
+            "left": 52,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1381,
+            "top": 145,
+            "width": 522,
+            "height": 485
+          },
+          "resized": [
+            142,
+            132
+          ],
+          "placement": {
+            "left": 48,
+            "top": 24
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1893,
+            "top": 95,
+            "width": 240,
+            "height": 536
+          },
+          "resized": [
+            65,
+            144
+          ],
+          "placement": {
+            "left": 64,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_catchBreath.png",
+      "character": "player",
+      "action": "catch-breath",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 5,
+      "sha256": "a1d2b54156991f6d3ecfd99c43c16a66c7cfa7cfdef3dae98d78149d87114dc0",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": [
+        [
+          70,
+          55,
+          310,
+          625
+        ],
+        [
+          490,
+          65,
+          310,
+          615
+        ],
+        [
+          900,
+          95,
+          330,
+          585
+        ],
+        [
+          1320,
+          125,
+          350,
+          555
+        ],
+        [
+          1770,
+          55,
+          310,
+          625
+        ]
+      ],
+      "alphaConnectivityThreshold": 16,
+      "discardedPixels": 398612,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 84,
+            "top": 67,
+            "width": 280,
+            "height": 611
+          },
+          "resized": [
+            66,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 503,
+            "top": 76,
+            "width": 283,
+            "height": 602
+          },
+          "resized": [
+            68,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 914,
+            "top": 104,
+            "width": 306,
+            "height": 572
+          },
+          "resized": [
+            77,
+            144
+          ],
+          "placement": {
+            "left": 62,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1330,
+            "top": 135,
+            "width": 337,
+            "height": 543
+          },
+          "resized": [
+            89,
+            144
+          ],
+          "placement": {
+            "left": 61,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1782,
+            "top": 72,
+            "width": 282,
+            "height": 606
+          },
+          "resized": [
+            67,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_Criticalhitpng.png",
+      "character": "player",
+      "action": "critical",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "1325fec79a6e4705b547a93fb5ee0ca501adf60b9d6183a76834a2d8445f071e",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 755,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 66,
+            "top": 95,
+            "width": 242,
+            "height": 531
+          },
+          "resized": [
+            66,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 369,
+            "top": 146,
+            "width": 294,
+            "height": 475
+          },
+          "resized": [
+            90,
+            144
+          ],
+          "placement": {
+            "left": 51,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 706,
+            "top": 138,
+            "width": 298,
+            "height": 488
+          },
+          "resized": [
+            88,
+            144
+          ],
+          "placement": {
+            "left": 52,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1045,
+            "top": 142,
+            "width": 387,
+            "height": 484
+          },
+          "resized": [
+            115,
+            144
+          ],
+          "placement": {
+            "left": 49,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1449,
+            "top": 141,
+            "width": 324,
+            "height": 481
+          },
+          "resized": [
+            97,
+            144
+          ],
+          "placement": {
+            "left": 53,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1878,
+            "top": 98,
+            "width": 244,
+            "height": 524
+          },
+          "resized": [
+            66,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_hurtpng.png",
+      "character": "player",
+      "action": "hurt",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 4,
+      "sha256": "2ffe4bffd20c7bad3a8bcda8b232fdd0f3bdd7280885db28e7ec7b38a90cb59c",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 1147,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 175,
+            "top": 93,
+            "width": 310,
+            "height": 568
+          },
+          "resized": [
+            79,
+            144
+          ],
+          "placement": {
+            "left": 61,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 627,
+            "top": 95,
+            "width": 323,
+            "height": 565
+          },
+          "resized": [
+            82,
+            144
+          ],
+          "placement": {
+            "left": 47,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1172,
+            "top": 130,
+            "width": 312,
+            "height": 533
+          },
+          "resized": [
+            84,
+            144
+          ],
+          "placement": {
+            "left": 59,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1687,
+            "top": 111,
+            "width": 282,
+            "height": 549
+          },
+          "resized": [
+            73,
+            144
+          ],
+          "placement": {
+            "left": 60,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_callwife.png",
+      "character": "guard",
+      "action": "call-wife",
+      "dimensions": [
+        2170,
+        725
+      ],
+      "frameCount": 8,
+      "sha256": "ddb79810c903dd4d2c3a92e207d8668c3616aa8c4161df9d3267dfdf2f3688ce",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": [
+        [
+          0,
+          140,
+          295,
+          450
+        ],
+        [
+          295,
+          140,
+          270,
+          450
+        ],
+        [
+          565,
+          140,
+          270,
+          450
+        ],
+        [
+          835,
+          140,
+          255,
+          450
+        ],
+        [
+          1090,
+          140,
+          263,
+          450
+        ],
+        [
+          1353,
+          140,
+          265,
+          450
+        ],
+        [
+          1618,
+          140,
+          255,
+          450
+        ],
+        [
+          1873,
+          140,
+          297,
+          450
+        ]
+      ],
+      "alphaConnectivityThreshold": 32,
+      "discardedPixels": 99298,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 19,
+            "top": 159,
+            "width": 268,
+            "height": 394
+          },
+          "resized": [
+            98,
+            144
+          ],
+          "placement": {
+            "left": 48,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 304,
+            "top": 159,
+            "width": 251,
+            "height": 394
+          },
+          "resized": [
+            92,
+            144
+          ],
+          "placement": {
+            "left": 48,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 578,
+            "top": 159,
+            "width": 249,
+            "height": 394
+          },
+          "resized": [
+            91,
+            144
+          ],
+          "placement": {
+            "left": 51,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 843,
+            "top": 159,
+            "width": 239,
+            "height": 394
+          },
+          "resized": [
+            87,
+            144
+          ],
+          "placement": {
+            "left": 53,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1104,
+            "top": 155,
+            "width": 239,
+            "height": 398
+          },
+          "resized": [
+            86,
+            144
+          ],
+          "placement": {
+            "left": 53,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1364,
+            "top": 155,
+            "width": 243,
+            "height": 398
+          },
+          "resized": [
+            88,
+            144
+          ],
+          "placement": {
+            "left": 52,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 6,
+          "alphaBounds": {
+            "left": 1629,
+            "top": 158,
+            "width": 235,
+            "height": 395
+          },
+          "resized": [
+            86,
+            144
+          ],
+          "placement": {
+            "left": 53,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 7,
+          "alphaBounds": {
+            "left": 1881,
+            "top": 159,
+            "width": 273,
+            "height": 394
+          },
+          "resized": [
+            100,
+            144
+          ],
+          "placement": {
+            "left": 45,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_crackknuckles.png",
+      "character": "guard",
+      "action": "crack-knuckles",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "16a48cfe08fb7fc832d4ccacb8e920eb1576c5f6d1812464399169a8fcd9ee87",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 11442,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 25,
+            "top": 126,
+            "width": 363,
+            "height": 492
+          },
+          "resized": [
+            106,
+            144
+          ],
+          "placement": {
+            "left": 39,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 413,
+            "top": 126,
+            "width": 329,
+            "height": 487
+          },
+          "resized": [
+            97,
+            144
+          ],
+          "placement": {
+            "left": 48,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 756,
+            "top": 126,
+            "width": 340,
+            "height": 494
+          },
+          "resized": [
+            100,
+            144
+          ],
+          "placement": {
+            "left": 46,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1107,
+            "top": 126,
+            "width": 326,
+            "height": 485
+          },
+          "resized": [
+            98,
+            144
+          ],
+          "placement": {
+            "left": 47,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1447,
+            "top": 112,
+            "width": 342,
+            "height": 506
+          },
+          "resized": [
+            97,
+            144
+          ],
+          "placement": {
+            "left": 48,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1821,
+            "top": 128,
+            "width": 337,
+            "height": 483
+          },
+          "resized": [
+            100,
+            144
+          ],
+          "placement": {
+            "left": 47,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_CritAtk.png",
+      "character": "guard",
+      "action": "critical",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "ec4a1089b18f7bd5548a40281ac5c6ca48b2263e331d9a205917a56d6d250067",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 1646,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 33,
+            "top": 164,
+            "width": 322,
+            "height": 397
+          },
+          "resized": [
+            117,
+            144
+          ],
+          "placement": {
+            "left": 30,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 397,
+            "top": 180,
+            "width": 325,
+            "height": 377
+          },
+          "resized": [
+            125,
+            144
+          ],
+          "placement": {
+            "left": 30,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 724,
+            "top": 169,
+            "width": 368,
+            "height": 391
+          },
+          "resized": [
+            136,
+            144
+          ],
+          "placement": {
+            "left": 19,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1033,
+            "top": 184,
+            "width": 447,
+            "height": 373
+          },
+          "resized": [
+            151,
+            125
+          ],
+          "placement": {
+            "left": 2,
+            "top": 31
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1479,
+            "top": 175,
+            "width": 333,
+            "height": 380
+          },
+          "resized": [
+            125,
+            144
+          ],
+          "placement": {
+            "left": 28,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1835,
+            "top": 167,
+            "width": 320,
+            "height": 394
+          },
+          "resized": [
+            118,
+            144
+          ],
+          "placement": {
+            "left": 31,
+            "top": 12
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_defend.png",
+      "character": "guard",
+      "action": "defend",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "frameCount": 4,
+      "sha256": "dc4e114e196bfbb493c9fd77e69076184e51532de60fedf757bccd8ec7c71ed4",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 2783,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 18,
+            "top": 191,
+            "width": 419,
+            "height": 507
+          },
+          "resized": [
+            119,
+            144
+          ],
+          "placement": {
+            "left": 30,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 466,
+            "top": 212,
+            "width": 423,
+            "height": 494
+          },
+          "resized": [
+            124,
+            144
+          ],
+          "placement": {
+            "left": 28,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 915,
+            "top": 205,
+            "width": 409,
+            "height": 497
+          },
+          "resized": [
+            121,
+            144
+          ],
+          "placement": {
+            "left": 30,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1354,
+            "top": 209,
+            "width": 420,
+            "height": 489
+          },
+          "resized": [
+            124,
+            144
+          ],
+          "placement": {
+            "left": 29,
+            "top": 12
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_eatdonut.png",
+      "character": "guard",
+      "action": "eat-donut",
+      "dimensions": [
+        2170,
+        725
+      ],
+      "frameCount": 8,
+      "sha256": "8e64ab4ab9ec86315601cde548fd4916a62e595ef6cf4fca5a92cf64fff14af6",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 3280,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 17,
+            "top": 167,
+            "width": 272,
+            "height": 395
+          },
+          "resized": [
+            99,
+            144
+          ],
+          "placement": {
+            "left": 46,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 308,
+            "top": 167,
+            "width": 255,
+            "height": 397
+          },
+          "resized": [
+            92,
+            144
+          ],
+          "placement": {
+            "left": 53,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 576,
+            "top": 169,
+            "width": 247,
+            "height": 393
+          },
+          "resized": [
+            91,
+            144
+          ],
+          "placement": {
+            "left": 51,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 834,
+            "top": 164,
+            "width": 261,
+            "height": 401
+          },
+          "resized": [
+            94,
+            144
+          ],
+          "placement": {
+            "left": 47,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1109,
+            "top": 168,
+            "width": 241,
+            "height": 404
+          },
+          "resized": [
+            86,
+            144
+          ],
+          "placement": {
+            "left": 53,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1367,
+            "top": 167,
+            "width": 243,
+            "height": 397
+          },
+          "resized": [
+            87,
+            144
+          ],
+          "placement": {
+            "left": 53,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 6,
+          "alphaBounds": {
+            "left": 1624,
+            "top": 162,
+            "width": 259,
+            "height": 403
+          },
+          "resized": [
+            93,
+            144
+          ],
+          "placement": {
+            "left": 50,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 7,
+          "alphaBounds": {
+            "left": 1882,
+            "top": 168,
+            "width": 273,
+            "height": 396
+          },
+          "resized": [
+            99,
+            144
+          ],
+          "placement": {
+            "left": 45,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_hurt.png",
+      "character": "guard",
+      "action": "hurt",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 4,
+      "sha256": "cbb579bd93806338e967f754ec582cf76ce36fb0ab17e99974972fd9cda86c76",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 12000,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 49,
+            "top": 131,
+            "width": 434,
+            "height": 531
+          },
+          "resized": [
+            118,
+            144
+          ],
+          "placement": {
+            "left": 31,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 596,
+            "top": 96,
+            "width": 418,
+            "height": 566
+          },
+          "resized": [
+            105,
+            144
+          ],
+          "placement": {
+            "left": 40,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1122,
+            "top": 130,
+            "width": 443,
+            "height": 530
+          },
+          "resized": [
+            120,
+            144
+          ],
+          "placement": {
+            "left": 28,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1667,
+            "top": 113,
+            "width": 442,
+            "height": 549
+          },
+          "resized": [
+            117,
+            144
+          ],
+          "placement": {
+            "left": 30,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_Defeat.png",
+      "character": "player",
+      "action": "defeat",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 5,
+      "sha256": "3fbf2d287173fa6410aa1e8985dc04317cd6fe6838fdb3717619c3e391e3d5ca",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 1087,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 78,
+            "top": 77,
+            "width": 293,
+            "height": 553
+          },
+          "resized": [
+            77,
+            144
+          ],
+          "placement": {
+            "left": 54,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 401,
+            "top": 112,
+            "width": 370,
+            "height": 526
+          },
+          "resized": [
+            96,
+            137
+          ],
+          "placement": {
+            "left": 38,
+            "top": 19
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 819,
+            "top": 210,
+            "width": 374,
+            "height": 420
+          },
+          "resized": [
+            98,
+            109
+          ],
+          "placement": {
+            "left": 52,
+            "top": 47
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1256,
+            "top": 192,
+            "width": 433,
+            "height": 446
+          },
+          "resized": [
+            113,
+            116
+          ],
+          "placement": {
+            "left": 42,
+            "top": 40
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1737,
+            "top": 227,
+            "width": 370,
+            "height": 406
+          },
+          "resized": [
+            97,
+            106
+          ],
+          "placement": {
+            "left": 47,
+            "top": 50
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "P_Animations/Protagonist_Battle_victory.png",
+      "character": "player",
+      "action": "victory",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 5,
+      "sha256": "f3e8601c01bffbeabb33b4402c456c61ee073a3ee4c261343be7529d53a4436c",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 1301,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 99,
+            "top": 59,
+            "width": 267,
+            "height": 571
+          },
+          "resized": [
+            65,
+            144
+          ],
+          "placement": {
+            "left": 64,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 544,
+            "top": 60,
+            "width": 275,
+            "height": 569
+          },
+          "resized": [
+            70,
+            144
+          ],
+          "placement": {
+            "left": 65,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 976,
+            "top": 61,
+            "width": 249,
+            "height": 569
+          },
+          "resized": [
+            63,
+            144
+          ],
+          "placement": {
+            "left": 65,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1401,
+            "top": 62,
+            "width": 274,
+            "height": 568
+          },
+          "resized": [
+            69,
+            144
+          ],
+          "placement": {
+            "left": 63,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1832,
+            "top": 55,
+            "width": 242,
+            "height": 574
+          },
+          "resized": [
+            61,
+            144
+          ],
+          "placement": {
+            "left": 64,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_Distracted.png",
+      "character": "guard",
+      "action": "distracted",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 4,
+      "sha256": "87784f3bdc4941943bf85a04fa276ef34d0d67992ba139edca0f8365b06833e6",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 2434,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 35,
+            "top": 112,
+            "width": 449,
+            "height": 548
+          },
+          "resized": [
+            118,
+            144
+          ],
+          "placement": {
+            "left": 30,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 578,
+            "top": 112,
+            "width": 453,
+            "height": 548
+          },
+          "resized": [
+            119,
+            144
+          ],
+          "placement": {
+            "left": 28,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1145,
+            "top": 97,
+            "width": 438,
+            "height": 565
+          },
+          "resized": [
+            112,
+            144
+          ],
+          "placement": {
+            "left": 39,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1660,
+            "top": 112,
+            "width": 449,
+            "height": 547
+          },
+          "resized": [
+            118,
+            144
+          ],
+          "placement": {
+            "left": 29,
+            "top": 12
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_Riled.png",
+      "character": "guard",
+      "action": "riled",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 4,
+      "sha256": "d7a1ef082f355ec1359057ff7c9c9ab71045c5e3e647cbd83869012e71227015",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 5239,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 83,
+            "top": 112,
+            "width": 402,
+            "height": 556
+          },
+          "resized": [
+            104,
+            144
+          ],
+          "placement": {
+            "left": 44,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 629,
+            "top": 114,
+            "width": 401,
+            "height": 552
+          },
+          "resized": [
+            105,
+            144
+          ],
+          "placement": {
+            "left": 44,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 1137,
+            "top": 142,
+            "width": 442,
+            "height": 521
+          },
+          "resized": [
+            122,
+            144
+          ],
+          "placement": {
+            "left": 30,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1711,
+            "top": 109,
+            "width": 401,
+            "height": 555
+          },
+          "resized": [
+            104,
+            144
+          ],
+          "placement": {
+            "left": 43,
+            "top": 12
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_Victory.png",
+      "character": "guard",
+      "action": "victory",
+      "dimensions": [
+        2171,
+        724
+      ],
+      "frameCount": 5,
+      "sha256": "2229237d5b3d0551205f7adae3b07817e4090568dfc8a3f10046ac512f82d360",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 1512,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 31,
+            "top": 111,
+            "width": 436,
+            "height": 549
+          },
+          "resized": [
+            114,
+            144
+          ],
+          "placement": {
+            "left": 33,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 516,
+            "top": 95,
+            "width": 352,
+            "height": 567
+          },
+          "resized": [
+            89,
+            144
+          ],
+          "placement": {
+            "left": 51,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 930,
+            "top": 97,
+            "width": 359,
+            "height": 563
+          },
+          "resized": [
+            92,
+            144
+          ],
+          "placement": {
+            "left": 50,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1376,
+            "top": 111,
+            "width": 345,
+            "height": 551
+          },
+          "resized": [
+            90,
+            144
+          ],
+          "placement": {
+            "left": 53,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1802,
+            "top": 96,
+            "width": 321,
+            "height": 567
+          },
+          "resized": [
+            81,
+            144
+          ],
+          "placement": {
+            "left": 56,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_defeat.png",
+      "character": "guard",
+      "action": "defeat",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "116e0eb553d9e77825a3b307277a7ed7124209e6aa9e0e0ca2b781c2f64b01c5",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 4933,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 0,
+            "top": 176,
+            "width": 340,
+            "height": 420
+          },
+          "resized": [
+            117,
+            144
+          ],
+          "placement": {
+            "left": 31,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 350,
+            "top": 192,
+            "width": 332,
+            "height": 405
+          },
+          "resized": [
+            114,
+            139
+          ],
+          "placement": {
+            "left": 30,
+            "top": 17
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 740,
+            "top": 240,
+            "width": 288,
+            "height": 357
+          },
+          "resized": [
+            98,
+            122
+          ],
+          "placement": {
+            "left": 47,
+            "top": 34
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1069,
+            "top": 242,
+            "width": 359,
+            "height": 353
+          },
+          "resized": [
+            123,
+            121
+          ],
+          "placement": {
+            "left": 32,
+            "top": 35
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1433,
+            "top": 256,
+            "width": 369,
+            "height": 339
+          },
+          "resized": [
+            127,
+            116
+          ],
+          "placement": {
+            "left": 30,
+            "top": 40
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1807,
+            "top": 256,
+            "width": 365,
+            "height": 342
+          },
+          "resized": [
+            125,
+            117
+          ],
+          "placement": {
+            "left": 32,
+            "top": 39
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_whistle.png",
+      "character": "guard",
+      "action": "blow-whistle",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "92f6c25190a9f1ed0b2c45df989807a603490bf1c2ee80aa66ea5ddef6e8c7ae",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 1,
+      "discardedPixels": 936,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 19,
+            "top": 139,
+            "width": 355,
+            "height": 474
+          },
+          "resized": [
+            108,
+            144
+          ],
+          "placement": {
+            "left": 39,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 397,
+            "top": 130,
+            "width": 335,
+            "height": 483
+          },
+          "resized": [
+            101,
+            144
+          ],
+          "placement": {
+            "left": 46,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 753,
+            "top": 142,
+            "width": 343,
+            "height": 472
+          },
+          "resized": [
+            104,
+            144
+          ],
+          "placement": {
+            "left": 46,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1121,
+            "top": 140,
+            "width": 333,
+            "height": 472
+          },
+          "resized": [
+            102,
+            144
+          ],
+          "placement": {
+            "left": 46,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1481,
+            "top": 141,
+            "width": 329,
+            "height": 471
+          },
+          "resized": [
+            101,
+            144
+          ],
+          "placement": {
+            "left": 46,
+            "top": 12
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1834,
+            "top": 139,
+            "width": 338,
+            "height": 474
+          },
+          "resized": [
+            104,
+            144
+          ],
+          "placement": {
+            "left": 41,
+            "top": 12
+          },
+          "footCenter": 96
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_fall.png",
+      "character": "guard",
+      "action": "stumble",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 6,
+      "sha256": "7bf82c07668dfaf9d9140de33973f98e6a607a1f9c237d8371c1a3335ee19658",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 32,
+      "discardedPixels": 1753,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 24,
+            "top": 205,
+            "width": 331,
+            "height": 318
+          },
+          "resized": [
+            146,
+            140
+          ],
+          "placement": {
+            "left": 15,
+            "top": 16
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 340,
+            "top": 203,
+            "width": 310,
+            "height": 320
+          },
+          "resized": [
+            129,
+            132
+          ],
+          "placement": {
+            "left": 2,
+            "top": 24
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 661,
+            "top": 194,
+            "width": 331,
+            "height": 328
+          },
+          "resized": [
+            145,
+            144
+          ],
+          "placement": {
+            "left": 22,
+            "top": 12
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 1009,
+            "top": 249,
+            "width": 385,
+            "height": 234
+          },
+          "resized": [
+            151,
+            92
+          ],
+          "placement": {
+            "left": 2,
+            "top": 64
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1391,
+            "top": 356,
+            "width": 369,
+            "height": 163
+          },
+          "resized": [
+            163,
+            72
+          ],
+          "placement": {
+            "left": 15,
+            "top": 84
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1775,
+            "top": 384,
+            "width": 380,
+            "height": 139
+          },
+          "resized": [
+            167,
+            61
+          ],
+          "placement": {
+            "left": 13,
+            "top": 95
+          },
+          "footCenter": 96.5
+        }
+      ]
+    },
+    {
+      "source": "Guard_Animations/Guard_battle_getup.png",
+      "character": "guard",
+      "action": "recovery",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "frameCount": 8,
+      "sha256": "333ce773d308e893217b35b3c0c83e96af4bbaf04b5fb769dae40a58d2d8b0ba",
+      "hasAlpha": true,
+      "layout": "Single row, approximately regular placement; unequal character widths and gaps. Detect alpha bounds, not a uniform grid.",
+      "manualRegions": null,
+      "alphaConnectivityThreshold": 32,
+      "discardedPixels": 0,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBounds": {
+            "left": 18,
+            "top": 379,
+            "width": 282,
+            "height": 118
+          },
+          "resized": [
+            136,
+            57
+          ],
+          "placement": {
+            "left": 28,
+            "top": 99
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 1,
+          "alphaBounds": {
+            "left": 318,
+            "top": 341,
+            "width": 254,
+            "height": 155
+          },
+          "resized": [
+            121,
+            74
+          ],
+          "placement": {
+            "left": 36,
+            "top": 82
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 2,
+          "alphaBounds": {
+            "left": 591,
+            "top": 310,
+            "width": 238,
+            "height": 189
+          },
+          "resized": [
+            115,
+            91
+          ],
+          "placement": {
+            "left": 39,
+            "top": 65
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 3,
+          "alphaBounds": {
+            "left": 853,
+            "top": 273,
+            "width": 207,
+            "height": 230
+          },
+          "resized": [
+            99,
+            110
+          ],
+          "placement": {
+            "left": 47,
+            "top": 46
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 4,
+          "alphaBounds": {
+            "left": 1136,
+            "top": 248,
+            "width": 198,
+            "height": 255
+          },
+          "resized": [
+            95,
+            122
+          ],
+          "placement": {
+            "left": 47,
+            "top": 34
+          },
+          "footCenter": 96
+        },
+        {
+          "index": 5,
+          "alphaBounds": {
+            "left": 1395,
+            "top": 231,
+            "width": 200,
+            "height": 271
+          },
+          "resized": [
+            96,
+            130
+          ],
+          "placement": {
+            "left": 50,
+            "top": 26
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 6,
+          "alphaBounds": {
+            "left": 1654,
+            "top": 215,
+            "width": 213,
+            "height": 287
+          },
+          "resized": [
+            102,
+            138
+          ],
+          "placement": {
+            "left": 44,
+            "top": 18
+          },
+          "footCenter": 96.5
+        },
+        {
+          "index": 7,
+          "alphaBounds": {
+            "left": 1925,
+            "top": 202,
+            "width": 217,
+            "height": 300
+          },
+          "resized": [
+            104,
+            144
+          ],
+          "placement": {
+            "left": 44,
+            "top": 12
+          },
+          "footCenter": 96.5
+        }
+      ]
+    }
+  ],
+  "ambiguousFiles": [],
+  "notes": [
+    "Frames are alpha-connected silhouettes, not equal-width cells. Small detached generation debris is excluded.",
+    "Nearest-neighbour proportional resizing; final alpha trimmed; feet centers anchored at x=96, baseline y=155.",
+    "All Player sheets face right; all Guard battle sheets face left. No horizontal flipping.",
+    "Inspected Player and Guard skills, defense, hurt and critical attacks are integrated. Player/Guard victory, Guard defeat and status idles are integrated. Player defeat is integrated; only stunned art is absent.",
+    "Catch Breath has contaminated background pixels; explicit regions isolate poses. Call Wife has a joined floor shadow; explicit regions separate its eight poses.",
+    "Connectivity ignores alpha below 16/255 for Catch Breath and 32/255 for Call Wife; retained silhouette pixels preserve original alpha.",
+    "Backpack frame 4 fits proportionally to 132 px high and Guard critical frame 3 to 125 px high to avoid clipping wide extensions. Other frames normalize to 144 px.",
+    "Guard_Animations/Guard_idle.png (2172x724, four poses) is hallway idle, not a battle action.",
+    "Fall has six poses; get-up has eight, ordered left-to-right. Alpha below 32 bridges adjacent source poses; ignore it for connectivity. Normalize both with fixed proportional body scale from their tallest pose, baseline 155. Fall holds downed pose 300 ms; recovery restores the current persistent stance. Missing optional sheets use hurt fallback."
+  ]
+}

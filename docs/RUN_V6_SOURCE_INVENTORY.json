@@ -1,0 +1,350 @@
+{
+  "newEightFrameSourceLocated": false,
+  "runUpdateWithdrawnByUser": true,
+  "sources": [
+    {
+      "path": "P_Animations/Pixel Runner Back-View Sprite Sheet.png",
+      "bytes": 795796,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sha256": "342acabf72184a067c2815ae8535029aa793b0ef1aed5fac2f2f3d80a7ba4607",
+      "matchesPreviousProcessedSource": true,
+      "detectedPoses": 6,
+      "connectivityAlphaThreshold": 1,
+      "analysisRegion": null,
+      "layout": "horizontal row, alpha silhouettes with unequal gaps",
+      "poses": [
+        {
+          "sourceIndex": 0,
+          "crop": {
+            "left": 65,
+            "top": 112,
+            "width": 244,
+            "height": 520
+          },
+          "sourceFeetY": 631
+        },
+        {
+          "sourceIndex": 1,
+          "crop": {
+            "left": 432,
+            "top": 113,
+            "width": 246,
+            "height": 519
+          },
+          "sourceFeetY": 631
+        },
+        {
+          "sourceIndex": 2,
+          "crop": {
+            "left": 787,
+            "top": 112,
+            "width": 243,
+            "height": 520
+          },
+          "sourceFeetY": 631
+        },
+        {
+          "sourceIndex": 3,
+          "crop": {
+            "left": 1143,
+            "top": 112,
+            "width": 257,
+            "height": 520
+          },
+          "sourceFeetY": 631
+        },
+        {
+          "sourceIndex": 4,
+          "crop": {
+            "left": 1526,
+            "top": 114,
+            "width": 234,
+            "height": 497
+          },
+          "sourceFeetY": 610
+        },
+        {
+          "sourceIndex": 5,
+          "crop": {
+            "left": 1878,
+            "top": 112,
+            "width": 247,
+            "height": 520
+          },
+          "sourceFeetY": 631
+        }
+      ]
+    },
+    {
+      "path": "P_Animations/Pixel Running Cycle Sprite Sheet.png",
+      "bytes": 1502280,
+      "width": 1983,
+      "height": 793,
+      "hasAlpha": true,
+      "sha256": "495d52385b7d49779b951f0f9c8a2dfbbaed95e4cf2807c9c42e3863af86a48d",
+      "matchesPreviousProcessedSource": true,
+      "detectedPoses": 10,
+      "connectivityAlphaThreshold": 16,
+      "analysisRegion": null,
+      "layout": "horizontal row, alpha silhouettes with unequal gaps",
+      "poses": [
+        {
+          "sourceIndex": 0,
+          "crop": {
+            "left": 13,
+            "top": 251,
+            "width": 195,
+            "height": 335
+          },
+          "sourceFeetY": 585
+        },
+        {
+          "sourceIndex": 1,
+          "crop": {
+            "left": 223,
+            "top": 251,
+            "width": 172,
+            "height": 343
+          },
+          "sourceFeetY": 593
+        },
+        {
+          "sourceIndex": 2,
+          "crop": {
+            "left": 434,
+            "top": 251,
+            "width": 152,
+            "height": 343
+          },
+          "sourceFeetY": 593
+        },
+        {
+          "sourceIndex": 3,
+          "crop": {
+            "left": 612,
+            "top": 251,
+            "width": 171,
+            "height": 343
+          },
+          "sourceFeetY": 593
+        },
+        {
+          "sourceIndex": 4,
+          "crop": {
+            "left": 765,
+            "top": 245,
+            "width": 225,
+            "height": 341
+          },
+          "sourceFeetY": 585
+        },
+        {
+          "sourceIndex": 5,
+          "crop": {
+            "left": 959,
+            "top": 251,
+            "width": 253,
+            "height": 303
+          },
+          "sourceFeetY": 553
+        },
+        {
+          "sourceIndex": 6,
+          "crop": {
+            "left": 1227,
+            "top": 251,
+            "width": 146,
+            "height": 343
+          },
+          "sourceFeetY": 593
+        },
+        {
+          "sourceIndex": 7,
+          "crop": {
+            "left": 1410,
+            "top": 251,
+            "width": 156,
+            "height": 343
+          },
+          "sourceFeetY": 593
+        },
+        {
+          "sourceIndex": 8,
+          "crop": {
+            "left": 1600,
+            "top": 251,
+            "width": 160,
+            "height": 343
+          },
+          "sourceFeetY": 593
+        },
+        {
+          "sourceIndex": 9,
+          "crop": {
+            "left": 1755,
+            "top": 251,
+            "width": 205,
+            "height": 336
+          },
+          "sourceFeetY": 586
+        }
+      ]
+    },
+    {
+      "path": "P_Animations/Pixel-Art Runner Sprite Sheet.png",
+      "bytes": 805289,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sha256": "39a5ade1b938bf0fef5969c9fbf018a8ef1f825c7a689856418e1592e84cc058",
+      "matchesPreviousProcessedSource": true,
+      "detectedPoses": 6,
+      "connectivityAlphaThreshold": 1,
+      "analysisRegion": null,
+      "layout": "horizontal row, alpha silhouettes with unequal gaps",
+      "poses": [
+        {
+          "sourceIndex": 0,
+          "crop": {
+            "left": 64,
+            "top": 114,
+            "width": 243,
+            "height": 532
+          },
+          "sourceFeetY": 645
+        },
+        {
+          "sourceIndex": 1,
+          "crop": {
+            "left": 417,
+            "top": 112,
+            "width": 245,
+            "height": 530
+          },
+          "sourceFeetY": 641
+        },
+        {
+          "sourceIndex": 2,
+          "crop": {
+            "left": 773,
+            "top": 114,
+            "width": 247,
+            "height": 524
+          },
+          "sourceFeetY": 637
+        },
+        {
+          "sourceIndex": 3,
+          "crop": {
+            "left": 1143,
+            "top": 111,
+            "width": 247,
+            "height": 529
+          },
+          "sourceFeetY": 639
+        },
+        {
+          "sourceIndex": 4,
+          "crop": {
+            "left": 1511,
+            "top": 114,
+            "width": 243,
+            "height": 514
+          },
+          "sourceFeetY": 627
+        },
+        {
+          "sourceIndex": 5,
+          "crop": {
+            "left": 1867,
+            "top": 113,
+            "width": 241,
+            "height": 529
+          },
+          "sourceFeetY": 641
+        }
+      ]
+    },
+    {
+      "path": "P_Animations/Six-Frame Pixel Art Run Cycle.png",
+      "bytes": 1100419,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sha256": "a9c887dd505276f4ca509f348ad52868d527de686e422459d4e87e7c42e03b51",
+      "matchesPreviousProcessedSource": true,
+      "detectedPoses": 6,
+      "connectivityAlphaThreshold": 1,
+      "analysisRegion": {
+        "top": 95,
+        "bottom": 615
+      },
+      "layout": "horizontal row, alpha silhouettes with unequal gaps",
+      "poses": [
+        {
+          "sourceIndex": 0,
+          "crop": {
+            "left": 7,
+            "top": 95,
+            "width": 309,
+            "height": 520
+          },
+          "sourceFeetY": 614
+        },
+        {
+          "sourceIndex": 1,
+          "crop": {
+            "left": 416,
+            "top": 95,
+            "width": 266,
+            "height": 482
+          },
+          "sourceFeetY": 576
+        },
+        {
+          "sourceIndex": 2,
+          "crop": {
+            "left": 765,
+            "top": 95,
+            "width": 269,
+            "height": 520
+          },
+          "sourceFeetY": 614
+        },
+        {
+          "sourceIndex": 3,
+          "crop": {
+            "left": 1131,
+            "top": 95,
+            "width": 272,
+            "height": 520
+          },
+          "sourceFeetY": 614
+        },
+        {
+          "sourceIndex": 4,
+          "crop": {
+            "left": 1495,
+            "top": 95,
+            "width": 265,
+            "height": 520
+          },
+          "sourceFeetY": 614
+        },
+        {
+          "sourceIndex": 5,
+          "crop": {
+            "left": 1864,
+            "top": 95,
+            "width": 264,
+            "height": 520
+          },
+          "sourceFeetY": 614
+        }
+      ]
+    }
+  ],
+  "conclusion": "User clarified the run artwork was not updated. Existing6/10/6/6-pose sources and runtime running retained; eight-frame integration request withdrawn."
+}

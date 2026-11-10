@@ -1,0 +1,84 @@
+{
+  "source": "Guard_Animations/Guard_idle.png",
+  "sha256": "357e3d4fd7b28245f5d62ec2438df8705777b63e76be99bccdae159d9242f8ab",
+  "sourceDimensions": [
+    2172,
+    724
+  ],
+  "frameCount": 4,
+  "outputDimensions": [
+    256,
+    256
+  ],
+  "baseline": 249,
+  "frames": [
+    {
+      "index": 0,
+      "alphaBounds": {
+        "left": 158,
+        "top": 56,
+        "width": 293,
+        "height": 636
+      },
+      "resized": [
+        111,
+        240
+      ],
+      "placement": {
+        "left": 72,
+        "top": 10
+      }
+    },
+    {
+      "index": 1,
+      "alphaBounds": {
+        "left": 699,
+        "top": 49,
+        "width": 299,
+        "height": 641
+      },
+      "resized": [
+        112,
+        240
+      ],
+      "placement": {
+        "left": 72,
+        "top": 10
+      }
+    },
+    {
+      "index": 2,
+      "alphaBounds": {
+        "left": 1242,
+        "top": 48,
+        "width": 290,
+        "height": 642
+      },
+      "resized": [
+        108,
+        240
+      ],
+      "placement": {
+        "left": 74,
+        "top": 10
+      }
+    },
+    {
+      "index": 3,
+      "alphaBounds": {
+        "left": 1785,
+        "top": 59,
+        "width": 293,
+        "height": 633
+      },
+      "resized": [
+        111,
+        238
+      ],
+      "placement": {
+        "left": 72,
+        "top": 12
+      }
+    }
+  ]
+}
