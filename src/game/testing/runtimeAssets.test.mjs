@@ -1,0 +1,2 @@
+import test from'node:test';import assert from'node:assert/strict';import{readFile}from'node:fs/promises';import{createHash}from'node:crypto';import inventory from '../../../docs/maintenance/runtime-hashes.json' with{type:'json'};
+test('repository cleanup preserves every shipped runtime asset byte and production Q table',async()=>{for(const[path,hash]of Object.entries(inventory))assert.equal(createHash('sha256').update(await readFile(path)).digest('hex'),hash,path);});

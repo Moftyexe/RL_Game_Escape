@@ -85,9 +85,9 @@ test('the shipped trained file loads as compatible EVAL and choosing does not al
  const text=await readFile(new URL('../../../public/assets/ai/guard_qtable.json',import.meta.url),'utf8');const c=new GuardAIController({random:()=>.5});assert.equal(c.load(text),true);assert.equal(c.mode,'Q-LEARNING');assert.equal(c.qPolicy.epsilon,0);const before=JSON.stringify(c.qPolicy.table.toJSON());c.chooseAction(state());assert.equal(JSON.stringify(c.qPolicy.table.toJSON()),before);assert.ok(c.qPolicy.table.stateCount>0);
 });
 
-test('v7 smoke and all saved checkpoints preserve visits, legal coverage and fixed epsilon horizon',async()=>{
+test('production v7 checkpoint preserves visits, legal coverage and fixed epsilon horizon',async()=>{
  let previousVisits=0;
- for(const path of ['tools/guard-v7-smoke-qtable.json',...['60','80','100'].map(k=>`tools/checkpoints/v7/guard_qtable_${k}k.json`)]){
+ for(const path of ['public/assets/ai/guard_qtable.json']){
   const saved=JSON.parse(await readFile(new URL('../../../'+path,import.meta.url),'utf8'));
   const q=QTable.fromJSON(saved);assert.equal(saved.stateSchema,'guard-q-v7');assert.equal(saved.metadata.config.alpha,.1);assert.equal(saved.metadata.config.gamma,.95);assert.equal(saved.metadata.config.epsilonDecayEpisodes,45000);
   assert.deepEqual(q.coverage(),saved.metadata.coverage);assert.ok(q.coverage().totalVisits>previousVisits);previousVisits=q.coverage().totalVisits;

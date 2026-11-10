@@ -1,0 +1,15 @@
+{
+  "testsPassed": 415,
+  "testsFailed": 0,
+  "syntaxFiles": 129,
+  "syntaxFailures": 0,
+  "buildExitCode": 0,
+  "brokenReadmeLinks": 0,
+  "removedFiles": 710,
+  "removedMiB": 843.4570121765137,
+  "trackedFilesRemoved": 488,
+  "trackedMiBRemoved": 763.276047706604,
+  "productionQHash": "96dff2a6a9c7f2803342e5d7e9550231b22392c10a5bebd8e8d4fb7f012bf686",
+  "musicLicense": "CC BY 4.0; approved by project owner",
+  "historyRewritten": false
+}

@@ -1,6 +1,0 @@
-{
-  "schema": "guard-q-v1",
-  "sha256": "17c5030862cd99a227f4dfe49df488067aa8b047646c1a88ba28e24c44dd008e",
-  "rejected": true,
-  "reason": "v2 schema and current combat signature required"
-}

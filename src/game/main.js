@@ -1,4 +1,3 @@
-import { Game as MainGame } from './scenes/Game';
 import SchoolScene from './scenes/SchoolScene';
 import BattleScene from './scenes/BattleScene';
 import DayTransitionScene from './scenes/DayTransitionScene.js';
@@ -22,8 +21,7 @@ const config = {
     scene: [
         SchoolScene,
         BattleScene,
-        DayTransitionScene,
-        MainGame
+        DayTransitionScene
     ]
 };
 

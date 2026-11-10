@@ -8,7 +8,7 @@ import { createSchoolFixture } from './explorationTestHarness.mjs';
 const close = (actual, expected) => assert.ok(Math.abs(actual - expected) < 1e-8, `${actual} != ${expected}`);
 
 test('measured crop fits the current opaque BG and layout aligns source landmarks with world coordinates', async () => {
-    const metadata = await sharp(await readFile(new URL('../../../BG.png', import.meta.url))).metadata();
+    const metadata = await sharp(await readFile(new URL('../../../public/assets/environment/hallway.png', import.meta.url))).metadata();
     assert.deepEqual([metadata.width, metadata.height], [2048, 688]);
     assert.ok(HALLWAY.crop.x + HALLWAY.crop.width <= metadata.width);
     assert.ok(HALLWAY.crop.y + HALLWAY.crop.height <= metadata.height);

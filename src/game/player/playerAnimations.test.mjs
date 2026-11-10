@@ -1,3 +1,4 @@
+import{verifyOptionalSource}from'../testing/assetProvenance.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
@@ -28,8 +29,7 @@ test('all movement frames match reports, source hashes, transparency, centering 
     const root = new URL('../../../', import.meta.url);
     let exported = 0;
     for (const sheet of report.sheets) {
-        const source = await readFile(new URL('P_Animations/' + sheet.source, root));
-        assert.equal(createHash('sha256').update(source).digest('hex'), sheet.sha256);
+        await verifyOptionalSource(new URL('P_Animations/' + sheet.source, root),sheet.sha256);
         if (!sheet.animation) continue;
         assert.equal(sheet.exportedFrames, counts[sheet.animation]);
         const files = await readdir(new URL('public/assets/player/movement/' + sheet.animation + '/', root));

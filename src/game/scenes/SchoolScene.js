@@ -2,7 +2,7 @@ import { Scene, Input, Textures } from 'phaser';
 import { preloadHallwayAssets, createMusician } from '../exploration/hallwayAssets.js';
 import HallwayMusic from '../exploration/HallwayMusic.js';
 import { addMusicianInteraction } from '../exploration/musicianInteraction.js';
-import background from '../../../BG.png?url';
+const background = `${import.meta.env?.BASE_URL??'./'}assets/environment/hallway.png`;
 import { preloadPlayer, createPlayerAnimations, RUN_SPEED, PLAYER_FOOT_ORIGIN } from '../player/playerAnimations';
 import InteractionZones from '../interactions/InteractionZones';
 import { preloadGuard, createGuardAnimations, GUARD_TEXTURE, GUARD_IDLE, GUARD_FOOT_ORIGIN } from '../guard/guardAnimations';

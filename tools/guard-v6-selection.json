@@ -1,6 +1,0 @@
-{
-  "selected": "q-100k",
-  "source": "tools/checkpoints/v6/guard_qtable_100k.json",
-  "sha256": "a45930e8955707be6f1ea0689b39b0ecbce384080277fa2fa19c9c813f695a6d",
-  "reason": "100k has the best overall Q wins/reward and Aggressive win rate (46.8%), best state/action coverage, and lower CRITICAL Defend rate than60k/80k. It is not uniformly best:80k wins more against Random/Tricky and heals more efficiently.100k has rare Defend chains up to10 (versus7/6), which remain a policy weakness; no round-limit draws occurred. It was chosen for broader held-out performance and coverage, not merely duration. No tactical fixes or further balance changes were added."
-}

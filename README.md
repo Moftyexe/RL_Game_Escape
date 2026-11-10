@@ -1,181 +1,112 @@
-# RL_Game_Escape
+# School Escape
 
-School Escape: a Phaser RPG with a frozen Q-learning Guard, day-based readiness, dialogue and audio settings.
+**Get out of school. Get past the Guard. Try again tomorrow.**
 
-## Phaser Vite Template
+A browser-based, pixel-art RPG about a Player who keeps trying to escape school and a Guard who gets more prepared after every successful escape. Explore the hallway, meet the Music Guy, and face a turn-based battle at the gate.
 
-This is a Phaser 4 project template that uses Vite for bundling. It supports hot-reloading for quick development workflow and includes scripts to generate production-ready builds.
+<img src="public/assets/environment/hallway.png" alt="The school hallway explored in School Escape" width="960">
 
-**[This Template is also available as a TypeScript version.](https://github.com/phaserjs/template-vite-ts)**
+## The escape loop
 
-### Versions
+1. Explore the school hallway using WASD or the arrow keys.
+2. Approach the gate to trigger a conversation with the Guard automatically.
+3. Choose attacks, defenses, distractions and recovery moves in battle.
+4. Win to escape and advance to the next day. Lose to retry the same day.
 
-This template has been updated for:
+Successful escapes raise the Guard's readiness from **CASUAL → ALERT → PREPARED → DETERMINED → LOCKED IN**. Readiness caps on Day5; the day counter can keep going. Losing never lowers readiness or advances the day.
 
-- [Phaser 4.0.0](https://github.com/phaserjs/phaser)
-- [Vite 6.3.1](https://github.com/vitejs/vite)
+## Meet the characters
 
-![screenshot](screenshot.png)
+| The Player | The School Guard | The Music Guy |
+| :---: | :---: | :---: |
+| <img src="public/assets/portraits/player.png" alt="Player dialogue portrait" height="190"> | <img src="public/assets/portraits/guard.png" alt="Guard dialogue portrait" height="190"> | <img src="public/assets/portraits/musicguy.png" alt="Music Guy dialogue portrait" height="190"> |
+| Backpack ready. School attendance optional. | The only thing between you and the gate. | Music by [@prodbyhajime](https://www.instagram.com/prodbyhajime/). |
 
-## Requirements
+The images above are the game's actual hallway and portrait assets, not screenshots of gameplay.
 
-[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
+## Battle your way out
 
-## Available Commands
+Combat uses **FAST → NORMAL → SLOW** priorities. Manage HP and SP, read statuses, and choose when to attack, defend or recover. The context panel explains each highlighted command and previews deterministic HP/SP changes.
 
-| Command | Description |
-|---------|-------------|
-| `npm install` | Install project dependencies |
-| `npm run dev` | Launch a development web server |
-| `npm run build` | Create a production build in the `dist` folder |
-| `npm run dev-nolog` | Launch a development web server without sending anonymous data (see "About log.js" below) |
-| `npm run build-nolog` | Create a production build in the `dist` folder without sending anonymous data (see "About log.js" below) |
+| Player command | What it does |
+| --- | --- |
+| ATTACK | A reliable physical punch. |
+| DEFEND | Reduces incoming damage, adds Player-only evasion and recovers SP for the round. |
+| BRO, LOCK IN | Applies FOCUSED for better accuracy, critical chance and defense. |
+| TALK SMACK | Deals fixed emotional damage and makes the Guard RILED. |
+| LOOK THERE! | Distracts the Guard, with a chance to interrupt him and leave him OFF GUARD. |
+| SWING BACKPACK | A heavy physical swing with lower accuracy and an SP cost. |
+| CATCH BREATH | Pays30SP to restore up to150HP; offers no defense or SP recovery. |
 
+The Guard has his own attacks, Defend, Crack Knuckles, Whistle, a once-per-battle Call Wife and a once-per-battle Donut. Statuses affect accuracy, damage, critical hits and protection. Full rules are in [Combat rules](docs/COMBAT_RULES.md).
 
-## Writing Code
+## A learned Guard, not a stat boost
 
-After cloning the repo, run `npm install` from your project directory. Then, you can start the local development server by running `npm run dev`.
+The live Guard uses a **frozen Q-learning table**. There is no learning during human battles. Day-based readiness changes how closely he follows his learned action ranking; it does not increase his HP, damage or accuracy.
 
-The local development server runs on `http://localhost:8080` by default. Please see the Vite documentation if you wish to change this, or add SSL support.
+The shipped `guard-q-v7` table is the selected **60k checkpoint** from one continuous100k experiment. It was chosen over the80k and100k checkpoints using held-out performance and behavior. Unvisited actions are not mistaken for learned zero values; completely unseen states use a safe Random fallback.
 
-Once the server is running you can edit any of the files in the `src` folder. Vite will automatically recompile your code and then reload the browser.
+**F2** explains the Guard's visible situation and learned options in plain English. **A** inside F2 opens the technical Q/visit view. The current hidden Guard move stays hidden until reveal. **P** switches the diagnostic policy between Q-learning and Random.
 
-## Template Project Structure
+[AI architecture](docs/GUARD_Q_LEARNING.md) · [Checkpoint results](docs/V7_COMBAT_GATE_PORTRAITS.md) · [Day/readiness design](docs/DAY_READINESS_PROGRESSION.md)
 
-We have provided a default project structure to get you started. This is as follows:
+## Controls
 
-| Path                         | Description                                                |
-|------------------------------|------------------------------------------------------------|
-| `index.html`                 | A basic HTML page to contain the game.                     |
-| `public/assets`              | Game sprites, audio, etc. Served directly at runtime.      |
-| `public/style.css`           | Global layout styles.                                      |
-| `src/main.js`                | Application bootstrap.                                     |
-| `src/game`                   | Folder containing the game code.                           |
-| `src/game/main.js`           | Game entry point: configures and starts the game.          |
-| `src/game/scenes`            | Folder with all Phaser game scenes.                        | 
+| Where | Controls |
+| --- | --- |
+| Hallway | WASD / arrows to move; approach the gate for battle; Space near the Music Guy for audio settings. |
+| Dialogue | Space / Enter / click reveals the current line; the next press advances. |
+| Battle menu | W/S or up/down; Enter/Space to confirm;1–6 shortcuts; mouse hover/click. |
+| Skills menu | A/left or Back/Escape to return; D/right opens Skills when selected. |
+| Audio menu | Mouse click/drag sliders; up/down to select, left/right to adjust5%; Escape to close. |
+| Debug | F2 for AI information; A inside F2 for Advanced; P to change diagnostic policy. |
 
-## Handling Assets
+## Music and sound
 
-Vite supports loading assets via JavaScript module `import` statements.
+Talk to the Music Guy for separate **Hallway Music, Battle Music, Sound Effects and Footsteps** controls, plus music mute. Changes apply live and are saved when browser storage is available. Hallway music pauses for battle and keeps its playback position; battle music uses one looping instance.
 
-This template provides support for both embedding assets and also loading them from a static folder. To embed an asset, you can import it at the top of the JavaScript file you are using it in:
+Hallway and battle music: **[@prodbyhajime](https://www.instagram.com/prodbyhajime/)**, licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** with the artist's approval confirmed by the project owner. The recordings are unchanged. Attribution and redistribution details: [Music license](MUSIC_LICENSE.md).
 
-```js
-import logoImg from './assets/logo.png'
-```
+The selected36-sound SFX palette covers menus, dialogue, battle entry, footsteps, attacks, statuses and results. Original source credits and CC0 terms are preserved in [SFX licenses](public/assets/audio/sfx/LICENSES.txt). [Sound selection report](docs/SFX_INTEGRATION_REPORT.md).
 
-To load static files such as audio files, videos, etc place them into the `public/assets` folder. Then you can use this path in the Loader calls within Phaser:
+## Run locally
 
-```js
-preload ()
-{
-    //  This is an example of an imported bundled image.
-    //  Remember to import it at the top of this file
-    this.load.image('logo', logoImg);
-
-    //  This is an example of loading a static image
-    //  from the public/assets folder:
-    this.load.image('background', 'assets/bg.png');
-}
-```
-
-When you issue the `npm run build` command, all static assets are automatically copied to the `dist/assets` folder.
-
-## Deploying to Production
-
-After you run the `npm run build` command, your code will be built into a single bundle and saved to the `dist` folder, along with any other assets your project imported, or stored in the public assets folder.
-
-In order to deploy your game, you will need to upload *all* of the contents of the `dist` folder to a public facing web server.
-
-## Customizing the Template
-
-### Vite
-
-If you want to customize your build, such as adding plugin (i.e. for loading CSS or fonts), you can modify the `vite/config.*.mjs` file for cross-project changes, or you can modify and/or create new configuration files and target them in specific npm tasks inside of `package.json`. Please see the [Vite documentation](https://vitejs.dev/) for more information.
-
-## About log.js
-
-If you inspect our node scripts you will see there is a file called `log.js`. This file makes a single silent API call to a domain called `gryzor.co`. This domain is owned by Phaser Studio Inc. The domain name is a homage to one of our favorite retro games.
-
-We send the following 3 pieces of data to this API: The name of the template being used (vue, react, etc). If the build was 'dev' or 'prod' and finally the version of Phaser being used.
-
-At no point is any personal data collected or sent. We don't know about your project files, device, browser or anything else. Feel free to inspect the `log.js` file to confirm this.
-
-Why do we do this? Because being open source means we have no visible metrics about which of our templates are being used. We work hard to maintain a large and diverse set of templates for Phaser developers and this is our small anonymous way to determine if that work is actually paying off, or not. In short, it helps us ensure we're building the tools for you.
-
-However, if you don't want to send any data, you can use these commands instead:
-
-Dev:
-
-```bash
-npm run dev-nolog
-```
-
-Build:
-
-```bash
-npm run build-nolog
-```
-
-Or, to disable the log entirely, simply delete the file `log.js` and remove the call to it in the `scripts` section of `package.json`:
-
-Before:
-
-```json
-"scripts": {
-    "dev": "node log.js dev & dev-template-script",
-    "build": "node log.js build & build-template-script"
-},
-```
-
-After:
-
-```json
-"scripts": {
-    "dev": "dev-template-script",
-    "build": "build-template-script"
-},
-```
-
-Either of these will stop `log.js` from running. If you do decide to do this, please could you at least join our Discord and tell us which template you're using! Or send us a quick email. Either will be super-helpful, thank you.
-
-## Join the Phaser Community!
-
-We love to see what developers like you create with Phaser! It really motivates us to keep improving. So please join our community and show-off your work 😄
-
-**Visit:** The [Phaser website](https://phaser.io) and follow on [Phaser Twitter](https://twitter.com/phaser_)<br />
-**Play:** Some of the amazing games [#madewithphaser](https://twitter.com/search?q=%23madewithphaser&src=typed_query&f=live)<br />
-**Learn:** [API Docs](https://newdocs.phaser.io), [Support Forum](https://phaser.discourse.group/) and [StackOverflow](https://stackoverflow.com/questions/tagged/phaser-framework)<br />
-**Discord:** Join us on [Discord](https://discord.gg/phaser)<br />
-**Code:** 2000+ [Examples](https://labs.phaser.io)<br />
-**Read:** The [Phaser World](https://phaser.io/community/newsletter) Newsletter<br />
-
-Created by [Phaser Studio](mailto:support@phaser.io). Powered by coffee, anime, pixels and love.
-
-The Phaser logo and characters are &copy; 2011 - 2025 Phaser Studio Inc.
-
-All rights reserved.
-
-
-## School Guard AI
-
-The shipped Q-table is used in evaluation mode; human battles do not learn. Press **P** (or click the Guard AI label) to switch the next decision between Random and Q-learning. **F2** toggles the AI debug overlay. Missing/incompatible data safely falls back to Random.
+Use a modern browser and Node.js22 or newer.
 
 ```sh
-npm run train:guard -- --episodes 20000 --seed 20261108
-npm run evaluate:guard -- --episodes 1000 --seed 20261109
+npm ci
+npm run dev
+```
+
+Open the local URL Vite prints. To build:
+
+```sh
+npm run build
+```
+
+Deploy the generated `dist/` folder to a static host. Vite is configured with a relative base path. Runtime graphics, music, SFX and the production AI table ship in `public/assets/`; raw animation sheets and old background iterations are not needed.
+
+Run the deterministic tests with:
+
+```sh
 node --test
 ```
 
-See [Guard Q-learning](docs/GUARD_Q_LEARNING.md) for architecture, state/reward definitions, reproducibility and actual evaluation results. See the training configuration and checkpoint reports for the current training protocol.
+## Edit and develop
 
-Current balance: Player 1000 HP, Guard 1200 HP; Catch Breath costs30 SP and heals150 HP only; Player Defend adds5 percentage points evasion against rolled physical attacks; Donut heals 200 HP only; five percentage HP bins and guard-q-v7 table. See [combat, gate, portraits and checkpoint report](docs/V7_COMBAT_GATE_PORTRAITS.md). Hallway music loops at 0.35 volume, pauses during battle, with volume controls available by talking to the Music Guy with Space.
+- **All authored dialogue:** [dialogueScript.js](src/game/dialogue/dialogueScript.js). [Editing guide](docs/DIALOGUE_EDITING.md).
+- **Audio settings:** `src/game/audio/AudioSettings.js`; per-effect selections remain in the runtime SFX manifest.
+- **Game scenes:** `src/game/scenes/SchoolScene.js`, `BattleScene.js`, `DayTransitionScene.js`.
+- **AI/training:** `src/game/ai/` and `src/game/training/`; command-line tools remain under `tools/`.
+- **Current UI/settings:** [Debug, portraits and audio](docs/DEBUG_DIALOGUE_AUDIO_SETTINGS.md), [Battle UI](docs/BATTLE_UI_POLISH.md).
+- **Documentation index:** [docs/README.md](docs/README.md).
 
-
-## Dialogue and audio settings
-
-Edit authored speech in [dialogueScript.js](src/game/dialogue/dialogueScript.js). See [dialogue editing](docs/DIALOGUE_EDITING.md) and [debug, portraits and settings](docs/DEBUG_DIALOGUE_AUDIO_SETTINGS.md).
+Old authoring exports, experiment checkpoints, frame-extraction caches and generated logs are excluded from the working repository. The processed runtime assets and production model remain. Historical inputs can be recovered from earlier Git commits if needed for regeneration; see [Repository cleanup](docs/maintenance/REPOSITORY_CLEANUP.md).
 
 ## License notices
 
-The repository LICENSE retains its Apache 2.0 text. The Phaser template MIT notice is preserved in [LICENSE.phaser-template](LICENSE.phaser-template). Audio/asset pack licenses remain with their respective assets.
+- Game repository code: [Apache2.0](LICENSE).
+- Phaser template notice: [MIT](LICENSE.phaser-template).
+- The two music recordings: [CC BY4.0](MUSIC_LICENSE.md), credited to @prodbyhajime.
+- Selected sound effects: [CC0/source notices](public/assets/audio/sfx/LICENSES.txt).
+- These code/music notices do not grant a separate license for character or background artwork.

@@ -1,7 +1,7 @@
 export const BATTLE_BACKDROP_KEY = 'battle-hallway';
 export const BATTLE_ARENA = Object.freeze({ x: 26, y: 22, width: 972, height: 366 });
 export const BACKDROP_DARKENING = 0.35;
-const backdropUrl = new URL('../../../BGbattle.png', import.meta.url).href;
+const backdropUrl = `${import.meta.env?.BASE_URL??'./'}assets/environment/battle.png`;
 
 export function preloadBattleBackdrop(scene) {
     scene.load.image(BATTLE_BACKDROP_KEY, backdropUrl);

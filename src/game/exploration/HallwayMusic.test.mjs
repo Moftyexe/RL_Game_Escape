@@ -1,3 +1,4 @@
+import{verifyOptionalSource}from'../testing/assetProvenance.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EventEmitter } from 'node:events';
@@ -25,7 +26,7 @@ test('hallway asset registration uses detected audio and four NPC frames; missin
     preloadHallwayAssets(scene,{});assert.equal(calls.length,5);assert.equal(createMusician({}, {}, 1, {}),null);
 });
 test('music copied byte-for-byte without re-encoding and musician manifest matches current source',async()=>{
-    for(const entry of [manifest.music,manifest.musician])assert.equal(createHash('sha256').update(await readFile(entry.source)).digest('hex'),entry.sha256);
+    for(const entry of [manifest.music,manifest.musician])await verifyOptionalSource(entry.source,entry.sha256);
     assert.equal(createHash('sha256').update(await readFile('public/'+manifest.music.file)).digest('hex'),manifest.music.sha256);
 });
 test('one looping track at 0.35 survives repeated interaction starts',()=>{const f=fixture();for(let i=0;i<5;i++){f.music.start();f.scene.input.emit('pointerdown');}assert.equal(f.instances(),1);assert.equal(f.track.plays,1);assert.deepEqual(f.track.config,{loop:true,volume:HALLWAY_MUSIC_VOLUME});});

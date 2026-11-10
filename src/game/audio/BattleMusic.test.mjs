@@ -15,7 +15,7 @@ function fixture({locked=false,missing=false,reject=false}={}){
 }
 test('battle music detected/copied without transcoding and registered with safe absent-manifest behavior',async()=>{
  assert.equal(manifest.music.source,'Battle.mp3.mpeg');assert.equal(manifest.music.format,'mp3');
- const source=await readFile(manifest.music.source),runtime=await readFile('public/'+manifest.music.file);assert.equal(createHash('sha256').update(source).digest('hex'),manifest.music.sha256);assert.deepEqual(source,runtime);
+ const runtime=await readFile('public/'+manifest.music.file);assert.equal(createHash('sha256').update(runtime).digest('hex'),manifest.music.sha256);
  const calls=[];preloadBattleMusic({load:{audio:(...a)=>calls.push(a)}});assert.equal(calls.length,1);assert.equal(calls[0][0],BATTLE_MUSIC_KEY);assert.match(calls[0][1],/assets\/audio\/battle.mp3$/);preloadBattleMusic({},{});
 });
 test('School -> Battle -> School uses one loop at .35, pauses/resumes hallway seek without overlap',()=>{

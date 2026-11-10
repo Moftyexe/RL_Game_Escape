@@ -1,5 +1,0 @@
-{
-  "stem": "latest-run-side",
-  "fallbackStem": "3-run-side",
-  "note": "Eight inspected poses from8-frame side run cycle.mp4. Set stem to3-run-side and rerun processPlayerSprites.mjs --runs-only to restore previous video cycle."
-}

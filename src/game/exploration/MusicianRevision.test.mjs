@@ -1,3 +1,4 @@
+import{verifyOptionalSource}from'../testing/assetProvenance.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -8,8 +9,8 @@ import {preloadHallwayAssets,MUSICIAN_IDLE,MUSICIAN_DEPTH} from './hallwayAssets
 import {createSchoolFixture}from'./explorationTestHarness.mjs';
 
 test('musician uses replaced source bytes, actual pose count and revisioned keys rather than old textures',async()=>{
- const e=manifest.musician,source=await readFile(e.source),metadata=await sharp(source).metadata();
- assert.equal(createHash('sha256').update(source).digest('hex'),e.sha256);assert.notEqual(e.sha256,'1e4ad94951af7e216b4963a5035c19c72bf48f1d9391e54a0b87d96ec946a6d0');
+ const e=manifest.musician,source=await verifyOptionalSource(e.source,e.sha256),metadata=source?await sharp(source).metadata():{width:e.dimensions[0],height:e.dimensions[1]};
+ assert.notEqual(e.sha256,'1e4ad94951af7e216b4963a5035c19c72bf48f1d9391e54a0b87d96ec946a6d0');
  assert.deepEqual(e.dimensions,[metadata.width,metadata.height]);assert.equal(e.sourceHasAlpha,false);assert.equal(e.frames.length,4);assert.ok(e.matteRemoval.removedPixels>0);
  const loads=[];preloadHallwayAssets({load:{audio(){},image:(...a)=>loads.push(a)}});assert.equal(loads.length,e.frames.length);
  assert.ok(loads.every(([key,url])=>key.includes(e.revision)&&url.includes('?v=')));assert.ok(MUSICIAN_IDLE.includes(e.revision));

@@ -1,3 +1,4 @@
+import{verifyOptionalSource}from'../testing/assetProvenance.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EventEmitter } from 'node:events';
@@ -207,8 +208,7 @@ test('processed battle PNGs preserve source files, dimensions, transparent paddi
     const report = JSON.parse(await readFile(new URL('public/assets/battle/inspection.json', root)));
     let count = 0;
     for (const sheet of report.sheets) {
-        const source = await readFile(new URL(sheet.source, root));
-        assert.equal(createHash('sha256').update(source).digest('hex'), sheet.sha256);
+        await verifyOptionalSource(new URL(sheet.source,root),sheet.sha256);
         for (const frame of sheet.frames) {
             if (sheet.manualRegions) {
                 const [left, top, width, height] = sheet.manualRegions[frame.index];

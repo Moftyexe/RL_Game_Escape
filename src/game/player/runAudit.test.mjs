@@ -1,3 +1,4 @@
+import{verifyOptionalSource}from'../testing/assetProvenance.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
@@ -9,8 +10,8 @@ import processing from '../../../public/assets/player/movement/processing-report
 import { playerAnimations as player } from '../exploration/explorationTestHarness.mjs';
 const root=new URL('../../../',import.meta.url),hash=data=>createHash('sha256').update(data).digest('hex');
 for(const animation of audit.animations)test(`${animation.folder} audit verifies source, every output hash/crop, contiguous order and unique pixels`,async()=>{
- const entry=manifest.animations[animation.folder],source=await readFile(new URL('P_Animations/'+entry.source,root));
- assert.equal(hash(source),entry.sourceSha256);assert.equal(entry.sourceSha256,animation.sourceSha256);assert.ok(animation.sourceMatchesProcessingReport);assert.ok(animation.cropsMatchManifest);
+ const entry=manifest.animations[animation.folder],source=await verifyOptionalSource(new URL('P_Animations/'+entry.source,root),entry.sourceSha256);
+ assert.equal(entry.sourceSha256,animation.sourceSha256);assert.ok(animation.sourceMatchesProcessingReport);assert.ok(animation.cropsMatchManifest);
  assert.ok(animation.noSkippedOrReusedIndexes);assert.ok(animation.contiguousFiles);assert.deepEqual(animation.exactDuplicates,[]);assert.deepEqual(animation.pixelExactDuplicates,[]);
  const indexes=Array.from({length:entry.frames.length},(_,i)=>i);assert.deepEqual(animation.playbackOrder,indexes);
  assert.deepEqual(entry.frames.map(f=>f.index),indexes);assert.deepEqual(entry.frames.map(f=>f.sourcePoseIndex),indexes);

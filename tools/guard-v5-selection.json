@@ -1,6 +1,0 @@
-{
-  "selected": "q-60k",
-  "source": "tools/checkpoints/v5/guard_qtable_60k.json",
-  "sha256": "fb29db0c01c96cf71f18d69b363f77769f3aa5e120b6691b79a7d2093ab7cdcf",
-  "reason": "Best paired overall/Aggressive win rate and reward, best coverage, substantially better Aggressive Donut efficiency and lower CRITICAL Defend rate; no round-limit draws. Remaining short Defend chains and Donut waste against easy bots documented."
-}

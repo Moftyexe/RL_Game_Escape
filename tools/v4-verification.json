@@ -1,7 +1,0 @@
-{
-  "buildCommand": "npm.cmd run build-nolog",
-  "buildExitCode": 0,
-  "testsPassed": 345,
-  "testsFailed": 0,
-  "manualBrowserAudioChecked": false
-}

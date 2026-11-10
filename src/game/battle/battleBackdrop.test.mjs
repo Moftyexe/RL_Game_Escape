@@ -7,7 +7,7 @@ function fixture({missing=false,broken=false}={}) {
  const scene={textures:{exists:()=>!missing,get:()=>texture},load:{image:(...args)=>calls.push(['load',...args])},ui:{add:v=>objects.push(...v)},add:{image:(...args)=>({args,setScale(value){this.scale=value;return this;}}),rectangle:(...args)=>({args})}};
  return {scene,calls,objects};
 }
-test('battle backdrop loads the real BGbattle asset',()=>{const f=fixture();preloadBattleBackdrop(f.scene);assert.equal(f.calls[0][1],'battle-hallway');assert.match(f.calls[0][2],/BGbattle\.png$/);});
+test('battle backdrop loads the shipped game background',()=>{const f=fixture();preloadBattleBackdrop(f.scene);assert.equal(f.calls[0][1],'battle-hallway');assert.match(f.calls[0][2],/assets\/environment\/battle\.png$/);});
 test('backdrop cover crop preserves aspect and stays exclusively in upper arena',()=>{
  const f=fixture(),result=createBattleBackdrop(f.scene,1),crop=f.calls.find(c=>c[0]==='crop');
  assert.equal(f.objects.length,2);assert.equal(result.image.args[0],512);assert.equal(result.image.args[1],205);
